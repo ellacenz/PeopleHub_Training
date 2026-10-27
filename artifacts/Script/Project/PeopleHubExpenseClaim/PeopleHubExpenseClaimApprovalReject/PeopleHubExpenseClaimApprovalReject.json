@@ -1,0 +1,28 @@
+{
+	"id": "7791c36a-b9c7-f111-bf5b-000d3aba8400",
+	"createdAt": "2026-10-14T10:24:20.950Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "73a0ff58-1ace-44a8-9d26-1067e11ec610",
+			"name": "peoplehubexpenseclaim",
+			"contextname": "peoplehubexpenseclaim"
+		}
+	],
+	"agents": [],
+	"processFlows": [],
+	"apis": [],
+	"name": "PeopleHubExpenseClaimApprovalReject",
+	"ver": "26.10.14.1246",
+	"description": "Process flow PeopleHubExpenseClaimApproval, reject branch: sets the claim to Rejected (with a reason) and outputs the decision email texts.",
+	"folder": "04_approval",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "6411635b-3295-489d-a5b0-674945933aca",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2"
+}

@@ -1,0 +1,28 @@
+{
+	"id": "df23a23f-98c8-f111-bf5b-000d3ab82ee9",
+	"createdAt": "2026-10-15T12:59:35.000Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "4e641d1b-52fa-43f2-9d17-1d7ecd735a2e",
+			"name": "peoplehubleaverequest",
+			"contextname": "peoplehubleaverequest"
+		}
+	],
+	"agents": [],
+	"processFlows": [],
+	"apis": [],
+	"name": "PeopleHubLeaveRequestDelete",
+	"ver": "26.10.15.1259",
+	"description": "POST { id }: the employee deletes their own DRAFT leave request (409 when it is no longer a draft).",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "72287854-1837-4365-9f80-c2200ae67efd",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2"
+}

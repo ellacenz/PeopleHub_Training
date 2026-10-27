@@ -1,0 +1,11 @@
+{
+	"id": "4f12d199-4dc9-f111-bf5b-000d3ab82ee9",
+	"createdAt": "2026-10-16T10:37:36.640Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"name": "PeopleHubTrainerTrainingME",
+	"description": null,
+	"ver": "26.10.16.1037",
+	"isGlobalAdmin": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"acl": []
+}

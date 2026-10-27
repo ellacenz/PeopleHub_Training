@@ -1,0 +1,538 @@
+{
+	"id": "de2dc713-4ec9-f111-bf5b-000d3ab82ee9",
+	"createdAt": "2026-10-16T10:41:01.163Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000c01",
+			"path": "/",
+			"summary": "Participants and SAP employees",
+			"method": "GET",
+			"description": "Role PeopleHubTrainerTrainingME only. Returns ok, trainer, sapAvailable, summary, participants[], employees[], users[] (only with ?search=)",
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "TrainerParticipants",
+							"objectType": "reference",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "search",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "Optional: find any Neptune user by user name, name or email (max 20)",
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "abe587f8-4dc9-f111-bf5b-000d3ab82ee9",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		}
+	],
+	"definitions": [
+		{
+			"id": "E1C1A000-0000-4000-8000-000000000C11",
+			"name": "TrainerParticipants",
+			"properties": [
+				{
+					"id": null,
+					"name": "ok",
+					"objectType": "boolean",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "trainer",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "sapAvailable",
+					"objectType": "boolean",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "summary",
+					"objectType": "object",
+					"required": false,
+					"children": [
+						{
+							"id": null,
+							"name": "participants",
+							"objectType": "number",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "mapped",
+							"objectType": "number",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "notMapped",
+							"objectType": "number",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "missingRole",
+							"objectType": "number",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						}
+					],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "participants",
+					"objectType": "array",
+					"required": false,
+					"children": [
+						{
+							"id": null,
+							"name": "USER_NAME",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "NAME",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "EMAIL",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "LOCKED",
+							"objectType": "boolean",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "IS_EMPLOYEE",
+							"objectType": "boolean",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "IS_MANAGER",
+							"objectType": "boolean",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "HAS_BOTH_ROLES",
+							"objectType": "boolean",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "ROLES_TEXT",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "MAP_ID",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "PERNR",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "MAPPED",
+							"objectType": "boolean",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "SAP_NAME",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "SAP_ORG",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "SAP_MANAGER",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "SAP_MANAGER_NAME",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "RECOMMENDED",
+							"objectType": "boolean",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "STATUS_TEXT",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "STATUS_STATE",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						}
+					],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "employees",
+					"objectType": "array",
+					"required": false,
+					"children": [
+						{
+							"id": null,
+							"name": "PERNR",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "NAME",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "ORG_TEXT",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "POS_TEXT",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "MANAGER",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "MANAGER_NAME",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "IS_MANAGER",
+							"objectType": "boolean",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "RECOMMENDED",
+							"objectType": "boolean",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "TEXT",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						}
+					],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "users",
+					"objectType": "array",
+					"required": false,
+					"children": [
+						{
+							"id": null,
+							"name": "USER_NAME",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "NAME",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "EMAIL",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "LOCKED",
+							"objectType": "boolean",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "IS_PARTICIPANT",
+							"objectType": "boolean",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						}
+					],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "error",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": "object"
+		}
+	],
+	"documentation": [],
+	"name": "PeopleHubTrainerParticipantsApi",
+	"endpoint": "/api/serverscript/peoplehubtrainerparticipantsapi",
+	"ver": "26.10.16.1041",
+	"version": null,
+	"description": "Trainer mapping app: participants, roles, mapping, SAP employees",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"enableScriptEditor": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

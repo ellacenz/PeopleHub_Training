@@ -1,0 +1,24 @@
+{
+	"id": "3b39b148-d9c7-f111-bf5b-000d3aba8400",
+	"createdAt": "2026-10-14T14:12:29.466Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"attributes": [],
+	"locales": [
+		{
+			"isoCode": "EN",
+			"locale": "en"
+		}
+	],
+	"name": "peoplehubexpenseclaimapproval",
+	"description": null,
+	"fallbackLocale": "en",
+	"application": "peoplehubexpenseclaimapproval",
+	"ver": "26.10.22.1344",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"active": true,
+	"deleted": false,
+	"baseModelId": null,
+	"enhancedBy": [],
+	"baseModel": null,
+	"apps": []
+}

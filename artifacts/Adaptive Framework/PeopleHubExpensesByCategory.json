@@ -1,0 +1,141 @@
+{
+	"id": "27eab9ea-54cd-f111-bf5b-000d3ab0a70f",
+	"createdAt": "2026-10-21T13:40:03.666Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"settings": {
+		"properties": {
+			"report": {
+				"paginationRows": "14",
+				"updateTime": 0,
+				"initialGroupField": ""
+			},
+			"form": {
+				"enableCompact": false,
+				"showFilter": false
+			},
+			"table": {
+				"titleAlign": "center",
+				"chartHeight": "260",
+				"chartType": "pie",
+				"enableSorting": false,
+				"enableMonochrome": false,
+				"pieInnerSize": 0,
+				"enable3D": false,
+				"alpha3D": 0,
+				"beta3D": 0,
+				"depth3D": 100,
+				"legendEnable": true,
+				"legendAlign": "center",
+				"legendVerticalAlign": "bottom",
+				"legendLayout": "horizontal",
+				"xAxisTitleEnable": false,
+				"xAxisReversed": false,
+				"xAxisStartOnTick": true,
+				"xAxisGridLineWidth": 0,
+				"yAxisTitleEnable": false,
+				"yAxisReversed": false,
+				"yAxisStartOnTick": true,
+				"yAxisGridLineWidth": 1
+			}
+		},
+		"fieldCatalog": [
+			{
+				"name": "category",
+				"label": "Category",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "merchant",
+				"label": "Merchant",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "currency",
+				"label": "Currency",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "amount",
+				"label": "Amount",
+				"type": "decimal",
+				"usage": "BOTH"
+			},
+			{
+				"name": "amounteur",
+				"label": "Amount EUR",
+				"type": "decimal",
+				"usage": "BOTH"
+			},
+			{
+				"name": "policyflags",
+				"label": "Policy flags",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "expensedate",
+				"label": "Date",
+				"type": "timestamp",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [],
+		"fieldsRun": [
+			{
+				"visible": true,
+				"name": "amounteur",
+				"text": "Amount EUR",
+				"enableFilter": false,
+				"fieldPos": 1,
+				"type": "value"
+			},
+			{
+				"visible": true,
+				"name": "category",
+				"text": "Category",
+				"fieldPos": 2,
+				"type": "category"
+			}
+		],
+		"defaultVariant": {
+			"id": "",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		},
+		"translation": {
+			"EN": {
+				"report": {},
+				"form": {},
+				"table": {},
+				"fieldCatalog": {}
+			}
+		},
+		"table": "peoplehubexpenseline"
+	},
+	"name": "PeopleHubExpensesByCategory",
+	"description": "Expenses (EUR) by category (tile chart)",
+	"group": "",
+	"type": "C",
+	"connectorid": "73873c9f-54cd-f111-bf5b-000d3ab0a70f",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "26.10.21.1340",
+	"disabled": false,
+	"appType": "A",
+	"application": "neptunedxp_adaptive_tile_chart",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null,
+	"i18n": []
+}

@@ -1,0 +1,24 @@
+{
+	"id": "411d55a5-8ec8-f111-bf5b-000d3ab82ee9",
+	"createdAt": "2026-10-15T11:50:43.893Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"attributes": [],
+	"locales": [
+		{
+			"isoCode": "EN",
+			"locale": "en"
+		}
+	],
+	"name": "peoplehubregisterleaverequest",
+	"description": null,
+	"fallbackLocale": "en",
+	"application": "peoplehubregisterleaverequest",
+	"ver": "26.10.16.0901",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"active": true,
+	"deleted": false,
+	"baseModelId": null,
+	"enhancedBy": [],
+	"baseModel": null,
+	"apps": []
+}

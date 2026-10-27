@@ -1,0 +1,11 @@
+{
+	"id": "fe7d7617-73b5-48db-a40b-41bc8ab591ad",
+	"createdAt": "2026-10-12T14:56:25.146Z",
+	"createdBy": "joao.salvador@neptune-software.com",
+	"name": "PeopleHubEmployeeTrainingME",
+	"description": null,
+	"ver": "26.10.15.1122",
+	"isGlobalAdmin": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"acl": []
+}

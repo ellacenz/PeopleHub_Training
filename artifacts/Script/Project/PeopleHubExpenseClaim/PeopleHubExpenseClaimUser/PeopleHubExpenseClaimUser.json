@@ -1,0 +1,22 @@
+{
+	"id": "cea635e0-c2c7-f111-bf5b-000d3aba8400",
+	"createdAt": "2026-10-14T11:32:05.856Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"agents": [],
+	"processFlows": [],
+	"apis": [],
+	"name": "PeopleHubExpenseClaimUser",
+	"ver": "26.10.14.1254",
+	"description": "Returns the current user and whether they are an expense approver (Cockpit role PeopleHubApproverClaim). Used by the app to decide what the user can see and do.",
+	"folder": "01_core",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "6411635b-3295-489d-a5b0-674945933aca",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2"
+}

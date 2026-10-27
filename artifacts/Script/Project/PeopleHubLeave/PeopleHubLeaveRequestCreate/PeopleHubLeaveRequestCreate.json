@@ -1,0 +1,82 @@
+{
+	"id": "fdff8ce3-92c8-f111-bf5b-000d3ab82ee9",
+	"createdAt": "2026-10-15T12:21:04.363Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [
+		{
+			"id": "21E041E0-8CC8-F111-BF5B-000D3AB82EE9",
+			"name": "dayjs",
+			"contextname": "dayjs"
+		}
+	],
+	"entitySets": [
+		{
+			"id": "6667e56b-a8e0-407e-b86c-e1e302e10ab6",
+			"name": "peoplehubusermap",
+			"contextname": "peoplehubusermap"
+		},
+		{
+			"id": "4e641d1b-52fa-43f2-9d17-1d7ecd735a2e",
+			"name": "peoplehubleaverequest",
+			"contextname": "peoplehubleaverequest"
+		}
+	],
+	"agents": [],
+	"processFlows": [],
+	"apis": [
+		{
+			"id": "f01909d5-7bc2-4abc-ba33-a70aba7ba59b",
+			"name": "getEmployees",
+			"contextname": "getEmployees",
+			"parent": "287393dc-396c-47cf-9706-02de8efe96d4",
+			"method": "GET"
+		},
+		{
+			"id": "0af4d8b1-4b77-4196-a92d-f76e745e2fef",
+			"name": "getAbsenceTypes",
+			"contextname": "getAbsenceTypes",
+			"parent": "287393dc-396c-47cf-9706-02de8efe96d4",
+			"method": "GET"
+		},
+		{
+			"id": "f9fdb337-ed7f-43ae-9925-e265967f3b45",
+			"name": "getHolidays",
+			"contextname": "getHolidays",
+			"parent": "287393dc-396c-47cf-9706-02de8efe96d4",
+			"method": "GET"
+		},
+		{
+			"id": "80f2c648-eb41-427d-9e5a-1a31a9ee5e83",
+			"name": "getAbsences",
+			"contextname": "getAbsences",
+			"parent": "287393dc-396c-47cf-9706-02de8efe96d4",
+			"method": "GET"
+		},
+		{
+			"id": "e7c74aee-7309-414c-b0c7-101617f7d90a",
+			"name": "getCheckQuota",
+			"contextname": "getCheckQuota",
+			"parent": "287393dc-396c-47cf-9706-02de8efe96d4",
+			"method": "GET"
+		},
+		{
+			"id": "dc3d3ca6-40e8-49eb-8c3a-21c81eee2878",
+			"name": "getLeaveBalance",
+			"contextname": "getLeaveBalance",
+			"parent": "287393dc-396c-47cf-9706-02de8efe96d4",
+			"method": "GET"
+		}
+	],
+	"name": "PeopleHubLeaveRequestCreate",
+	"ver": "26.10.20.1442",
+	"description": "POST { AWART, START_DATE, END_DATE, COMMENT, preview }: counts working days (dayjs, SAP holidays), checks overlaps, SAP quota and the balance minus days booked in Neptune; preview only checks, otherwise saves a DRAFT request.",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "72287854-1837-4365-9f80-c2200ae67efd",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2"
+}

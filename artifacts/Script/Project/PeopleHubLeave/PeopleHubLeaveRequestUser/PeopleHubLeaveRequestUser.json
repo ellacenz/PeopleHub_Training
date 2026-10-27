@@ -1,0 +1,36 @@
+{
+	"id": "1a51c1b1-8cc8-f111-bf5b-000d3ab82ee9",
+	"createdAt": "2026-10-15T11:36:43.836Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "6667e56b-a8e0-407e-b86c-e1e302e10ab6",
+			"name": "peoplehubusermap",
+			"contextname": "peoplehubusermap"
+		}
+	],
+	"agents": [],
+	"processFlows": [],
+	"apis": [
+		{
+			"id": "f01909d5-7bc2-4abc-ba33-a70aba7ba59b",
+			"name": "getEmployees",
+			"contextname": "getEmployees",
+			"parent": "287393dc-396c-47cf-9706-02de8efe96d4",
+			"method": "GET"
+		}
+	],
+	"name": "PeopleHubLeaveRequestUser",
+	"ver": "26.10.15.1203",
+	"description": "Returns the current user, their SAP employee (PERNR, name, manager) from peoplehubusermap + SAP, and the Cockpit roles PeopleHubEmployeeTrainingME / PeopleHubManagerTrainingME.",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "72287854-1837-4365-9f80-c2200ae67efd",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2"
+}

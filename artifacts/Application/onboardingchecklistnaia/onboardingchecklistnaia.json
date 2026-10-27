@@ -1,0 +1,1234 @@
+{
+	"id": "4c8355eb-5fcd-f111-bf5b-000d3ab0a70f",
+	"createdAt": "2026-10-21T14:58:48.900Z",
+	"createdBy": "joao.salvador@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "6ebd9821-75be-4398-87f5-1f6a9243a5fb",
+			"fieldName": "App",
+			"fieldParent": 0,
+			"fieldType": "sap.m.App",
+			"script": "",
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "43f4882c-bfe7-4566-f26e-16a58df2384d",
+					"fieldName": "dpTasks",
+					"fieldParent": "6ebd9821-75be-4398-87f5-1f6a9243a5fb",
+					"fieldType": "sap.f.DynamicPage",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "headerExpanded",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "toggleHeaderOnTitleClick",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "preserveHeaderStateOnScroll",
+							"grouping": "Properties",
+							"value": "false",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "showFooter",
+							"grouping": "Properties",
+							"value": "false",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "styleClass",
+							"grouping": "Properties",
+							"value": "onboardingchecklistnaia_page",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "2f910ccb-b1e0-47d3-965d-538dd09921b2",
+							"fieldName": "agTitle",
+							"fieldParent": "43f4882c-bfe7-4566-f26e-16a58df2384d",
+							"fieldType": "neptune.Aggregation",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "aggregation",
+									"grouping": "Aggregation",
+									"value": "title",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "567bf96c-bf55-4db9-f32a-e59d7bb67781",
+									"fieldName": "dptTitle",
+									"fieldParent": "2f910ccb-b1e0-47d3-965d-538dd09921b2",
+									"fieldType": "sap.f.DynamicPageTitle",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "695af2ef-362c-4aa5-af5d-f39c87f7e02e",
+											"fieldName": "agHeading",
+											"fieldParent": "567bf96c-bf55-4db9-f32a-e59d7bb67781",
+											"fieldType": "neptune.Aggregation",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "aggregation",
+													"grouping": "Aggregation",
+													"value": "heading",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "f3b33af9-37a2-4319-bb36-0e2aea0e2acd",
+													"fieldName": "vbHeading",
+													"fieldParent": "695af2ef-362c-4aa5-af5d-f39c87f7e02e",
+													"fieldType": "sap.m.VBox",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "5ca0e141-5997-4b40-9cfb-527218a32e08",
+															"fieldName": "titleMain",
+															"fieldParent": "f3b33af9-37a2-4319-bb36-0e2aea0e2acd",
+															"fieldType": "sap.m.Title",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Onboarding Tasks",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "styleClass",
+																	"grouping": "Properties",
+																	"value": "onboardingchecklistnaia_pageTitle",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "72cc3512-568a-4ff2-9665-03a408c32724",
+															"fieldName": "txtSubtitle",
+															"fieldParent": "f3b33af9-37a2-4319-bb36-0e2aea0e2acd",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Tasks>/count} task(s)",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "styleClass",
+																	"grouping": "Properties",
+																	"value": "onboardingchecklistnaia_pageSubtitle",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": []
+														}
+													]
+												}
+											]
+										},
+										{
+											"fieldNo": "e4d40f7c-869b-42a2-dc9a-b30a0904098e",
+											"fieldName": "agActions",
+											"fieldParent": "567bf96c-bf55-4db9-f32a-e59d7bb67781",
+											"fieldType": "neptune.Aggregation",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "aggregation",
+													"grouping": "Aggregation",
+													"value": "actions",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "d5580f17-79f0-4ef8-f737-3d259bb0a40d",
+													"fieldName": "btnRefresh",
+													"fieldParent": "e4d40f7c-869b-42a2-dc9a-b30a0904098e",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://refresh",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Refresh",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "onboardingchecklistnaia_btnRefresh",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "onRefresh()",
+															"script": "onRefresh()",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "57f1efeb-ca6f-45af-f451-3feaabc9c976",
+							"fieldName": "agHeader",
+							"fieldParent": "43f4882c-bfe7-4566-f26e-16a58df2384d",
+							"fieldType": "neptune.Aggregation",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "aggregation",
+									"grouping": "Aggregation",
+									"value": "header",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "b75f1dd3-ed2a-4c89-b009-a7bd33dfcd6e",
+									"fieldName": "dphHeader",
+									"fieldParent": "57f1efeb-ca6f-45af-f451-3feaabc9c976",
+									"fieldType": "sap.f.DynamicPageHeader",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "pinnable",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "40ce18da-776e-4c61-c209-1f6b4fe117ab",
+											"fieldName": "hbFilters",
+											"fieldParent": "b75f1dd3-ed2a-4c89-b009-a7bd33dfcd6e",
+											"fieldType": "sap.m.HBox",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "wrap",
+													"grouping": "Properties",
+													"value": "Wrap",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "d0767630-9e5f-4104-d59e-1d7744c73801",
+													"fieldName": "vbSearch",
+													"fieldParent": "40ce18da-776e-4c61-c209-1f6b4fe117ab",
+													"fieldType": "sap.m.VBox",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "76483f09-e313-43d5-a033-e0f7cd649ed3",
+															"fieldName": "lblSearch",
+															"fieldParent": "d0767630-9e5f-4104-d59e-1d7744c73801",
+															"fieldType": "sap.m.Label",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Search tasks",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "0acb3763-5ca1-40e3-e1fa-c0a0e84fbc43",
+															"fieldName": "sfSearch",
+															"fieldParent": "d0767630-9e5f-4104-d59e-1d7744c73801",
+															"fieldType": "sap.m.SearchField",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "placeholder",
+																	"grouping": "Properties",
+																	"value": "Search by title...",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "styleClass",
+																	"grouping": "Properties",
+																	"value": "onboardingchecklistnaia_searchField",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "liveChange",
+																	"grouping": "Events",
+																	"value": "Anonymous Function",
+																	"script": "onSearchChanged(oEvent.getParameter('newValue'));",
+																	"language": "javascript",
+																	"translation": []
+																}
+															],
+															"data": []
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "b4ac857a-29eb-42a0-9fa5-561c06b2d396",
+							"fieldName": "agContent",
+							"fieldParent": "43f4882c-bfe7-4566-f26e-16a58df2384d",
+							"fieldType": "neptune.Aggregation",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "aggregation",
+									"grouping": "Aggregation",
+									"value": "content",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "708f540f-926d-471c-b6bf-70177c4c9e6e",
+									"fieldName": "vbContent",
+									"fieldParent": "b4ac857a-29eb-42a0-9fa5-561c06b2d396",
+									"fieldType": "sap.m.VBox",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "styleClass",
+											"grouping": "Properties",
+											"value": "onboardingchecklistnaia_contentArea",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "b82fd7a4-a812-453d-a6f5-a51dc20adfb6",
+											"fieldName": "msOffline",
+											"fieldParent": "708f540f-926d-471c-b6bf-70177c4c9e6e",
+											"fieldType": "sap.m.MessageStrip",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "You are offline — showing the last loaded tasks.",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Warning",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "showIcon",
+													"grouping": "Properties",
+													"value": "true",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "showCloseButton",
+													"grouping": "Properties",
+													"value": "false",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "visible",
+													"grouping": "Properties",
+													"value": "{Tasks>/isOffline}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "onboardingchecklistnaia_offlineStrip",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "639d8e93-5db3-414b-f7a9-e944e5d46d04",
+											"fieldName": "vbLoading",
+											"fieldParent": "708f540f-926d-471c-b6bf-70177c4c9e6e",
+											"fieldType": "sap.m.VBox",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "visible",
+													"grouping": "Properties",
+													"value": "{Tasks>/view/showLoading}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "onboardingchecklistnaia_stateBox",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "1b25869b-20d9-4a22-f567-2484c94c42bb",
+													"fieldName": "biLoading",
+													"fieldParent": "639d8e93-5db3-414b-f7a9-e944e5d46d04",
+													"fieldType": "sap.m.BusyIndicator",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "size",
+															"grouping": "Properties",
+															"value": "1.5rem",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "e6c0ad56-b52f-4035-b59f-c9abd53923a4",
+													"fieldName": "txtLoading",
+													"fieldParent": "639d8e93-5db3-414b-f7a9-e944e5d46d04",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Loading tasks...",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "onboardingchecklistnaia_stateText",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "b10e9e26-d8cd-4638-8f06-8e9b6ff2eecf",
+											"fieldName": "vbError",
+											"fieldParent": "708f540f-926d-471c-b6bf-70177c4c9e6e",
+											"fieldType": "sap.m.VBox",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "visible",
+													"grouping": "Properties",
+													"value": "{Tasks>/view/showError}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "onboardingchecklistnaia_stateBox",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "0b48f53d-2777-4d4d-bcfd-9a79aedf6895",
+													"fieldName": "iconError",
+													"fieldParent": "b10e9e26-d8cd-4638-8f06-8e9b6ff2eecf",
+													"fieldType": "sap.ui.core.Icon",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "src",
+															"grouping": "Properties",
+															"value": "sap-icon://message-error",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "onboardingchecklistnaia_stateIcon onboardingchecklistnaia_stateIconError",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "000ed46c-ddd3-4a8e-e29a-66b76a6e6c9f",
+													"fieldName": "txtError",
+													"fieldParent": "b10e9e26-d8cd-4638-8f06-8e9b6ff2eecf",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Couldn't load tasks. Check your connection and try again.",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "onboardingchecklistnaia_stateText",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "6a9ecbc3-ea7f-49a3-86a8-a985151b426e",
+													"fieldName": "btnRetry",
+													"fieldParent": "b10e9e26-d8cd-4638-8f06-8e9b6ff2eecf",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Retry",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://synchronize",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "onboardingchecklistnaia_btnRetry",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "onRefresh()",
+															"script": "onRefresh()",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "befb47da-6143-411f-ddf2-cc144a481641",
+											"fieldName": "vbEmpty",
+											"fieldParent": "708f540f-926d-471c-b6bf-70177c4c9e6e",
+											"fieldType": "sap.m.VBox",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "visible",
+													"grouping": "Properties",
+													"value": "{Tasks>/view/showEmpty}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "onboardingchecklistnaia_stateBox",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "b26ae179-452f-46b3-dc2b-f4c0f07a4844",
+													"fieldName": "iconEmpty",
+													"fieldParent": "befb47da-6143-411f-ddf2-cc144a481641",
+													"fieldType": "sap.ui.core.Icon",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "src",
+															"grouping": "Properties",
+															"value": "sap-icon://task",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "onboardingchecklistnaia_stateIcon",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "5d4fa44d-fd9f-43d3-d3ca-edb732fc5e91",
+													"fieldName": "txtEmpty",
+													"fieldParent": "befb47da-6143-411f-ddf2-cc144a481641",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "No onboarding tasks yet.",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "onboardingchecklistnaia_stateText",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "1cbc9e9f-8496-451e-c922-f5655c684b85",
+											"fieldName": "vbNoResults",
+											"fieldParent": "708f540f-926d-471c-b6bf-70177c4c9e6e",
+											"fieldType": "sap.m.VBox",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "visible",
+													"grouping": "Properties",
+													"value": "{Tasks>/view/showNoResults}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "onboardingchecklistnaia_stateBox",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "3c7997ec-da66-4276-88d3-841df649fca9",
+													"fieldName": "iconNoResults",
+													"fieldParent": "1cbc9e9f-8496-451e-c922-f5655c684b85",
+													"fieldType": "sap.ui.core.Icon",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "src",
+															"grouping": "Properties",
+															"value": "sap-icon://search",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "onboardingchecklistnaia_stateIcon",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "8ef1c8fd-8ae7-468d-b5ff-e9d11c6523fd",
+													"fieldName": "txtNoResults",
+													"fieldParent": "1cbc9e9f-8496-451e-c922-f5655c684b85",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "No tasks match your search.",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "onboardingchecklistnaia_stateText",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "3ee4b66a-4e68-4688-a84b-deaefad5b2eb",
+											"fieldName": "listTasks",
+											"fieldParent": "708f540f-926d-471c-b6bf-70177c4c9e6e",
+											"fieldType": "sap.m.List",
+											"script": "",
+											"bindingType": "h",
+											"bindingSource": "DataModel",
+											"bindingParentID": "d232fb57-7d3b-4494-92ac-84f55020f4ca",
+											"modelPath": "Tasks>/FILTERED",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "visible",
+													"grouping": "Properties",
+													"value": "{Tasks>/view/showList}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "showSeparators",
+													"grouping": "Properties",
+													"value": "None",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "growing",
+													"grouping": "Properties",
+													"value": "true",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "growingThreshold",
+													"grouping": "Properties",
+													"value": "20",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "noDataText",
+													"grouping": "Properties",
+													"value": "No tasks found",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "onboardingchecklistnaia_taskList",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "5f862da2-2e0c-4f28-ccbe-0bfc258ce902",
+													"fieldName": "cliTask",
+													"fieldParent": "3ee4b66a-4e68-4688-a84b-deaefad5b2eb",
+													"fieldType": "sap.m.CustomListItem",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "onboardingchecklistnaia_taskCardItem",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "cae1028e-2dda-4e2c-e975-eff4f4662a71",
+															"fieldName": "vbCard",
+															"fieldParent": "5f862da2-2e0c-4f28-ccbe-0bfc258ce902",
+															"fieldType": "sap.m.VBox",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "styleClass",
+																	"grouping": "Properties",
+																	"value": "onboardingchecklistnaia_taskCard",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": [
+																{
+																	"fieldNo": "1890bd0e-d3d3-429e-a8d1-debc4414f87e",
+																	"fieldName": "hbTop",
+																	"fieldParent": "cae1028e-2dda-4e2c-e975-eff4f4662a71",
+																	"fieldType": "sap.m.HBox",
+																	"script": "",
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "wrap",
+																			"grouping": "Properties",
+																			"value": "Wrap",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "justifyContent",
+																			"grouping": "Properties",
+																			"value": "SpaceBetween",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "onboardingchecklistnaia_taskCardTop",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": [
+																		{
+																			"fieldNo": "2dbe2702-72d1-448d-c8f4-16ce08d697dd",
+																			"fieldName": "txtTitle",
+																			"fieldParent": "1890bd0e-d3d3-429e-a8d1-debc4414f87e",
+																			"fieldType": "sap.m.Text",
+																			"script": "",
+																			"request": [],
+																			"response": [],
+																			"attributes": [
+																				{
+																					"attribute": "text",
+																					"grouping": "Properties",
+																					"value": "{Tasks>title}",
+																					"script": "",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "styleClass",
+																					"grouping": "Properties",
+																					"value": "onboardingchecklistnaia_taskTitle",
+																					"script": "",
+																					"translation": []
+																				}
+																			],
+																			"data": []
+																		},
+																		{
+																			"fieldNo": "f0b7a6b2-3366-4431-8f88-87bd35615863",
+																			"fieldName": "osStatus",
+																			"fieldParent": "1890bd0e-d3d3-429e-a8d1-debc4414f87e",
+																			"fieldType": "sap.m.ObjectStatus",
+																			"script": "",
+																			"request": [],
+																			"response": [],
+																			"attributes": [
+																				{
+																					"attribute": "text",
+																					"grouping": "Properties",
+																					"value": "{Tasks>statusText}",
+																					"script": "",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "state",
+																					"grouping": "Properties",
+																					"value": "{Tasks>statusState}",
+																					"script": "",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "styleClass",
+																					"grouping": "Properties",
+																					"value": "onboardingchecklistnaia_taskStatusPill",
+																					"script": "",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "state",
+																					"grouping": "Formatter",
+																					"value": "Anonymous Function",
+																					"script": "if (statusState === 'Success' || statusState === 'Warning' || statusState === 'Error' || statusState === 'Information') return statusState; return 'None';",
+																					"language": "",
+																					"translation": []
+																				}
+																			],
+																			"data": []
+																		}
+																	]
+																},
+																{
+																	"fieldNo": "3b8c6bd4-0b44-49ec-9ac3-4ec4286baaaa",
+																	"fieldName": "hbMeta",
+																	"fieldParent": "cae1028e-2dda-4e2c-e975-eff4f4662a71",
+																	"fieldType": "sap.m.HBox",
+																	"script": "",
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "onboardingchecklistnaia_taskMeta",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": [
+																		{
+																			"fieldNo": "9a9f8263-1405-40f6-e11c-043300a4e268",
+																			"fieldName": "iconDue",
+																			"fieldParent": "3b8c6bd4-0b44-49ec-9ac3-4ec4286baaaa",
+																			"fieldType": "sap.ui.core.Icon",
+																			"script": "",
+																			"request": [],
+																			"response": [],
+																			"attributes": [
+																				{
+																					"attribute": "src",
+																					"grouping": "Properties",
+																					"value": "sap-icon://appointment-2",
+																					"script": "",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "styleClass",
+																					"grouping": "Properties",
+																					"value": "onboardingchecklistnaia_taskMetaIcon",
+																					"script": "",
+																					"translation": []
+																				}
+																			],
+																			"data": []
+																		},
+																		{
+																			"fieldNo": "0f7e542c-705e-43aa-aa0a-d437678cf5a0",
+																			"fieldName": "txtDue",
+																			"fieldParent": "3b8c6bd4-0b44-49ec-9ac3-4ec4286baaaa",
+																			"fieldType": "sap.m.Text",
+																			"script": "",
+																			"request": [],
+																			"response": [],
+																			"attributes": [
+																				{
+																					"attribute": "text",
+																					"grouping": "Properties",
+																					"value": "{Tasks>dueDateDisplay}",
+																					"script": "",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "styleClass",
+																					"grouping": "Properties",
+																					"value": "onboardingchecklistnaia_taskMetaText",
+																					"script": "",
+																					"translation": []
+																				}
+																			],
+																			"data": []
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "7d8b859f-534b-47cd-e2e3-301dbfcd8f82",
+					"fieldName": "getOnboardingtask",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"restSource": "1b635ce9-38cd-f111-bf5b-000d3ab0a70f",
+					"restOperation": "5306a9eb-d32f-4dcc-9404-62eae24b196e",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "ajaxSuccess",
+							"grouping": "Events",
+							"value": "Anonymous Function",
+							"script": "file://event/neptune.restapi/getOnboardingtask/ajaxSuccess.js",
+							"language": "javascript",
+							"translation": []
+						},
+						{
+							"attribute": "ajaxError",
+							"grouping": "Events",
+							"value": "Anonymous Function",
+							"script": "file://event/neptune.restapi/getOnboardingtask/ajaxError.js",
+							"language": "javascript",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "d232fb57-7d3b-4494-92ac-84f55020f4ca",
+					"fieldName": "Tasks",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model",
+					"script": "",
+					"bindingValue": "Generic Array",
+					"bindingType": "u",
+					"bindingSource": "P9",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "setCacheType",
+							"grouping": "Model",
+							"value": "IndexedDB",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "setEnableCache",
+							"grouping": "Model",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "setInitLoad",
+							"grouping": "Model",
+							"value": "cache",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "cacheInitLoadFinished",
+							"grouping": "Events",
+							"value": "cacheInitLoadFinished();",
+							"script": "cacheInitLoadFinished();",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "2d98907d-059a-44ab-df9b-6aa2e583fcb1",
+					"fieldName": "GlobalFunctions",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/GlobalFunctions.js",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"iaSettings": {
+		"denylist": [],
+		"allowlist": []
+	},
+	"ver": "26.10.21.1518",
+	"application": "onboardingchecklistnaia",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": true,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": true,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_integration": false,
+	"ui5_chart": false,
+	"ui5_dxp_ui": false,
+	"ui5_theme": "",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "file:///css.css",
+	"compiledCss": "file:///compiledCss.css",
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"generateVersionOnActivation": false,
+	"disableIntelligence": false,
+	"activationHistoryCount": 0,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"apis": [
+		{
+			"id": "1b635ce9-38cd-f111-bf5b-000d3ab0a70f",
+			"name": "OnboardingAPI",
+			"ver": "26.10.21.1359"
+		}
+	],
+	"i18n": []
+}

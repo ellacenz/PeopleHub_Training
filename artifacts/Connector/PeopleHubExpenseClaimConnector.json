@@ -1,0 +1,17 @@
+{
+	"id": "72873c9f-54cd-f111-bf5b-000d3ab0a70f",
+	"createdAt": "2026-10-21T13:38:05.563Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"settings": {
+		"tableid": "73a0ff58-1ace-44a8-9d26-1067e11ec610",
+		"hasDocumentation": false
+	},
+	"documentation": {},
+	"name": "PeopleHubExpenseClaimConnector",
+	"description": null,
+	"group": null,
+	"type": "T",
+	"ver": "26.10.21.1337",
+	"disabled": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2"
+}

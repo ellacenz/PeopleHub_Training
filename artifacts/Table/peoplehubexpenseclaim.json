@@ -1,0 +1,117 @@
+{
+	"id": "73a0ff58-1ace-44a8-9d26-1067e11ec610",
+	"createdAt": "2026-10-12T14:56:43.270Z",
+	"createdBy": "joao.salvador@neptune-software.com",
+	"fields": [
+		{
+			"fieldName": "claimid",
+			"fieldType": "uuid",
+			"isUnique": true,
+			"description": "Unique identifier for the expense claim",
+			"isNullable": false,
+			"id": "2570764c-0585-4751-efef-4c5c150857a3"
+		},
+		{
+			"fieldName": "title",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Title of the expense claim",
+			"isNullable": false,
+			"id": "ff2b6178-3aa3-4090-d367-a75331b04b67"
+		},
+		{
+			"fieldName": "purpose",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Purpose of the expense claim",
+			"isNullable": true,
+			"id": "02df87c7-c299-419f-f7f3-aa2cc340bba9"
+		},
+		{
+			"fieldName": "datefrom",
+			"fieldType": "timestamp",
+			"isUnique": false,
+			"description": "Start date of the expense period",
+			"isNullable": false,
+			"id": "12818043-f5bd-49bc-93b6-9174e7182b38"
+		},
+		{
+			"fieldName": "dateto",
+			"fieldType": "timestamp",
+			"isUnique": false,
+			"description": "End date of the expense period",
+			"isNullable": false,
+			"id": "776c7e37-3130-4cae-b8a9-10987711b4c5"
+		},
+		{
+			"fieldName": "status",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Current status of the claim (default: Draft)",
+			"isNullable": false,
+			"id": "aaa776c3-827f-4e2a-8db2-26b9bbf8d9bb"
+		},
+		{
+			"fieldName": "totaleur",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"description": "Total amount in EUR",
+			"isNullable": false,
+			"precision": "12",
+			"scale": "2",
+			"id": "f866b0ee-210b-4f49-fcd4-7c91dc2ec91c"
+		},
+		{
+			"fieldName": "createdByPerson",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "User who created the claim",
+			"isNullable": false,
+			"id": "4f227d6e-47ac-4547-cade-828cb13c7efd"
+		},
+		{
+			"fieldName": "submittedat",
+			"fieldType": "timestamp",
+			"isUnique": false,
+			"description": "Timestamp when the claim was submitted",
+			"isNullable": true,
+			"id": "89e7ec91-1144-4136-87aa-6d4b41e32561"
+		},
+		{
+			"fieldName": "approver",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "User who approved or rejected the claim",
+			"isNullable": true,
+			"id": "5239b932-5d79-4972-e856-7cd7f451ea96"
+		},
+		{
+			"fieldName": "decidedat",
+			"fieldType": "timestamp",
+			"isUnique": false,
+			"description": "Timestamp when the decision was made",
+			"isNullable": true,
+			"id": "7b50c2bb-d85f-46d9-8d60-87f061fdc0a6"
+		},
+		{
+			"fieldName": "rejectionreason",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Reason for rejection if applicable",
+			"isNullable": true,
+			"id": "d686b9f4-62d4-46fb-cf98-2a43dd1952b8"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"vectorStoreConfig": {},
+	"name": "peoplehubexpenseclaim",
+	"description": "Table to store expense claim records",
+	"ver": "26.10.14.1047",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"generationStrategy": "uuid",
+	"rolesRead": [],
+	"rolesWrite": []
+}

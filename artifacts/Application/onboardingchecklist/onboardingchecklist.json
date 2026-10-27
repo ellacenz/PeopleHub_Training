@@ -1,0 +1,293 @@
+{
+	"id": "028ba731-3acd-f111-bf5b-000d3ab0a70f",
+	"createdAt": "2026-10-21T10:28:46.003Z",
+	"createdBy": "joao.salvador@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "fb93baec-7939-41ca-af14-5f983c517a84",
+			"fieldName": "App",
+			"fieldParent": 0,
+			"fieldType": "sap.m.App",
+			"script": "",
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "fe2a6e6b-cbf7-48b7-f5a9-9fc194d9378d",
+					"fieldName": "pageTasks",
+					"fieldParent": "fb93baec-7939-41ca-af14-5f983c517a84",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Onboarding Tasks",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "backgroundDesign",
+							"grouping": "Properties",
+							"value": "List",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "318f244c-dd35-4db9-aa24-1550f9a2663a",
+							"fieldName": "toolbarFilter",
+							"fieldParent": "fe2a6e6b-cbf7-48b7-f5a9-9fc194d9378d",
+							"fieldType": "sap.m.Toolbar",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "HeaderToolbar",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "ff44b82d-3c98-4fcc-e250-1662cc6bb2e6",
+									"fieldName": "sfTaskFilter",
+									"fieldParent": "318f244c-dd35-4db9-aa24-1550f9a2663a",
+									"fieldType": "sap.m.SearchField",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "placeholder",
+											"grouping": "Properties",
+											"value": "Search tasks by title",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "width",
+											"grouping": "Properties",
+											"value": "100%",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "liveChange",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.m.SearchField/sfTaskFilter/liveChange.js",
+											"language": "javascript",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						},
+						{
+							"fieldNo": "e42b5cf5-ce92-49a7-86a6-dbcfa2775c6a",
+							"fieldName": "listTasks",
+							"fieldParent": "fe2a6e6b-cbf7-48b7-f5a9-9fc194d9378d",
+							"fieldType": "sap.m.List",
+							"script": "",
+							"bindingType": "h",
+							"bindingSource": "DataModel",
+							"bindingParentID": "ab1863f8-7620-46ea-a025-73b1bfc3d688",
+							"modelPath": "Tasks>/ITEMS",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "2743446c-3d23-4e3b-df09-a60f2b974b1d",
+									"fieldName": "itemTask",
+									"fieldParent": "e42b5cf5-ce92-49a7-86a6-dbcfa2775c6a",
+									"fieldType": "sap.m.StandardListItem",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "{Tasks>title}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "description",
+											"grouping": "Properties",
+											"value": "{Tasks>dueDate}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "36cad427-baae-42f8-e24d-b40f0e9701f6",
+					"fieldName": "getOnboardingtask",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"restSource": "1b635ce9-38cd-f111-bf5b-000d3ab0a70f",
+					"restOperation": "5306a9eb-d32f-4dcc-9404-62eae24b196e",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "ajaxSuccess",
+							"grouping": "Events",
+							"value": "Anonymous Function",
+							"script": "file://event/neptune.restapi/getOnboardingtask/ajaxSuccess.js",
+							"language": "javascript",
+							"translation": []
+						},
+						{
+							"attribute": "ajaxError",
+							"grouping": "Events",
+							"value": "Anonymous Function",
+							"script": "sap.m.MessageToast.show('Failed to load tasks');",
+							"language": "javascript",
+							"translation": []
+						},
+						{
+							"attribute": "setInitLoad",
+							"grouping": "Model",
+							"value": "online",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "8387548f-b799-47d4-8337-75404d7677e4",
+					"fieldName": "Tasks",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model",
+					"script": "",
+					"bindingValue": "Generic Array",
+					"bindingType": "u",
+					"bindingSource": "P9",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "setCacheType",
+							"grouping": "Model",
+							"value": "IndexedDB",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "setEnableCache",
+							"grouping": "Model",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "setInitLoad",
+							"grouping": "Model",
+							"value": "cache",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "88df682b-4f50-43d9-e69d-2b8b28de506f",
+					"fieldName": "GlobalFunctions",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/GlobalFunctions.js",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"iaSettings": {
+		"denylist": [],
+		"allowlist": []
+	},
+	"ver": "26.10.23.1450",
+	"application": "onboardingchecklist",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_integration": false,
+	"ui5_chart": false,
+	"ui5_dxp_ui": false,
+	"ui5_theme": "",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"compiledCss": "",
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"generateVersionOnActivation": false,
+	"disableIntelligence": false,
+	"activationHistoryCount": 0,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"apis": [
+		{
+			"id": "1b635ce9-38cd-f111-bf5b-000d3ab0a70f",
+			"name": "OnboardingAPI",
+			"ver": "26.10.21.1359"
+		}
+	],
+	"i18n": []
+}

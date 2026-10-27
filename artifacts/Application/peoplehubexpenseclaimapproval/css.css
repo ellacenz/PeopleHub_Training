@@ -1,0 +1,16 @@
+.peoplehubexpenseclaimapproval_headerSubTitleBox {
+    gap: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+}
+
+.peoplehubexpenseclaimapproval_redFlag {
+    color: var(--sapNegativeTextColor) !important;
+    white-space: normal;
+}
+
+.peoplehubexpenseclaimapproval_redFlagsTitle.sapMTitle {
+    color: var(--sapNegativeTextColor) !important;
+    margin-top: 1rem;
+}

@@ -1,0 +1,338 @@
+{
+	"id": "2da8f9fe-92c8-f111-bf5b-000d3ab82ee9",
+	"createdAt": "2026-10-15T12:21:50.373Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000701",
+			"path": "/",
+			"summary": "Check or create a leave request",
+			"method": "POST",
+			"description": "Body { AWART, START_DATE (YYYY-MM-DD), END_DATE, COMMENT, preview }. preview=true only checks. Returns { ok, preview, WORKING_DAYS, holidays[], quotaMessage, id, ... } or { ok:false, error } with status 400/403/409.",
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "LeaveRequestResult",
+							"objectType": "reference",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "409",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "LeaveRequestResult",
+							"objectType": "reference",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"name": "LeaveRequestInput",
+					"objectType": "reference",
+					"items": [],
+					"isArray": false,
+					"path": null
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "fdff8ce3-92c8-f111-bf5b-000d3ab82ee9",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		}
+	],
+	"definitions": [
+		{
+			"id": "E1C1A000-0000-4000-8000-000000000711",
+			"name": "LeaveRequestInput",
+			"properties": [
+				{
+					"id": null,
+					"name": "AWART",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "0100 Leave, 0190 Educational Leave, 0300 Paid Leave of Abs., 0620 Unpaid Leave",
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "START_DATE",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "YYYY-MM-DD",
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "END_DATE",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "YYYY-MM-DD",
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "COMMENT",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "preview",
+					"objectType": "boolean",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "true = only check, nothing is saved",
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": "object"
+		},
+		{
+			"id": "E1C1A000-0000-4000-8000-000000000712",
+			"name": "LeaveRequestResult",
+			"properties": [
+				{
+					"id": null,
+					"name": "ok",
+					"objectType": "boolean",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "preview",
+					"objectType": "boolean",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "error",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "id",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "STATUS",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "PERNR",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "EMPLOYEE_NAME",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "AWART",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "TYPE_TEXT",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "START_DATE",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "END_DATE",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "WORKING_DAYS",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "quotaMessage",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "holidays",
+					"objectType": "array",
+					"required": false,
+					"children": [
+						{
+							"id": null,
+							"name": "date",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "text",
+							"objectType": "string",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						},
+						{
+							"id": null,
+							"name": "value",
+							"objectType": "number",
+							"required": false,
+							"children": [],
+							"alternatives": null,
+							"description": null,
+							"pattern": null
+						}
+					],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": "object"
+		}
+	],
+	"documentation": [],
+	"name": "PeopleHubLeaveRequestCreateApi",
+	"endpoint": "/api/serverscript/peoplehubleaverequestcreateapi",
+	"ver": "26.10.15.1224",
+	"version": null,
+	"description": "Check (preview) or create a leave request for the logged-in employee",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"enableScriptEditor": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"apiGroup": null,
+	"apiFormat": 1,
+	"roles": []
+}

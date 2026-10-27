@@ -1,0 +1,24 @@
+{
+	"id": "8a9223dc-d5c7-f111-bf5b-000d3aba8400",
+	"createdAt": "2026-10-14T13:47:57.090Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"attributes": [],
+	"locales": [
+		{
+			"isoCode": "EN",
+			"locale": "en"
+		}
+	],
+	"name": "peoplehub_inbox",
+	"description": null,
+	"fallbackLocale": "EN",
+	"application": "peoplehub_inbox",
+	"ver": "26.10.14.1347",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"active": true,
+	"deleted": false,
+	"baseModelId": null,
+	"enhancedBy": [],
+	"baseModel": null,
+	"apps": []
+}

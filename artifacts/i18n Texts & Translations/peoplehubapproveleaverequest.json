@@ -1,0 +1,24 @@
+{
+	"id": "f8c86678-3bc9-f111-bf5b-000d3ab82ee9",
+	"createdAt": "2026-10-16T08:27:52.306Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"attributes": [],
+	"locales": [
+		{
+			"isoCode": "EN",
+			"locale": "en"
+		}
+	],
+	"name": "peoplehubapproveleaverequest",
+	"description": null,
+	"fallbackLocale": "en",
+	"application": "peoplehubapproveleaverequest",
+	"ver": "26.10.16.0910",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"active": true,
+	"deleted": false,
+	"baseModelId": null,
+	"enhancedBy": [],
+	"baseModel": null,
+	"apps": []
+}

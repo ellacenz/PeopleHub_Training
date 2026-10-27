@@ -1,0 +1,40 @@
+:root {
+    --peoplehubexpenseclaim-primary: #0854a0;
+    --peoplehubexpenseclaim-bg: #f4f5f7;
+    --peoplehubexpenseclaim-surface: #ffffff;
+    --peoplehubexpenseclaim-text-primary: #1d2129;
+}
+
+.sapUiTheme-sap_horizon_dark,
+.sapUiTheme-neptune_horizon_dark {
+    --peoplehubexpenseclaim-primary: #4a9eff;
+    --peoplehubexpenseclaim-bg: #1a1a1a;
+    --peoplehubexpenseclaim-surface: #2a2a2a;
+    --peoplehubexpenseclaim-text-primary: #e0e0e0;
+}
+
+.peoplehubexpenseclaim_app .sapUiIcon,
+.peoplehubexpenseclaim_app .sapMBtnIcon {
+    font-family: "SAP-icons" !important;
+}
+
+.peoplehubexpenseclaim_dynamicPageTable {
+    padding-bottom: 56px !important;
+}
+
+.peoplehubexpenseclaim_headerSubTitleBox {
+    gap: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+}
+
+.peoplehubexpenseclaim_redFlag {
+    color: var(--sapNegativeTextColor) !important;
+    white-space: normal;
+}
+
+.peoplehubexpenseclaim_redFlagsTitle.sapMTitle {
+    color: var(--sapNegativeTextColor) !important;
+    margin-top: 1rem;
+}

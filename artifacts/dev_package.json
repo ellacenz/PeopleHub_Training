@@ -1,0 +1,3263 @@
+{
+	"id": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"createdAt": "2026-10-12T14:56:23.280Z",
+	"createdBy": "joao.salvador@neptune-software.com",
+	"git": {
+		"remote": "https://github.com/ellacenz/PeopleHub_Training.git",
+		"branch": "master"
+	},
+	"name": "PEOPLEHUB_TRAINING",
+	"description": null,
+	"ver": "26.10.27.0950",
+	"enableCICD": true,
+	"internalReadOnly": false,
+	"oeVersion": null,
+	"excludeTemplateFiles": false,
+	"roles": [],
+	"apps": [
+		{
+			"id": "fc4ee05a-bdc7-f111-bf5b-000d3aba8400",
+			"application": "peoplehubexpenseclaim",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "f6c86678-3bc9-f111-bf5b-000d3ab82ee9",
+			"application": "peoplehubapproveleaverequest",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "dae6b6b8-fbd9-4bf9-c91f-f2c899d72198",
+			"application": "peoplehub_inbox",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "d14769e1-4dc9-f111-bf5b-000d3ab82ee9",
+			"application": "peoplehubemployeemapping",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "a54aa39c-d8c7-f111-bf5b-000d3aba8400",
+			"application": "peoplehubexpenseclaimapproval",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "4c8355eb-5fcd-f111-bf5b-000d3ab0a70f",
+			"application": "onboardingchecklistnaia",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "3d1d55a5-8ec8-f111-bf5b-000d3ab82ee9",
+			"application": "peoplehubregisterleaverequest",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "028ba731-3acd-f111-bf5b-000d3ab0a70f",
+			"application": "onboardingchecklist",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "e479d918-3ec9-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveRequestDecideApi",
+			"description": "Manager approves or rejects a pending leave request (PDF + email to the employee)",
+			"apiGroup": null
+		},
+		{
+			"id": "e27b10d3-96c8-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveRequestSendApi",
+			"description": "Send the employee's own draft leave request for approval and email the managers",
+			"apiGroup": null
+		},
+		{
+			"id": "e123a23f-98c8-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveRequestDeleteApi",
+			"description": "Delete the employee's own draft leave request",
+			"apiGroup": null
+		},
+		{
+			"id": "e02bb528-3ec9-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveConfirmationFileApi",
+			"description": "Leave confirmation PDF of an approved request (inline)",
+			"apiGroup": null
+		},
+		{
+			"id": "de2dc713-4ec9-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubTrainerParticipantsApi",
+			"description": "Trainer mapping app: participants, roles, mapping, SAP employees",
+			"apiGroup": null
+		},
+		{
+			"id": "dd3fa8bc-82cc-f111-bf5b-002248a30ef2",
+			"name": "peoplehubleaverequest",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "cdbbe92c-55cd-f111-bf5b-000d3ab0a70f",
+			"name": "PeopleHubDashboardKpiApi",
+			"description": "Dashboard KPI tile: Integration Card manifest",
+			"apiGroup": null
+		},
+		{
+			"id": "be420fde-47bf-4310-b48d-3eb9ebabe175",
+			"name": "PeopleHubUserMapTrainingME",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "9fce1f04-c9c7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubReceiptValidationApi",
+			"description": "AI validation of the receipt of one expense line",
+			"apiGroup": null
+		},
+		{
+			"id": "9eeb5dea-c2c7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubExpenseClaimUserApi",
+			"description": "Current user and PeopleHub expense roles (requester / approver)",
+			"apiGroup": null
+		},
+		{
+			"id": "37813ce0-4fc9-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubTrainerMappingSaveApi",
+			"description": "Trainer mapping app: save, remove or auto-map participant mappings",
+			"apiGroup": null
+		},
+		{
+			"id": "343125ce-d6c7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubExpenseClaimSendApi",
+			"description": "Send an expense claim for approval",
+			"apiGroup": null
+		},
+		{
+			"id": "2da8f9fe-92c8-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveRequestCreateApi",
+			"description": "Check (preview) or create a leave request for the logged-in employee",
+			"apiGroup": null
+		},
+		{
+			"id": "287393dc-396c-47cf-9706-02de8efe96d4",
+			"name": "PeopleHubTrainingHRPortal_SAP",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "2123e05b-cbc7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubReceiptFileApi",
+			"description": "Receipt file (binary, real Content-Type) for preview",
+			"apiGroup": null
+		},
+		{
+			"id": "1d476af1-6326-4167-9371-62803484367c",
+			"name": "PeopleHubLeaveApi",
+			"description": "PeopleHub Leave: user mapping and leave request operations (Neptune tables only)",
+			"apiGroup": null
+		},
+		{
+			"id": "1c51c1b1-8cc8-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveRequestUserApi",
+			"description": "Current user, linked SAP employee and leave roles (employee / manager)",
+			"apiGroup": null
+		},
+		{
+			"id": "1b635ce9-38cd-f111-bf5b-000d3ab0a70f",
+			"name": "OnboardingAPI",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "1200ad74-b4c7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubExpenseClaimTableApi",
+			"description": "Table API for the expense claim training: claims, lines, policies and receipts",
+			"apiGroup": null
+		},
+		{
+			"id": "09d4cd4c-49a5-483e-a4c3-bd9d5714dc75",
+			"name": "PeopleHubLeaveRequestTrainingME",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "b1d34a86-37cd-f111-bf5b-000d3ab0a70f",
+			"name": "onboardingtask",
+			"description": null
+		},
+		{
+			"id": "9fc6dd6b-f333-4e2c-aedc-d8b33603a2a0",
+			"name": "peoplehubexpensereceipt",
+			"description": "Table to store expense receipt file information and content."
+		},
+		{
+			"id": "73a0ff58-1ace-44a8-9d26-1067e11ec610",
+			"name": "peoplehubexpenseclaim",
+			"description": "Table to store expense claim records"
+		},
+		{
+			"id": "6bf3fdb7-f9bb-4bea-a437-46c09d42f20c",
+			"name": "peoplehubexpensepolicy",
+			"description": "A table to store expense policy rules and limits."
+		},
+		{
+			"id": "6667e56b-a8e0-407e-b86c-e1e302e10ab6",
+			"name": "peoplehubusermap",
+			"description": null
+		},
+		{
+			"id": "4e641d1b-52fa-43f2-9d17-1d7ecd735a2e",
+			"name": "peoplehubleaverequest",
+			"description": null
+		},
+		{
+			"id": "0ea424f5-8c07-4d1c-88cd-2f9919dc0d52",
+			"name": "peoplehubexpenseline",
+			"description": "A table to store individual expense line items associated with a claim."
+		}
+	],
+	"jsclass": [
+		{
+			"id": "fdff8ce3-92c8-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveRequestCreate",
+			"description": "POST { AWART, START_DATE, END_DATE, COMMENT, preview }: counts working days (dayjs, SAP holidays), checks overlaps, SAP quota and the balance minus days booked in Neptune; preview only checks, otherwise saves a DRAFT request."
+		},
+		{
+			"id": "e5a625fe-91c8-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveRequestSeed",
+			"description": "Creates 3 test leave requests (Pending, Approved, Rejected) for the user who runs it, using their SAP employee from peoplehubusermap. Safe to run repeatedly (replaces the runner's SEED rows)."
+		},
+		{
+			"id": "df23a23f-98c8-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveRequestDelete",
+			"description": "POST { id }: the employee deletes their own DRAFT leave request (409 when it is no longer a draft)."
+		},
+		{
+			"id": "de2bb528-3ec9-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveConfirmationFile",
+			"description": "GET ?id=: the leave confirmation PDF of an approved request (PDF Archive), inline, for the employee who asked or a manager."
+		},
+		{
+			"id": "cea635e0-c2c7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubExpenseClaimUser",
+			"description": "Returns the current user and whether they are an expense approver (Cockpit role PeopleHubApproverClaim). Used by the app to decide what the user can see and do."
+		},
+		{
+			"id": "cbbbe92c-55cd-f111-bf5b-000d3ab0a70f",
+			"name": "PeopleHubDashboardKpi",
+			"description": "Dashboard KPI tile: returns a UI5 Integration Card (numeric header) with what waits for a decision, approved leave days and approved claims"
+		},
+		{
+			"id": "c3a78c49-b4c7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubExpenseClaimSeed",
+			"description": "Creates or refreshes the expense claim training mock data: 6 claims (requester Antonio, approver Veronica), their lines and the expense policies. Safe to run repeatedly."
+		},
+		{
+			"id": "abe587f8-4dc9-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubTrainerParticipants",
+			"description": "Trainer mapping app: GET participants (leave roles + mapped users) with roles, mapping and SAP employee, plus SAP employees (validEmployees = Bill West and his reports) and the suggested PERNR; ?search= finds any user. Role PeopleHubTrainerTrainingME only."
+		},
+		{
+			"id": "9538fecf-3dc9-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveRequestDecide",
+			"description": "POST { id, decision, comment }: a manager approves or rejects a PENDING leave request; on approve creates the PDF PeopleHubLeaveConfirmation and emails it to the employee (template PeopleHubLeaveRequestDecision)."
+		},
+		{
+			"id": "8c1121c2-4fc9-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubTrainerMappingSave",
+			"description": "Trainer mapping app: POST save / remove / automap (with preview) of peoplehubusermap rows; only Bill West and his reports can be mapped. Role PeopleHubTrainerTrainingME only; SAP read only."
+		},
+		{
+			"id": "8280eb5f-b9c7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubExpenseClaimApprovalApprove",
+			"description": "Process flow PeopleHubExpenseClaimApproval, approve branch: sets the claim to Approved and outputs the decision email texts."
+		},
+		{
+			"id": "7791c36a-b9c7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubExpenseClaimApprovalReject",
+			"description": "Process flow PeopleHubExpenseClaimApproval, reject branch: sets the claim to Rejected (with a reason) and outputs the decision email texts."
+		},
+		{
+			"id": "6fc7eca0-ebb5-4746-983b-0b36da27f02b",
+			"name": "ph_leave_service",
+			"description": ""
+		},
+		{
+			"id": "6c0a11c6-d6c7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubExpenseClaimSend",
+			"description": "POST { claimid }: checks the claim, sets it to Submitted (one send only) and starts the process flow PeopleHubExpenseClaimApproval."
+		},
+		{
+			"id": "691b9544-b9c7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubReceiptValidation",
+			"description": "POST { lineid }: AI reads the receipt (PDF/image) and code checks it against the expense line. Saves the result on the receipt (1 line = 1 receipt)."
+		},
+		{
+			"id": "4dfc7bc5-96c8-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveRequestSend",
+			"description": "POST { id }: sends the employee's own DRAFT leave request for approval (status PENDING) and emails every user with role PeopleHubManagerTrainingME (template PeopleHubLeaveRequestApproval)."
+		},
+		{
+			"id": "43142a57-b9c7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubExpenseClaimApprovalPrepare",
+			"description": "Process flow PeopleHubExpenseClaimApproval, step 1: summary of the claim (already Submitted by PeopleHubExpenseClaimSend) and its AI results, recommendation, approver emails."
+		},
+		{
+			"id": "3de5a870-c0ce-f111-bf5b-7ced8d2c6615",
+			"name": "OnboardingReminder",
+			"description": "Job script: onboarding progress, overdue tasks and tasks due in the next 14 days, written to the log"
+		},
+		{
+			"id": "1f23e05b-cbc7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubReceiptFile",
+			"description": "GET ?receiptid=: returns the receipt file as binary with its real Content-Type, shown inline. Use the URL as the source of sap.m.PDFViewer (PDF) or sap.m.Image (photos)."
+		},
+		{
+			"id": "1a51c1b1-8cc8-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveRequestUser",
+			"description": "Returns the current user, their SAP employee (PERNR, name, manager) from peoplehubusermap + SAP, and the Cockpit roles PeopleHubEmployeeTrainingME / PeopleHubManagerTrainingME."
+		},
+		{
+			"id": "12814e87-8a4d-4db6-a2da-445653b29b06",
+			"name": "ph_seed_training_data",
+			"description": ""
+		},
+		{
+			"id": "0e484b9c-8cc8-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveRequestUserMapSeed",
+			"description": "Links each training participant (Neptune user name) to a SAP employee (PERNR) in peoplehubusermap. Checks the PERNR in SAP first. Run before the training; safe to run repeatedly."
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "72287854-1837-4365-9f80-c2200ae67efd",
+			"name": "PeopleHubLeave",
+			"description": "PeopleHub Leave"
+		},
+		{
+			"id": "6411635b-3295-489d-a5b0-674945933aca",
+			"name": "PeopleHubExpenseClaim",
+			"description": ""
+		},
+		{
+			"id": "3ce5a870-c0ce-f111-bf5b-7ced8d2c6615",
+			"name": "PeopleHubOnboarding",
+			"description": "Onboarding (exercises 1.2 and 5.2): the reminder job script"
+		}
+	],
+	"theme": [
+		{
+			"id": "090fae21-42cd-f111-bf5b-000d3ab0a70f",
+			"name": "PeopleHubBrand",
+			"description": "PeopleHub brand for the launchpad (exercise 4.0, reference)"
+		}
+	],
+	"theme_generator": [
+		{
+			"id": "c2932e9f-28cd-f111-bf5b-000d3ab0a70f",
+			"name": "peoplehub_light",
+			"description": null
+		}
+	],
+	"pdf": [
+		{
+			"id": "fb6fecd7-3cc9-f111-bf5b-000d3ab82ee9",
+			"application": "PeopleHubLeaveConfirmation",
+			"description": "PeopleHub leave approval confirmation (generated by PeopleHubLeaveRequestDecide)"
+		}
+	],
+	"rulesengine": [],
+	"reports": [
+		{
+			"id": "29eab9ea-54cd-f111-bf5b-000d3ab0a70f",
+			"name": "PeopleHubExpenseAnalysis",
+			"description": "Expense lines: slice and dice",
+			"application": "neptunedxp_adaptive_bi"
+		},
+		{
+			"id": "27eab9ea-54cd-f111-bf5b-000d3ab0a70f",
+			"name": "PeopleHubExpensesByCategory",
+			"description": "Expenses (EUR) by category (tile chart)",
+			"application": "neptunedxp_adaptive_tile_chart"
+		},
+		{
+			"id": "25eab9ea-54cd-f111-bf5b-000d3ab0a70f",
+			"name": "PeopleHubClaimsByStatus",
+			"description": "Expense claims (EUR) by status (tile chart)",
+			"application": "neptunedxp_adaptive_tile_chart"
+		},
+		{
+			"id": "23eab9ea-54cd-f111-bf5b-000d3ab0a70f",
+			"name": "PeopleHubLeaveDaysByStatus",
+			"description": "Leave days by status (tile chart)",
+			"application": "neptunedxp_adaptive_tile_chart"
+		},
+		{
+			"id": "1dbea1bf-54cd-f111-bf5b-000d3ab0a70f",
+			"name": "PeopleHubLeaveDaysByType",
+			"description": "Leave days by absence type (tile chart)",
+			"application": "neptunedxp_adaptive_tile_chart"
+		}
+	],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [
+		{
+			"id": "e73e4634-55cd-f111-bf5b-000d3ab0a70f",
+			"description": null,
+			"name": "PeopleHubDashboardKpiTile"
+		},
+		{
+			"id": "e24c4de0-2399-405d-935c-75890f639eed",
+			"description": null,
+			"name": "PeopleHubLeaveRequestTile"
+		},
+		{
+			"id": "dae63079-d9c7-f111-bf5b-000d3aba8400",
+			"description": null,
+			"name": "PeopleHubMyApprovalsTile"
+		},
+		{
+			"id": "b59052a2-b4cb-f111-bf5b-000d3a651db3",
+			"description": null,
+			"name": "Job Openings & Apply​"
+		},
+		{
+			"id": "8bff4801-4acd-f111-bf5b-000d3ab0a70f",
+			"description": null,
+			"name": "Onboarding"
+		},
+		{
+			"id": "60d6ab1b-4ec9-f111-bf5b-000d3ab82ee9",
+			"description": null,
+			"name": "PeopleHubTrainer"
+		},
+		{
+			"id": "4d080d68-4fc6-f111-bf5b-000d3ab90571",
+			"description": null,
+			"name": "PeopleHubExpenseClaimTile"
+		},
+		{
+			"id": "4cfc7bc5-96c8-f111-bf5b-000d3ab82ee9",
+			"description": null,
+			"name": "PeopleHubLeaveRequestApprovalsTile"
+		},
+		{
+			"id": "381065c8-54cd-f111-bf5b-000d3ab0a70f",
+			"description": null,
+			"name": "PeopleHubLeaveDaysByTypeTile"
+		},
+		{
+			"id": "2feab9ea-54cd-f111-bf5b-000d3ab0a70f",
+			"description": null,
+			"name": "PeopleHubExpensesByCategoryTile"
+		},
+		{
+			"id": "2deab9ea-54cd-f111-bf5b-000d3ab0a70f",
+			"description": null,
+			"name": "PeopleHubClaimsByStatusTile"
+		},
+		{
+			"id": "2beab9ea-54cd-f111-bf5b-000d3ab0a70f",
+			"description": null,
+			"name": "PeopleHubLeaveDaysByStatusTile"
+		}
+	],
+	"tile_layout": [],
+	"category": [
+		{
+			"id": "eda4f9f1-97c8-f111-bf5b-000d3ab82ee9",
+			"description": null,
+			"name": "PeopleHubHome"
+		},
+		{
+			"id": "e4bd4166-b4cb-f111-bf5b-000d3a651db3",
+			"description": null,
+			"name": "PeopleHubCareers"
+		},
+		{
+			"id": "9a9aa718-4acd-f111-bf5b-000d3ab0a70f",
+			"description": null,
+			"name": "Me"
+		},
+		{
+			"id": "51738074-97c8-f111-bf5b-000d3ab82ee9",
+			"description": null,
+			"name": "PeopleHubLeaveRequestsTileGroup"
+		},
+		{
+			"id": "3a1065c8-54cd-f111-bf5b-000d3ab0a70f",
+			"description": null,
+			"name": "PeopleHubDashboard"
+		},
+		{
+			"id": "00639822-97c8-f111-bf5b-000d3ab82ee9",
+			"description": null,
+			"name": "PeopleHubExpenseClaimsTileGroup"
+		}
+	],
+	"tilegroup_layout": [],
+	"launchpad": [
+		{
+			"id": "0a011331-ab88-4af7-be16-f8ccb4aef856",
+			"name": "PeopleHubLaunchpadTrainingME",
+			"description": null
+		}
+	],
+	"launchpad_layout": [],
+	"certificates": [],
+	"role": [
+		{
+			"id": "fe7d7617-73b5-48db-a40b-41bc8ab591ad",
+			"name": "PeopleHubEmployeeTrainingME",
+			"description": null
+		},
+		{
+			"id": "4f12d199-4dc9-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubTrainerTrainingME",
+			"description": null
+		},
+		{
+			"id": "3bc87b02-6899-4756-87ce-af0e62c24432",
+			"name": "PeopleHubManagerTrainingME",
+			"description": null
+		},
+		{
+			"id": "2a1fd5f8-c2c7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubApproverClaim",
+			"description": null
+		}
+	],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [
+		{
+			"id": "bd7eb2b1-96c8-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveRequestDecision",
+			"description": "Your leave request {=periodText}: {=decisionText}"
+		},
+		{
+			"id": "bc7eb2b1-96c8-f111-bf5b-000d3ab82ee9",
+			"name": "PeopleHubLeaveRequestApproval",
+			"description": "Leave request from {=requesterName}: {=periodText}"
+		},
+		{
+			"id": "4f25c5c9-adc7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubExpenseClaimApproval",
+			"description": "Expense claim \"{=title}\" is waiting for your approval"
+		},
+		{
+			"id": "323335b2-aec7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubExpenseClaimDecision",
+			"description": "Your expense claim \"{=title}\": {=decisionText}"
+		}
+	],
+	"department": [],
+	"script_scheduler": [
+		{
+			"id": "bbdda6c0-c0ce-f111-bf5b-7ced8d2c6615",
+			"name": "OnboardingReminder",
+			"description": "Daily onboarding reminder: progress, overdue tasks and tasks due in the next 14 days"
+		}
+	],
+	"wf_definition": [],
+	"connector": [
+		{
+			"id": "73873c9f-54cd-f111-bf5b-000d3ab0a70f",
+			"name": "PeopleHubExpenseLineConnector",
+			"description": null
+		},
+		{
+			"id": "72873c9f-54cd-f111-bf5b-000d3ab0a70f",
+			"name": "PeopleHubExpenseClaimConnector",
+			"description": null
+		},
+		{
+			"id": "5755ed8e-54cd-f111-bf5b-000d3ab0a70f",
+			"name": "PeopleHubLeaveRequestConnector",
+			"description": null
+		}
+	],
+	"i18n": [
+		{
+			"id": "fe4ee05a-bdc7-f111-bf5b-000d3aba8400",
+			"name": "peoplehubexpenseclaim",
+			"description": null
+		},
+		{
+			"id": "f8c86678-3bc9-f111-bf5b-000d3ab82ee9",
+			"name": "peoplehubapproveleaverequest",
+			"description": null
+		},
+		{
+			"id": "d34769e1-4dc9-f111-bf5b-000d3ab82ee9",
+			"name": "peoplehubemployeemapping",
+			"description": null
+		},
+		{
+			"id": "c6f7d4f7-5fcd-f111-bf5b-000d3ab0a70f",
+			"name": "onboardingchecklistnaia",
+			"description": null
+		},
+		{
+			"id": "be852cc1-359e-4b72-8a5e-5a0b17e909eb",
+			"name": "odata_test",
+			"description": null
+		},
+		{
+			"id": "9220ba4b-a6e0-4a11-9243-0ce2a3882974",
+			"name": "odata_test",
+			"description": null
+		},
+		{
+			"id": "8a9223dc-d5c7-f111-bf5b-000d3aba8400",
+			"name": "peoplehub_inbox",
+			"description": null
+		},
+		{
+			"id": "54dc4b5d-78de-44b0-98fd-028e9ff8315d",
+			"name": "leaverequeststrainingme",
+			"description": null
+		},
+		{
+			"id": "411d55a5-8ec8-f111-bf5b-000d3ab82ee9",
+			"name": "peoplehubregisterleaverequest",
+			"description": null
+		},
+		{
+			"id": "3b39b148-d9c7-f111-bf5b-000d3aba8400",
+			"name": "peoplehubexpenseclaimapproval",
+			"description": null
+		},
+		{
+			"id": "35ba5dd8-3dcd-f111-bf5b-000d3ab0a70f",
+			"name": "onboardingchecklist",
+			"description": null
+		}
+	],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": [],
+	"theme_ui5": [],
+	"webapp": [
+		{
+			"id": "5e9aa1fb-36ac-409b-901d-cedb31457c4c",
+			"name": "PH_Joblist_React",
+			"description": null
+		}
+	],
+	"ui5_control": [],
+	"ai_agent": [
+		{
+			"id": "cee2313c-1ac7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubInvoiceExtractionText",
+			"description": null
+		},
+		{
+			"id": "9c6b7b06-1ac7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubInvoiceExtractionImage",
+			"description": "Reads a receipt photo (JPG/PNG) and compares it with the claimed expense line. Returns JSON (see prompt). Called by script PeopleHubReceiptValidation."
+		},
+		{
+			"id": "97990a60-19c7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubInvoiceExtractionPDF",
+			"description": "Reads a receipt PDF and compares it with the claimed expense line. Returns JSON (see prompt). Called by script PeopleHubReceiptValidation."
+		}
+	],
+	"ai_model": [],
+	"ai_prompt": [
+		{
+			"id": "fa2ba825-1ac7-f111-bf5b-000d3aba8400",
+			"agent": "9c6b7b06-1ac7-f111-bf5b-000d3aba8400",
+			"guardrail": null,
+			"name": "fa2ba825-1ac7-f111-bf5b-000d3aba8400"
+		},
+		{
+			"id": "ba0dcd54-1ac7-f111-bf5b-000d3aba8400",
+			"agent": "cee2313c-1ac7-f111-bf5b-000d3aba8400",
+			"guardrail": null,
+			"name": "ba0dcd54-1ac7-f111-bf5b-000d3aba8400"
+		},
+		{
+			"id": "aaec4eb4-b5ce-f111-bf5b-7ced8d2c6615",
+			"agent": "9c6b7b06-1ac7-f111-bf5b-000d3aba8400",
+			"guardrail": null,
+			"name": "aaec4eb4-b5ce-f111-bf5b-7ced8d2c6615"
+		},
+		{
+			"id": "9431dfe1-19c7-f111-bf5b-000d3aba8400",
+			"agent": "97990a60-19c7-f111-bf5b-000d3aba8400",
+			"guardrail": null,
+			"name": "9431dfe1-19c7-f111-bf5b-000d3aba8400"
+		},
+		{
+			"id": "60f7e3a5-b5ce-f111-bf5b-7ced8d2c6615",
+			"agent": "97990a60-19c7-f111-bf5b-000d3aba8400",
+			"guardrail": null,
+			"name": "60f7e3a5-b5ce-f111-bf5b-7ced8d2c6615"
+		}
+	],
+	"ai_tool": [],
+	"ai_guardrail": [],
+	"sap_data_source": [],
+	"path_rewrite": [],
+	"font": [],
+	"vault": [
+		{
+			"id": "4DED4501-CAC7-F111-BF5B-000D3ABA8400",
+			"updatedAt": "2026-10-14T12:23:11.010Z",
+			"changedBy": "veronica.fernandez@neptune-software.com",
+			"name": "Anthropic model",
+			"description": "Used in traning for PeopleHub"
+		}
+	],
+	"workflow": [
+		{
+			"id": "a7353839-abc7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubExpenseClaimApproval",
+			"description": "Expense claim approval: started by script PeopleHubExpenseClaimSend (claim already Submitted) -> prepare -> email approvers -> user task (role PeopleHubApproverClaim) -> approve/reject -> email requester."
+		}
+	],
+	"workflow_logs": [
+		{
+			"id": "51734BD9-94CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Starting workflow"
+		},
+		{
+			"id": "54734BD9-94CB-F111-BF5B-000D3A651DB3",
+			"inputs": {
+				"claimid": "d0411ca2-aa8d-4b4b-9576-91f9677c7ce8",
+				"requesterEmail": "emmanuella.ndukwe@neptune-software.com",
+				"requesterName": "Emmanuella Ndukwe"
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": "Event_start",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "55734BD9-94CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": "Flow_start_prepare",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_start_prepare"
+		},
+		{
+			"id": "57734BD9-94CB-F111-BF5B-000D3A651DB3",
+			"inputs": {
+				"scriptId": "43142A57-B9C7-F111-BF5B-000D3ABA8400"
+			},
+			"outputs": {
+				"claimid": "d0411ca2-aa8d-4b4b-9576-91f9677c7ce8",
+				"title": "test",
+				"purpose": "test",
+				"periodText": "2026-10-19 to 2026-10-19",
+				"requesterName": "Emmanuella Ndukwe",
+				"requesterEmail": "emmanuella.ndukwe@neptune-software.com",
+				"approverEmails": "veronica.fernandez@neptune-software.com",
+				"totalText": "45.00",
+				"currency": "EUR",
+				"lineCount": 1,
+				"receiptCount": 1,
+				"passCount": 0,
+				"warningCount": 0,
+				"failCount": 0,
+				"notValidatedCount": 1,
+				"checksText": "1 receipt(s): 1 not validated",
+				"recommendation": "review",
+				"recommendationText": "Review",
+				"recommendationColor": "#a45d00",
+				"recommendationBg": "#fef3e6",
+				"summary": "test (2026-10-19 to 2026-10-19), 1 line(s), 45.00 EUR. 1 receipt(s): 1 not validated. AI recommendation: Review."
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": "Activity_prepare",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "58734BD9-94CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": "Flow_prepare_email",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_prepare_email"
+		},
+		{
+			"id": "5B734BD9-94CB-F111-BF5B-000D3A651DB3",
+			"inputs": {
+				"to": "veronica.fernandez@neptune-software.com",
+				"templateId": "4F25C5C9-ADC7-F111-BF5B-000D3ABA8400",
+				"cc": "",
+				"bcc": "",
+				"tokens": "[{\"name\":\"title\",\"value\":\"{Outputs>/Activity_prepare/title}\"},{\"name\":\"purpose\",\"value\":\"{Outputs>/Activity_prepare/purpose}\"},{\"name\":\"periodText\",\"value\":\"{Outputs>/Activity_prepare/periodText}\"},{\"name\":\"requesterName\",\"value\":\"{Outputs>/Activity_prepare/requesterName}\"},{\"name\":\"totalText\",\"value\":\"{Outputs>/Activity_prepare/totalText}\"},{\"name\":\"currency\",\"value\":\"{Outputs>/Activity_prepare/currency}\"},{\"name\":\"lineCount\",\"value\":\"{Outputs>/Activity_prepare/lineCount}\"},{\"name\":\"checksText\",\"value\":\"{Outputs>/Activity_prepare/checksText}\"},{\"name\":\"recommendationText\",\"value\":\"{Outputs>/Activity_prepare/recommendationText}\"},{\"name\":\"recommendationColor\",\"value\":\"{Outputs>/Activity_prepare/recommendationColor}\"},{\"name\":\"recommendationBg\",\"value\":\"{Outputs>/Activity_prepare/recommendationBg}\"}]",
+				"pdfAttachment": "false",
+				"pdfTemplateId": ""
+			},
+			"outputs": {
+				"status": "success"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": "Activity_emailApprovers",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "5C734BD9-94CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": "Flow_email_task",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_email_task"
+		},
+		{
+			"id": "5F734BD9-94CB-F111-BF5B-000D3A651DB3",
+			"inputs": {
+				"title": "Expense claim: test (45.00 EUR)",
+				"description": "test (2026-10-19 to 2026-10-19), 1 line(s), 45.00 EUR. 1 receipt(s): 1 not validated. AI recommendation: Review.",
+				"approverGroup": {
+					"roles": [
+						"2A1FD5F8-C2C7-F111-BF5B-000D3ABA8400"
+					],
+					"users": []
+				},
+				"taskActions": [
+					{
+						"id": "58416111-ad5f-4f65-d799-36e6a1183908",
+						"title": "Approve",
+						"value": "approve"
+					},
+					{
+						"id": "75bb9a33-7405-4b21-98e8-6fd5836de976",
+						"title": "Reject",
+						"value": "reject"
+					}
+				],
+				"embeddedInfo": {
+					"id": "f549828f-aacd-4536-dc7c-48c2c433c4d6",
+					"type": "application",
+					"title": "",
+					"appInfo": {
+						"appName": "peoplehubexpenseclaimapproval",
+						"startParams": "{\"claimid\":\"d0411ca2-aa8d-4b4b-9576-91f9677c7ce8\",\"recommendation\":\"review\",\"summary\":\"test (2026-10-19 to 2026-10-19), 1 line(s), 45.00 EUR. 1 receipt(s): 1 not validated. AI recommendation: Review.\",\"_processFlow\":{\"id\":\"A7353839-ABC7-F111-BF5B-000D3ABA8400\",\"executionId\":\"6600e02b-00d6-4465-bfc6-da688251000e\",\"activityExecutionId\":\"Activity_approval_2946147362\"}}"
+					}
+				}
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "awaiting_user",
+			"activityId": "Activity_approval",
+			"activityStatus": "pending",
+			"message": "Waiting on task Activity_approval_2946147362"
+		},
+		{
+			"id": "1A6FAD6E-95CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "User task Activity_approval_2946147362 complete. Restarting workflow."
+		},
+		{
+			"id": "1B6FAD6E-95CB-F111-BF5B-000D3A651DB3",
+			"inputs": {
+				"title": "Expense claim: test (45.00 EUR)",
+				"description": "test (2026-10-19 to 2026-10-19), 1 line(s), 45.00 EUR. 1 receipt(s): 1 not validated. AI recommendation: Review.",
+				"approverGroup": {
+					"roles": [
+						"2A1FD5F8-C2C7-F111-BF5B-000D3ABA8400"
+					],
+					"users": []
+				},
+				"taskActions": [
+					{
+						"id": "58416111-ad5f-4f65-d799-36e6a1183908",
+						"title": "Approve",
+						"value": "approve"
+					},
+					{
+						"id": "75bb9a33-7405-4b21-98e8-6fd5836de976",
+						"title": "Reject",
+						"value": "reject"
+					}
+				],
+				"embeddedInfo": {
+					"id": "f549828f-aacd-4536-dc7c-48c2c433c4d6",
+					"type": "application",
+					"title": "",
+					"appInfo": {
+						"appName": "peoplehubexpenseclaimapproval",
+						"startParams": "{\"claimid\":\"d0411ca2-aa8d-4b4b-9576-91f9677c7ce8\",\"recommendation\":\"review\",\"summary\":\"test (2026-10-19 to 2026-10-19), 1 line(s), 45.00 EUR. 1 receipt(s): 1 not validated. AI recommendation: Review.\",\"_processFlow\":{\"id\":\"A7353839-ABC7-F111-BF5B-000D3ABA8400\",\"executionId\":\"6600e02b-00d6-4465-bfc6-da688251000e\",\"activityExecutionId\":\"Activity_approval_2946147362\"}}"
+					}
+				}
+			},
+			"outputs": {
+				"approverDecision": "approve",
+				"claimid": "d0411ca2-aa8d-4b4b-9576-91f9677c7ce8",
+				"recommendation": "review",
+				"summary": "test (2026-10-19 to 2026-10-19), 1 line(s), 45.00 EUR. 1 receipt(s): 1 not validated. AI recommendation: Review.",
+				"_processFlow": {
+					"id": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+					"executionId": "6600e02b-00d6-4465-bfc6-da688251000e",
+					"activityExecutionId": "Activity_approval_2946147362"
+				}
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": "Activity_approval",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "1C6FAD6E-95CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": "Flow_task_gateway",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_task_gateway"
+		},
+		{
+			"id": "1E6FAD6E-95CB-F111-BF5B-000D3A651DB3",
+			"inputs": {},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": "Gateway_decision",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "1F6FAD6E-95CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": "Flow_gateway_approve",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_gateway_approve"
+		},
+		{
+			"id": "216FAD6E-95CB-F111-BF5B-000D3A651DB3",
+			"inputs": {
+				"scriptId": "8280EB5F-B9C7-F111-BF5B-000D3ABA8400"
+			},
+			"outputs": {
+				"claimid": "D0411CA2-AA8D-4B4B-9576-91F9677C7CE8",
+				"title": "test",
+				"decision": "approve",
+				"decisionText": "Approved",
+				"decidedBy": "emmanuella.ndukwe@neptune-software.com",
+				"statusColor": "#107e3e",
+				"statusBg": "#e8f5ec",
+				"statusNote": "Your expense claim is approved and will be reimbursed with the next payroll.",
+				"requesterEmail": "emmanuella.ndukwe@neptune-software.com"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": "Activity_approve",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "226FAD6E-95CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": "Flow_approve_email",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_approve_email"
+		},
+		{
+			"id": "256FAD6E-95CB-F111-BF5B-000D3A651DB3",
+			"inputs": {
+				"to": "emmanuella.ndukwe@neptune-software.com",
+				"templateId": "323335B2-AEC7-F111-BF5B-000D3ABA8400",
+				"cc": "",
+				"bcc": "",
+				"tokens": "[{\"name\":\"title\",\"value\":\"{Outputs>/Activity_prepare/title}\"},{\"name\":\"periodText\",\"value\":\"{Outputs>/Activity_prepare/periodText}\"},{\"name\":\"totalText\",\"value\":\"{Outputs>/Activity_prepare/totalText}\"},{\"name\":\"currency\",\"value\":\"{Outputs>/Activity_prepare/currency}\"},{\"name\":\"statusBg\",\"value\":\"{Outputs>/Activity_approve/statusBg}\"},{\"name\":\"statusColor\",\"value\":\"{Outputs>/Activity_approve/statusColor}\"},{\"name\":\"decisionText\",\"value\":\"{Outputs>/Activity_approve/decisionText}\"},{\"name\":\"decisionText\",\"value\":\"{Outputs>/Activity_approve/decisionText}\"},{\"name\":\"decidedBy\",\"value\":\"{Outputs>/Activity_approve/decidedBy}\"},{\"name\":\"statusNote\",\"value\":\"{Outputs>/Activity_approve/statusNote}\"}]",
+				"pdfAttachment": "false",
+				"pdfTemplateId": ""
+			},
+			"outputs": {
+				"status": "success"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": "Activity_emailApproved",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "266FAD6E-95CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": "Flow_approved_end",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_approved_end"
+		},
+		{
+			"id": "286FAD6E-95CB-F111-BF5B-000D3A651DB3",
+			"inputs": {},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "running",
+			"activityId": "Event_end",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "296FAD6E-95CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "6600E02B-00D6-4465-BFC6-DA688251000E",
+			"executionStatus": "completed",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Workflow PeopleHubExpenseClaimApproval ended successfully"
+		},
+		{
+			"id": "C036767D-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Starting workflow"
+		},
+		{
+			"id": "C336767D-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": {
+				"claimid": "8f7e5d3e-1ac1-456d-94c5-2980c820bcca",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"requesterName": "António Neves"
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": "Event_start",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "C436767D-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": "Flow_start_prepare",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_start_prepare"
+		},
+		{
+			"id": "C636767D-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": {
+				"scriptId": "43142A57-B9C7-F111-BF5B-000D3ABA8400"
+			},
+			"outputs": {
+				"claimid": "8f7e5d3e-1ac1-456d-94c5-2980c820bcca",
+				"title": "teste2",
+				"purpose": "teste2",
+				"periodText": "2026-10-19 to 2026-10-19",
+				"requesterName": "António Neves",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"approverEmails": "emmanuella.ndukwe@neptune-software.com,antonio.neves@neptune-software.com,veronica.fernandez@neptune-software.com",
+				"totalText": "15.00",
+				"currency": "EUR",
+				"lineCount": 1,
+				"receiptCount": 1,
+				"passCount": 0,
+				"warningCount": 0,
+				"failCount": 1,
+				"notValidatedCount": 0,
+				"checksText": "1 receipt(s): 1 failed",
+				"recommendation": "reject",
+				"recommendationText": "Reject",
+				"recommendationColor": "#bb0000",
+				"recommendationBg": "#fdeeee",
+				"summary": "teste2 (2026-10-19 to 2026-10-19), 1 line(s), 15.00 EUR. 1 receipt(s): 1 failed. AI recommendation: Reject."
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": "Activity_prepare",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "C736767D-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": "Flow_prepare_email",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_prepare_email"
+		},
+		{
+			"id": "CA36767D-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": {
+				"to": "emmanuella.ndukwe@neptune-software.com,antonio.neves@neptune-software.com,veronica.fernandez@neptune-software.com",
+				"templateId": "4F25C5C9-ADC7-F111-BF5B-000D3ABA8400",
+				"cc": "",
+				"bcc": "",
+				"tokens": "[{\"name\":\"title\",\"value\":\"{Outputs>/Activity_prepare/title}\"},{\"name\":\"purpose\",\"value\":\"{Outputs>/Activity_prepare/purpose}\"},{\"name\":\"periodText\",\"value\":\"{Outputs>/Activity_prepare/periodText}\"},{\"name\":\"requesterName\",\"value\":\"{Outputs>/Activity_prepare/requesterName}\"},{\"name\":\"totalText\",\"value\":\"{Outputs>/Activity_prepare/totalText}\"},{\"name\":\"currency\",\"value\":\"{Outputs>/Activity_prepare/currency}\"},{\"name\":\"lineCount\",\"value\":\"{Outputs>/Activity_prepare/lineCount}\"},{\"name\":\"checksText\",\"value\":\"{Outputs>/Activity_prepare/checksText}\"},{\"name\":\"recommendationText\",\"value\":\"{Outputs>/Activity_prepare/recommendationText}\"},{\"name\":\"recommendationColor\",\"value\":\"{Outputs>/Activity_prepare/recommendationColor}\"},{\"name\":\"recommendationBg\",\"value\":\"{Outputs>/Activity_prepare/recommendationBg}\"}]",
+				"pdfAttachment": "false",
+				"pdfTemplateId": ""
+			},
+			"outputs": {
+				"status": "success"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": "Activity_emailApprovers",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "CB36767D-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": "Flow_email_task",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_email_task"
+		},
+		{
+			"id": "CE36767D-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": {
+				"title": "Expense claim: teste2 (15.00 EUR)",
+				"description": "teste2 (2026-10-19 to 2026-10-19), 1 line(s), 15.00 EUR. 1 receipt(s): 1 failed. AI recommendation: Reject.",
+				"approverGroup": {
+					"roles": [
+						"2A1FD5F8-C2C7-F111-BF5B-000D3ABA8400"
+					],
+					"users": []
+				},
+				"taskActions": [
+					{
+						"id": "58416111-ad5f-4f65-d799-36e6a1183908",
+						"title": "Approve",
+						"value": "approve"
+					},
+					{
+						"id": "75bb9a33-7405-4b21-98e8-6fd5836de976",
+						"title": "Reject",
+						"value": "reject"
+					}
+				],
+				"embeddedInfo": {
+					"id": "f549828f-aacd-4536-dc7c-48c2c433c4d6",
+					"type": "application",
+					"title": "",
+					"appInfo": {
+						"appName": "peoplehubexpenseclaimapproval",
+						"startParams": "{\"claimid\":\"8f7e5d3e-1ac1-456d-94c5-2980c820bcca\",\"recommendation\":\"reject\",\"summary\":\"teste2 (2026-10-19 to 2026-10-19), 1 line(s), 15.00 EUR. 1 receipt(s): 1 failed. AI recommendation: Reject.\",\"_processFlow\":{\"id\":\"A7353839-ABC7-F111-BF5B-000D3ABA8400\",\"executionId\":\"86bedfb8-2fcc-4efb-bbb5-fcfbd21e606c\",\"activityExecutionId\":\"Activity_approval_b62137c217\"}}"
+					}
+				}
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "awaiting_user",
+			"activityId": "Activity_approval",
+			"activityStatus": "pending",
+			"message": "Waiting on task Activity_approval_b62137c217"
+		},
+		{
+			"id": "A1252DA4-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "User task Activity_approval_b62137c217 complete. Restarting workflow."
+		},
+		{
+			"id": "A2252DA4-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": {
+				"title": "Expense claim: teste2 (15.00 EUR)",
+				"description": "teste2 (2026-10-19 to 2026-10-19), 1 line(s), 15.00 EUR. 1 receipt(s): 1 failed. AI recommendation: Reject.",
+				"approverGroup": {
+					"roles": [
+						"2A1FD5F8-C2C7-F111-BF5B-000D3ABA8400"
+					],
+					"users": []
+				},
+				"taskActions": [
+					{
+						"id": "58416111-ad5f-4f65-d799-36e6a1183908",
+						"title": "Approve",
+						"value": "approve"
+					},
+					{
+						"id": "75bb9a33-7405-4b21-98e8-6fd5836de976",
+						"title": "Reject",
+						"value": "reject"
+					}
+				],
+				"embeddedInfo": {
+					"id": "f549828f-aacd-4536-dc7c-48c2c433c4d6",
+					"type": "application",
+					"title": "",
+					"appInfo": {
+						"appName": "peoplehubexpenseclaimapproval",
+						"startParams": "{\"claimid\":\"8f7e5d3e-1ac1-456d-94c5-2980c820bcca\",\"recommendation\":\"reject\",\"summary\":\"teste2 (2026-10-19 to 2026-10-19), 1 line(s), 15.00 EUR. 1 receipt(s): 1 failed. AI recommendation: Reject.\",\"_processFlow\":{\"id\":\"A7353839-ABC7-F111-BF5B-000D3ABA8400\",\"executionId\":\"86bedfb8-2fcc-4efb-bbb5-fcfbd21e606c\",\"activityExecutionId\":\"Activity_approval_b62137c217\"}}"
+					}
+				}
+			},
+			"outputs": {
+				"approverDecision": "approve",
+				"claimid": "8f7e5d3e-1ac1-456d-94c5-2980c820bcca",
+				"recommendation": "reject",
+				"summary": "teste2 (2026-10-19 to 2026-10-19), 1 line(s), 15.00 EUR. 1 receipt(s): 1 failed. AI recommendation: Reject.",
+				"_processFlow": {
+					"id": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+					"executionId": "86bedfb8-2fcc-4efb-bbb5-fcfbd21e606c",
+					"activityExecutionId": "Activity_approval_b62137c217"
+				}
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": "Activity_approval",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "A3252DA4-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": "Flow_task_gateway",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_task_gateway"
+		},
+		{
+			"id": "A5252DA4-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": {},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": "Gateway_decision",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "A6252DA4-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": "Flow_gateway_approve",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_gateway_approve"
+		},
+		{
+			"id": "A8252DA4-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": {
+				"scriptId": "8280EB5F-B9C7-F111-BF5B-000D3ABA8400"
+			},
+			"outputs": {
+				"claimid": "8F7E5D3E-1AC1-456D-94C5-2980C820BCCA",
+				"title": "teste2",
+				"decision": "approve",
+				"decisionText": "Approved",
+				"decidedBy": "antonio.neves@neptune-software.com",
+				"statusColor": "#107e3e",
+				"statusBg": "#e8f5ec",
+				"statusNote": "Your expense claim is approved and will be reimbursed with the next payroll.",
+				"requesterEmail": "antonio.neves@neptune-software.com"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": "Activity_approve",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "A9252DA4-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": "Flow_approve_email",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_approve_email"
+		},
+		{
+			"id": "AC252DA4-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": {
+				"to": "antonio.neves@neptune-software.com",
+				"templateId": "323335B2-AEC7-F111-BF5B-000D3ABA8400",
+				"cc": "",
+				"bcc": "",
+				"tokens": "[{\"name\":\"title\",\"value\":\"{Outputs>/Activity_prepare/title}\"},{\"name\":\"periodText\",\"value\":\"{Outputs>/Activity_prepare/periodText}\"},{\"name\":\"totalText\",\"value\":\"{Outputs>/Activity_prepare/totalText}\"},{\"name\":\"currency\",\"value\":\"{Outputs>/Activity_prepare/currency}\"},{\"name\":\"statusBg\",\"value\":\"{Outputs>/Activity_approve/statusBg}\"},{\"name\":\"statusColor\",\"value\":\"{Outputs>/Activity_approve/statusColor}\"},{\"name\":\"decisionText\",\"value\":\"{Outputs>/Activity_approve/decisionText}\"},{\"name\":\"decisionText\",\"value\":\"{Outputs>/Activity_approve/decisionText}\"},{\"name\":\"decidedBy\",\"value\":\"{Outputs>/Activity_approve/decidedBy}\"},{\"name\":\"statusNote\",\"value\":\"{Outputs>/Activity_approve/statusNote}\"}]",
+				"pdfAttachment": "false",
+				"pdfTemplateId": ""
+			},
+			"outputs": {
+				"status": "success"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": "Activity_emailApproved",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "AD252DA4-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": "Flow_approved_end",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_approved_end"
+		},
+		{
+			"id": "AF252DA4-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": {},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "running",
+			"activityId": "Event_end",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "B0252DA4-A7CB-F111-BF5B-000D3A651DB3",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "86BEDFB8-2FCC-4EFB-BBB5-FCFBD21E606C",
+			"executionStatus": "completed",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Workflow PeopleHubExpenseClaimApproval ended successfully"
+		},
+		{
+			"id": "E27C274A-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Starting workflow"
+		},
+		{
+			"id": "E57C274A-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"requesterName": "António Neves"
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": "Event_start",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "E67C274A-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": "Flow_start_prepare",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_start_prepare"
+		},
+		{
+			"id": "E87C274A-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"scriptId": "43142A57-B9C7-F111-BF5B-000D3ABA8400"
+			},
+			"outputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"title": "Training Amsterdam",
+				"purpose": "Neptune DXP partner training",
+				"periodText": "2026-10-11 to 2026-10-12",
+				"requesterName": "António Neves",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"approverEmails": "veronica.fernandez@neptune-software.com",
+				"totalText": "12.40",
+				"currency": "EUR",
+				"lineCount": 1,
+				"receiptCount": 1,
+				"passCount": 1,
+				"warningCount": 0,
+				"failCount": 0,
+				"notValidatedCount": 0,
+				"checksText": "1 receipt(s): 1 passed",
+				"recommendation": "approve",
+				"recommendationText": "Approve",
+				"recommendationColor": "#107e3e",
+				"recommendationBg": "#e8f5ec",
+				"summary": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve."
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": "Activity_prepare",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "E97C274A-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": "Flow_prepare_email",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_prepare_email"
+		},
+		{
+			"id": "EC7C274A-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"to": "veronica.fernandez@neptune-software.com",
+				"templateId": "4F25C5C9-ADC7-F111-BF5B-000D3ABA8400",
+				"cc": "",
+				"bcc": "",
+				"tokens": "[{\"name\":\"title\",\"value\":\"{Outputs>/Activity_prepare/title}\"},{\"name\":\"purpose\",\"value\":\"{Outputs>/Activity_prepare/purpose}\"},{\"name\":\"periodText\",\"value\":\"{Outputs>/Activity_prepare/periodText}\"},{\"name\":\"requesterName\",\"value\":\"{Outputs>/Activity_prepare/requesterName}\"},{\"name\":\"totalText\",\"value\":\"{Outputs>/Activity_prepare/totalText}\"},{\"name\":\"currency\",\"value\":\"{Outputs>/Activity_prepare/currency}\"},{\"name\":\"lineCount\",\"value\":\"{Outputs>/Activity_prepare/lineCount}\"},{\"name\":\"checksText\",\"value\":\"{Outputs>/Activity_prepare/checksText}\"},{\"name\":\"recommendationText\",\"value\":\"{Outputs>/Activity_prepare/recommendationText}\"},{\"name\":\"recommendationColor\",\"value\":\"{Outputs>/Activity_prepare/recommendationColor}\"},{\"name\":\"recommendationBg\",\"value\":\"{Outputs>/Activity_prepare/recommendationBg}\"}]",
+				"pdfAttachment": "false",
+				"pdfTemplateId": ""
+			},
+			"outputs": {
+				"status": "success"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": "Activity_emailApprovers",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "ED7C274A-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": "Flow_email_task",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_email_task"
+		},
+		{
+			"id": "F07C274A-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"title": "Expense claim: Training Amsterdam (12.40 EUR)",
+				"description": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.",
+				"approverGroup": {
+					"roles": [
+						"2A1FD5F8-C2C7-F111-BF5B-000D3ABA8400"
+					],
+					"users": []
+				},
+				"taskActions": [
+					{
+						"id": "58416111-ad5f-4f65-d799-36e6a1183908",
+						"title": "Approve",
+						"value": "approve"
+					},
+					{
+						"id": "75bb9a33-7405-4b21-98e8-6fd5836de976",
+						"title": "Reject",
+						"value": "reject"
+					}
+				],
+				"embeddedInfo": {
+					"id": "f549828f-aacd-4536-dc7c-48c2c433c4d6",
+					"type": "application",
+					"title": "",
+					"appInfo": {
+						"appName": "peoplehubexpenseclaimapproval",
+						"startParams": "{\"claimid\":\"7A1E0000-0000-4000-8000-000000000006\",\"recommendation\":\"approve\",\"summary\":\"Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.\",\"_processFlow\":{\"id\":\"A7353839-ABC7-F111-BF5B-000D3ABA8400\",\"executionId\":\"7f21e6e2-c681-4428-8f05-05c7c307599c\",\"activityExecutionId\":\"Activity_approval_6d08e4f093\"}}"
+					}
+				}
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "awaiting_user",
+			"activityId": "Activity_approval",
+			"activityStatus": "pending",
+			"message": "Waiting on task Activity_approval_6d08e4f093"
+		},
+		{
+			"id": "C6BEE4B0-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "User task Activity_approval_6d08e4f093 complete. Restarting workflow."
+		},
+		{
+			"id": "C7BEE4B0-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"title": "Expense claim: Training Amsterdam (12.40 EUR)",
+				"description": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.",
+				"approverGroup": {
+					"roles": [
+						"2A1FD5F8-C2C7-F111-BF5B-000D3ABA8400"
+					],
+					"users": []
+				},
+				"taskActions": [
+					{
+						"id": "58416111-ad5f-4f65-d799-36e6a1183908",
+						"title": "Approve",
+						"value": "approve"
+					},
+					{
+						"id": "75bb9a33-7405-4b21-98e8-6fd5836de976",
+						"title": "Reject",
+						"value": "reject"
+					}
+				],
+				"embeddedInfo": {
+					"id": "f549828f-aacd-4536-dc7c-48c2c433c4d6",
+					"type": "application",
+					"title": "",
+					"appInfo": {
+						"appName": "peoplehubexpenseclaimapproval",
+						"startParams": "{\"claimid\":\"7A1E0000-0000-4000-8000-000000000006\",\"recommendation\":\"approve\",\"summary\":\"Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.\",\"_processFlow\":{\"id\":\"A7353839-ABC7-F111-BF5B-000D3ABA8400\",\"executionId\":\"7f21e6e2-c681-4428-8f05-05c7c307599c\",\"activityExecutionId\":\"Activity_approval_6d08e4f093\"}}"
+					}
+				}
+			},
+			"outputs": {
+				"approverDecision": "reject",
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"recommendation": "approve",
+				"summary": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.",
+				"_processFlow": {
+					"id": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+					"executionId": "7f21e6e2-c681-4428-8f05-05c7c307599c",
+					"activityExecutionId": "Activity_approval_6d08e4f093"
+				}
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": "Activity_approval",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "C8BEE4B0-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": "Flow_task_gateway",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_task_gateway"
+		},
+		{
+			"id": "CABEE4B0-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": "Gateway_decision",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "CBBEE4B0-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": "Flow_gateway_reject",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_gateway_reject"
+		},
+		{
+			"id": "CDBEE4B0-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"scriptId": "7791C36A-B9C7-F111-BF5B-000D3ABA8400"
+			},
+			"outputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"title": "Training Amsterdam",
+				"decision": "reject",
+				"decisionText": "Rejected",
+				"decidedBy": "veronica.fernandez@neptune-software.com",
+				"statusColor": "#bb0000",
+				"statusBg": "#fdeeee",
+				"statusNote": "Your expense claim was rejected. Open it in PeopleHub, fix the receipts or lines and send it for approval again.",
+				"requesterEmail": "antonio.neves@neptune-software.com"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": "Activity_reject",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "CEBEE4B0-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": "Flow_reject_email",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_reject_email"
+		},
+		{
+			"id": "D1BEE4B0-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"to": "antonio.neves@neptune-software.com",
+				"templateId": "323335B2-AEC7-F111-BF5B-000D3ABA8400",
+				"cc": "",
+				"bcc": "",
+				"tokens": "[{\"name\":\"title\",\"value\":\"{Outputs>/Activity_prepare/title}\"},{\"name\":\"periodText\",\"value\":\"{Outputs>/Activity_prepare/periodText}\"},{\"name\":\"totalText\",\"value\":\"{Outputs>/Activity_prepare/totalText}\"},{\"name\":\"currency\",\"value\":\"{Outputs>/Activity_prepare/currency}\"},{\"name\":\"statusBg\",\"value\":\"{Outputs>/Activity_reject/statusBg}\"},{\"name\":\"statusColor\",\"value\":\"{Outputs>/Activity_reject/statusColor}\"},{\"name\":\"decisionText\",\"value\":\"{Outputs>/Activity_reject/decisionText}\"},{\"name\":\"decisionText\",\"value\":\"{Outputs>/Activity_reject/decisionText}\"},{\"name\":\"decidedBy\",\"value\":\"{Outputs>/Activity_reject/decidedBy}\"},{\"name\":\"statusNote\",\"value\":\"{Outputs>/Activity_reject/statusNote}\"}]",
+				"pdfAttachment": "false",
+				"pdfTemplateId": ""
+			},
+			"outputs": {
+				"status": "success"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": "Activity_emailRejected",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "D2BEE4B0-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": "Flow_rejected_end",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_rejected_end"
+		},
+		{
+			"id": "D4BEE4B0-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "running",
+			"activityId": "Event_end",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "D5BEE4B0-74C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "7F21E6E2-C681-4428-8F05-05C7C307599C",
+			"executionStatus": "completed",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Workflow PeopleHubExpenseClaimApproval ended successfully"
+		},
+		{
+			"id": "FCF1CA05-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Starting workflow"
+		},
+		{
+			"id": "FFF1CA05-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"requesterName": "António Neves"
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": "Event_start",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "00F2CA05-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": "Flow_start_prepare",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_start_prepare"
+		},
+		{
+			"id": "02F2CA05-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"scriptId": "43142A57-B9C7-F111-BF5B-000D3ABA8400"
+			},
+			"outputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"title": "Training Amsterdam",
+				"purpose": "Neptune DXP partner training",
+				"periodText": "2026-10-11 to 2026-10-12",
+				"requesterName": "António Neves",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"approverEmails": "veronica.fernandez@neptune-software.com",
+				"totalText": "12.40",
+				"currency": "EUR",
+				"lineCount": 1,
+				"receiptCount": 1,
+				"passCount": 1,
+				"warningCount": 0,
+				"failCount": 0,
+				"notValidatedCount": 0,
+				"checksText": "1 receipt(s): 1 passed",
+				"recommendation": "approve",
+				"recommendationText": "Approve",
+				"recommendationColor": "#107e3e",
+				"recommendationBg": "#e8f5ec",
+				"summary": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve."
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": "Activity_prepare",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "03F2CA05-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": "Flow_prepare_email",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_prepare_email"
+		},
+		{
+			"id": "06F2CA05-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"to": "veronica.fernandez@neptune-software.com",
+				"templateId": "4F25C5C9-ADC7-F111-BF5B-000D3ABA8400",
+				"cc": "",
+				"bcc": "",
+				"tokens": "[{\"name\":\"title\",\"value\":\"{Outputs>/Activity_prepare/title}\"},{\"name\":\"purpose\",\"value\":\"{Outputs>/Activity_prepare/purpose}\"},{\"name\":\"periodText\",\"value\":\"{Outputs>/Activity_prepare/periodText}\"},{\"name\":\"requesterName\",\"value\":\"{Outputs>/Activity_prepare/requesterName}\"},{\"name\":\"totalText\",\"value\":\"{Outputs>/Activity_prepare/totalText}\"},{\"name\":\"currency\",\"value\":\"{Outputs>/Activity_prepare/currency}\"},{\"name\":\"lineCount\",\"value\":\"{Outputs>/Activity_prepare/lineCount}\"},{\"name\":\"checksText\",\"value\":\"{Outputs>/Activity_prepare/checksText}\"},{\"name\":\"recommendationText\",\"value\":\"{Outputs>/Activity_prepare/recommendationText}\"},{\"name\":\"recommendationColor\",\"value\":\"{Outputs>/Activity_prepare/recommendationColor}\"},{\"name\":\"recommendationBg\",\"value\":\"{Outputs>/Activity_prepare/recommendationBg}\"}]",
+				"pdfAttachment": "false",
+				"pdfTemplateId": ""
+			},
+			"outputs": {
+				"status": "success"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": "Activity_emailApprovers",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "07F2CA05-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": "Flow_email_task",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_email_task"
+		},
+		{
+			"id": "0AF2CA05-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"title": "Expense claim: Training Amsterdam (12.40 EUR)",
+				"description": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.",
+				"approverGroup": {
+					"roles": [
+						"2A1FD5F8-C2C7-F111-BF5B-000D3ABA8400"
+					],
+					"users": []
+				},
+				"taskActions": [
+					{
+						"id": "58416111-ad5f-4f65-d799-36e6a1183908",
+						"title": "Approve",
+						"value": "approve"
+					},
+					{
+						"id": "75bb9a33-7405-4b21-98e8-6fd5836de976",
+						"title": "Reject",
+						"value": "reject"
+					}
+				],
+				"embeddedInfo": {
+					"id": "f549828f-aacd-4536-dc7c-48c2c433c4d6",
+					"type": "application",
+					"title": "",
+					"appInfo": {
+						"appName": "peoplehubexpenseclaimapproval",
+						"startParams": "{\"claimid\":\"7A1E0000-0000-4000-8000-000000000006\",\"recommendation\":\"approve\",\"summary\":\"Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.\",\"_processFlow\":{\"id\":\"A7353839-ABC7-F111-BF5B-000D3ABA8400\",\"executionId\":\"f2197af1-2ace-4673-a687-66676d39c72b\",\"activityExecutionId\":\"Activity_approval_5ace6949af\"}}"
+					}
+				}
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "awaiting_user",
+			"activityId": "Activity_approval",
+			"activityStatus": "pending",
+			"message": "Waiting on task Activity_approval_5ace6949af"
+		},
+		{
+			"id": "C57A391E-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "User task Activity_approval_5ace6949af complete. Restarting workflow."
+		},
+		{
+			"id": "C67A391E-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"title": "Expense claim: Training Amsterdam (12.40 EUR)",
+				"description": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.",
+				"approverGroup": {
+					"roles": [
+						"2A1FD5F8-C2C7-F111-BF5B-000D3ABA8400"
+					],
+					"users": []
+				},
+				"taskActions": [
+					{
+						"id": "58416111-ad5f-4f65-d799-36e6a1183908",
+						"title": "Approve",
+						"value": "approve"
+					},
+					{
+						"id": "75bb9a33-7405-4b21-98e8-6fd5836de976",
+						"title": "Reject",
+						"value": "reject"
+					}
+				],
+				"embeddedInfo": {
+					"id": "f549828f-aacd-4536-dc7c-48c2c433c4d6",
+					"type": "application",
+					"title": "",
+					"appInfo": {
+						"appName": "peoplehubexpenseclaimapproval",
+						"startParams": "{\"claimid\":\"7A1E0000-0000-4000-8000-000000000006\",\"recommendation\":\"approve\",\"summary\":\"Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.\",\"_processFlow\":{\"id\":\"A7353839-ABC7-F111-BF5B-000D3ABA8400\",\"executionId\":\"f2197af1-2ace-4673-a687-66676d39c72b\",\"activityExecutionId\":\"Activity_approval_5ace6949af\"}}"
+					}
+				}
+			},
+			"outputs": {
+				"approverDecision": "reject",
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"recommendation": "approve",
+				"summary": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.",
+				"_processFlow": {
+					"id": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+					"executionId": "f2197af1-2ace-4673-a687-66676d39c72b",
+					"activityExecutionId": "Activity_approval_5ace6949af"
+				}
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": "Activity_approval",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "C77A391E-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": "Flow_task_gateway",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_task_gateway"
+		},
+		{
+			"id": "C97A391E-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": "Gateway_decision",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "CA7A391E-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": "Flow_gateway_reject",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_gateway_reject"
+		},
+		{
+			"id": "CC7A391E-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"scriptId": "7791C36A-B9C7-F111-BF5B-000D3ABA8400"
+			},
+			"outputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"title": "Training Amsterdam",
+				"decision": "reject",
+				"decisionText": "Rejected",
+				"decidedBy": "veronica.fernandez@neptune-software.com",
+				"statusColor": "#bb0000",
+				"statusBg": "#fdeeee",
+				"statusNote": "Your expense claim was rejected. Open it in PeopleHub, fix the receipts or lines and send it for approval again.",
+				"requesterEmail": "antonio.neves@neptune-software.com"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": "Activity_reject",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "CD7A391E-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": "Flow_reject_email",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_reject_email"
+		},
+		{
+			"id": "D07A391E-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"to": "antonio.neves@neptune-software.com",
+				"templateId": "323335B2-AEC7-F111-BF5B-000D3ABA8400",
+				"cc": "",
+				"bcc": "",
+				"tokens": "[{\"name\":\"title\",\"value\":\"{Outputs>/Activity_prepare/title}\"},{\"name\":\"periodText\",\"value\":\"{Outputs>/Activity_prepare/periodText}\"},{\"name\":\"totalText\",\"value\":\"{Outputs>/Activity_prepare/totalText}\"},{\"name\":\"currency\",\"value\":\"{Outputs>/Activity_prepare/currency}\"},{\"name\":\"statusBg\",\"value\":\"{Outputs>/Activity_reject/statusBg}\"},{\"name\":\"statusColor\",\"value\":\"{Outputs>/Activity_reject/statusColor}\"},{\"name\":\"decisionText\",\"value\":\"{Outputs>/Activity_reject/decisionText}\"},{\"name\":\"decisionText\",\"value\":\"{Outputs>/Activity_reject/decisionText}\"},{\"name\":\"decidedBy\",\"value\":\"{Outputs>/Activity_reject/decidedBy}\"},{\"name\":\"statusNote\",\"value\":\"{Outputs>/Activity_reject/statusNote}\"}]",
+				"pdfAttachment": "false",
+				"pdfTemplateId": ""
+			},
+			"outputs": {
+				"status": "success"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": "Activity_emailRejected",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "D17A391E-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": "Flow_rejected_end",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_rejected_end"
+		},
+		{
+			"id": "D37A391E-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "running",
+			"activityId": "Event_end",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "D47A391E-75C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "F2197AF1-2ACE-4673-A687-66676D39C72B",
+			"executionStatus": "completed",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Workflow PeopleHubExpenseClaimApproval ended successfully"
+		},
+		{
+			"id": "5D980DAA-76C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "DAEA9264-5144-41D6-AF31-93D3D933F502",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Starting workflow"
+		},
+		{
+			"id": "60980DAA-76C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"requesterName": "António Neves"
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "DAEA9264-5144-41D6-AF31-93D3D933F502",
+			"executionStatus": "running",
+			"activityId": "Event_start",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "61980DAA-76C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "DAEA9264-5144-41D6-AF31-93D3D933F502",
+			"executionStatus": "running",
+			"activityId": "Flow_start_prepare",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_start_prepare"
+		},
+		{
+			"id": "63980DAA-76C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"scriptId": "43142A57-B9C7-F111-BF5B-000D3ABA8400"
+			},
+			"outputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"title": "Training Amsterdam",
+				"purpose": "Neptune DXP partner training",
+				"periodText": "2026-10-11 to 2026-10-12",
+				"requesterName": "António Neves",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"approverEmails": "veronica.fernandez@neptune-software.com",
+				"totalText": "12.40",
+				"currency": "EUR",
+				"lineCount": 1,
+				"receiptCount": 1,
+				"passCount": 1,
+				"warningCount": 0,
+				"failCount": 0,
+				"notValidatedCount": 0,
+				"checksText": "1 receipt(s): 1 passed",
+				"recommendation": "approve",
+				"recommendationText": "Approve",
+				"recommendationColor": "#107e3e",
+				"recommendationBg": "#e8f5ec",
+				"summary": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve."
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "DAEA9264-5144-41D6-AF31-93D3D933F502",
+			"executionStatus": "running",
+			"activityId": "Activity_prepare",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "64980DAA-76C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "DAEA9264-5144-41D6-AF31-93D3D933F502",
+			"executionStatus": "running",
+			"activityId": "Flow_prepare_email",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_prepare_email"
+		},
+		{
+			"id": "67980DAA-76C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"to": "veronica.fernandez@neptune-software.com",
+				"templateId": "4F25C5C9-ADC7-F111-BF5B-000D3ABA8400",
+				"cc": "",
+				"bcc": "",
+				"tokens": "[{\"name\":\"title\",\"value\":\"{Outputs>/Activity_prepare/title}\"},{\"name\":\"purpose\",\"value\":\"{Outputs>/Activity_prepare/purpose}\"},{\"name\":\"periodText\",\"value\":\"{Outputs>/Activity_prepare/periodText}\"},{\"name\":\"requesterName\",\"value\":\"{Outputs>/Activity_prepare/requesterName}\"},{\"name\":\"totalText\",\"value\":\"{Outputs>/Activity_prepare/totalText}\"},{\"name\":\"currency\",\"value\":\"{Outputs>/Activity_prepare/currency}\"},{\"name\":\"lineCount\",\"value\":\"{Outputs>/Activity_prepare/lineCount}\"},{\"name\":\"checksText\",\"value\":\"{Outputs>/Activity_prepare/checksText}\"},{\"name\":\"recommendationText\",\"value\":\"{Outputs>/Activity_prepare/recommendationText}\"},{\"name\":\"recommendationColor\",\"value\":\"{Outputs>/Activity_prepare/recommendationColor}\"},{\"name\":\"recommendationBg\",\"value\":\"{Outputs>/Activity_prepare/recommendationBg}\"}]",
+				"pdfAttachment": "false",
+				"pdfTemplateId": ""
+			},
+			"outputs": {
+				"status": "success"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "DAEA9264-5144-41D6-AF31-93D3D933F502",
+			"executionStatus": "running",
+			"activityId": "Activity_emailApprovers",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "68980DAA-76C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "DAEA9264-5144-41D6-AF31-93D3D933F502",
+			"executionStatus": "running",
+			"activityId": "Flow_email_task",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_email_task"
+		},
+		{
+			"id": "6B980DAA-76C8-F111-BF5B-000D3AB82EE9",
+			"inputs": {
+				"title": "Expense claim: Training Amsterdam (12.40 EUR)",
+				"description": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.",
+				"approverGroup": {
+					"roles": [
+						"2A1FD5F8-C2C7-F111-BF5B-000D3ABA8400"
+					],
+					"users": []
+				},
+				"taskActions": [
+					{
+						"id": "58416111-ad5f-4f65-d799-36e6a1183908",
+						"title": "Approve",
+						"value": "approve"
+					},
+					{
+						"id": "75bb9a33-7405-4b21-98e8-6fd5836de976",
+						"title": "Reject",
+						"value": "reject"
+					}
+				],
+				"embeddedInfo": {
+					"id": "f549828f-aacd-4536-dc7c-48c2c433c4d6",
+					"type": "application",
+					"title": "",
+					"appInfo": {
+						"appName": "peoplehubexpenseclaimapproval",
+						"startParams": "{\"claimid\":\"7A1E0000-0000-4000-8000-000000000006\",\"recommendation\":\"approve\",\"summary\":\"Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.\",\"_processFlow\":{\"id\":\"A7353839-ABC7-F111-BF5B-000D3ABA8400\",\"executionId\":\"daea9264-5144-41d6-af31-93d3d933f502\",\"activityExecutionId\":\"Activity_approval_8e3c0d7b6d\"}}"
+					}
+				}
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "DAEA9264-5144-41D6-AF31-93D3D933F502",
+			"executionStatus": "awaiting_user",
+			"activityId": "Activity_approval",
+			"activityStatus": "pending",
+			"message": "Waiting on task Activity_approval_8e3c0d7b6d"
+		},
+		{
+			"id": "96434EE0-76C8-F111-BF5B-000D3AB82EE9",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "DAEA9264-5144-41D6-AF31-93D3D933F502",
+			"executionStatus": "stopped",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Workflow PeopleHubExpenseClaimApproval stopping"
+		},
+		{
+			"id": "18D9156D-CDC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "74676C24-4075-4A87-BFC4-9B0CE20CFD71",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Starting workflow"
+		},
+		{
+			"id": "1BD9156D-CDC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006"
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "74676C24-4075-4A87-BFC4-9B0CE20CFD71",
+			"executionStatus": "running",
+			"activityId": "Event_start",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "1CD9156D-CDC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "74676C24-4075-4A87-BFC4-9B0CE20CFD71",
+			"executionStatus": "running",
+			"activityId": "Flow_start_prepare",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_start_prepare"
+		},
+		{
+			"id": "4F0B2F81-CDC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "AC508A26-15D6-49E1-9B41-8FF89D9886D1",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Starting workflow"
+		},
+		{
+			"id": "520B2F81-CDC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006"
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "AC508A26-15D6-49E1-9B41-8FF89D9886D1",
+			"executionStatus": "running",
+			"activityId": "Event_start",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "530B2F81-CDC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "AC508A26-15D6-49E1-9B41-8FF89D9886D1",
+			"executionStatus": "running",
+			"activityId": "Flow_start_prepare",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_start_prepare"
+		},
+		{
+			"id": "61323326-DAC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "BF685713-79B0-4F60-A3D1-797C735F269D",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Starting workflow"
+		},
+		{
+			"id": "64323326-DAC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"requesterName": "António Neves"
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "BF685713-79B0-4F60-A3D1-797C735F269D",
+			"executionStatus": "running",
+			"activityId": "Event_start",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "65323326-DAC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "BF685713-79B0-4F60-A3D1-797C735F269D",
+			"executionStatus": "running",
+			"activityId": "Flow_start_prepare",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_start_prepare"
+		},
+		{
+			"id": "67323326-DAC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"scriptId": "43142A57-B9C7-F111-BF5B-000D3ABA8400"
+			},
+			"outputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"title": "Training Amsterdam",
+				"purpose": "Neptune DXP partner training",
+				"periodText": "2026-10-11 to 2026-10-12",
+				"requesterName": "António Neves",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"approverEmails": "veronica.fernandez@neptune-software.com",
+				"totalText": "12.40",
+				"currency": "EUR",
+				"lineCount": 1,
+				"receiptCount": 1,
+				"passCount": 1,
+				"warningCount": 0,
+				"failCount": 0,
+				"notValidatedCount": 0,
+				"checksText": "1 receipt(s): 1 passed",
+				"recommendation": "approve",
+				"recommendationText": "Approve",
+				"recommendationColor": "#107e3e",
+				"recommendationBg": "#e8f5ec",
+				"summary": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve."
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "BF685713-79B0-4F60-A3D1-797C735F269D",
+			"executionStatus": "running",
+			"activityId": "Activity_prepare",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "68323326-DAC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "BF685713-79B0-4F60-A3D1-797C735F269D",
+			"executionStatus": "running",
+			"activityId": "Flow_prepare_email",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_prepare_email"
+		},
+		{
+			"id": "6A323326-DAC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"to": "veronica.fernandez@neptune-software.com",
+				"templateId": "4F25C5C9-ADC7-F111-BF5B-000D3ABA8400",
+				"cc": "",
+				"bcc": "",
+				"tokens": "[{\"name\":\"title\",\"value\":\"{Outputs>/Activity_prepare/title}\"},{\"name\":\"purpose\",\"value\":\"{Outputs>/Activity_prepare/purpose}\"},{\"name\":\"periodText\",\"value\":\"{Outputs>/Activity_prepare/periodText}\"},{\"name\":\"requesterName\",\"value\":\"{Outputs>/Activity_prepare/requesterName}\"},{\"name\":\"totalText\",\"value\":\"{Outputs>/Activity_prepare/totalText}\"},{\"name\":\"currency\",\"value\":\"{Outputs>/Activity_prepare/currency}\"},{\"name\":\"lineCount\",\"value\":\"{Outputs>/Activity_prepare/lineCount}\"},{\"name\":\"checksText\",\"value\":\"{Outputs>/Activity_prepare/checksText}\"},{\"name\":\"recommendationText\",\"value\":\"{Outputs>/Activity_prepare/recommendationText}\"},{\"name\":\"recommendationColor\",\"value\":\"{Outputs>/Activity_prepare/recommendationColor}\"},{\"name\":\"recommendationBg\",\"value\":\"{Outputs>/Activity_prepare/recommendationBg}\"}]",
+				"pdfAttachment": "false",
+				"pdfTemplateId": ""
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "BF685713-79B0-4F60-A3D1-797C735F269D",
+			"executionStatus": "error",
+			"activityId": "Activity_emailApprovers",
+			"activityStatus": "error",
+			"message": "Smtp connection not verified"
+		},
+		{
+			"id": "6B323326-DAC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "BF685713-79B0-4F60-A3D1-797C735F269D",
+			"executionStatus": "stopped",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Workflow PeopleHubExpenseClaimApproval stopping"
+		},
+		{
+			"id": "3B17DC9D-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Starting workflow"
+		},
+		{
+			"id": "3E17DC9D-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"requesterName": "António Neves"
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": "Event_start",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "3F17DC9D-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": "Flow_start_prepare",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_start_prepare"
+		},
+		{
+			"id": "5B270FA5-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"scriptId": "43142A57-B9C7-F111-BF5B-000D3ABA8400"
+			},
+			"outputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"title": "Training Amsterdam",
+				"purpose": "Neptune DXP partner training",
+				"periodText": "2026-10-11 to 2026-10-12",
+				"requesterName": "António Neves",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"approverEmails": "veronica.fernandez@neptune-software.com",
+				"totalText": "12.40",
+				"currency": "EUR",
+				"lineCount": 1,
+				"receiptCount": 1,
+				"passCount": 1,
+				"warningCount": 0,
+				"failCount": 0,
+				"notValidatedCount": 0,
+				"checksText": "1 receipt(s): 1 passed",
+				"recommendation": "approve",
+				"recommendationText": "Approve",
+				"recommendationColor": "#107e3e",
+				"recommendationBg": "#e8f5ec",
+				"summary": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve."
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": "Activity_prepare",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "5C270FA5-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": "Flow_prepare_email",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_prepare_email"
+		},
+		{
+			"id": "5F270FA5-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"to": "veronica.fernandez@neptune-software.com",
+				"templateId": "4F25C5C9-ADC7-F111-BF5B-000D3ABA8400",
+				"cc": "",
+				"bcc": "",
+				"tokens": "[{\"name\":\"title\",\"value\":\"{Outputs>/Activity_prepare/title}\"},{\"name\":\"purpose\",\"value\":\"{Outputs>/Activity_prepare/purpose}\"},{\"name\":\"periodText\",\"value\":\"{Outputs>/Activity_prepare/periodText}\"},{\"name\":\"requesterName\",\"value\":\"{Outputs>/Activity_prepare/requesterName}\"},{\"name\":\"totalText\",\"value\":\"{Outputs>/Activity_prepare/totalText}\"},{\"name\":\"currency\",\"value\":\"{Outputs>/Activity_prepare/currency}\"},{\"name\":\"lineCount\",\"value\":\"{Outputs>/Activity_prepare/lineCount}\"},{\"name\":\"checksText\",\"value\":\"{Outputs>/Activity_prepare/checksText}\"},{\"name\":\"recommendationText\",\"value\":\"{Outputs>/Activity_prepare/recommendationText}\"},{\"name\":\"recommendationColor\",\"value\":\"{Outputs>/Activity_prepare/recommendationColor}\"},{\"name\":\"recommendationBg\",\"value\":\"{Outputs>/Activity_prepare/recommendationBg}\"}]",
+				"pdfAttachment": "false",
+				"pdfTemplateId": ""
+			},
+			"outputs": {
+				"status": "success"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": "Activity_emailApprovers",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "60270FA5-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": "Flow_email_task",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_email_task"
+		},
+		{
+			"id": "63270FA5-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"title": "Expense claim: Training Amsterdam (12.40 EUR)",
+				"description": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.",
+				"approverGroup": {
+					"roles": [
+						"2A1FD5F8-C2C7-F111-BF5B-000D3ABA8400"
+					],
+					"users": []
+				},
+				"taskActions": [
+					{
+						"id": "58416111-ad5f-4f65-d799-36e6a1183908",
+						"title": "Approve",
+						"value": "approve"
+					},
+					{
+						"id": "75bb9a33-7405-4b21-98e8-6fd5836de976",
+						"title": "Reject",
+						"value": "reject"
+					}
+				],
+				"embeddedInfo": {
+					"id": "f549828f-aacd-4536-dc7c-48c2c433c4d6",
+					"type": "application",
+					"title": "",
+					"appInfo": {
+						"appName": "peoplehubexpenseclaimapproval",
+						"startParams": "{\"claimid\":\"7A1E0000-0000-4000-8000-000000000006\",\"recommendation\":\"approve\",\"summary\":\"Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.\",\"_processFlow\":{\"id\":\"A7353839-ABC7-F111-BF5B-000D3ABA8400\",\"executionId\":\"aca745ff-ab75-444c-947d-ba5ee8c7e15b\",\"activityExecutionId\":\"Activity_approval_752d4fddc6\"}}"
+					}
+				}
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "awaiting_user",
+			"activityId": "Activity_approval",
+			"activityStatus": "pending",
+			"message": "Waiting on task Activity_approval_752d4fddc6"
+		},
+		{
+			"id": "6457EECC-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "User task Activity_approval_752d4fddc6 complete. Restarting workflow."
+		},
+		{
+			"id": "6557EECC-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"title": "Expense claim: Training Amsterdam (12.40 EUR)",
+				"description": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.",
+				"approverGroup": {
+					"roles": [
+						"2A1FD5F8-C2C7-F111-BF5B-000D3ABA8400"
+					],
+					"users": []
+				},
+				"taskActions": [
+					{
+						"id": "58416111-ad5f-4f65-d799-36e6a1183908",
+						"title": "Approve",
+						"value": "approve"
+					},
+					{
+						"id": "75bb9a33-7405-4b21-98e8-6fd5836de976",
+						"title": "Reject",
+						"value": "reject"
+					}
+				],
+				"embeddedInfo": {
+					"id": "f549828f-aacd-4536-dc7c-48c2c433c4d6",
+					"type": "application",
+					"title": "",
+					"appInfo": {
+						"appName": "peoplehubexpenseclaimapproval",
+						"startParams": "{\"claimid\":\"7A1E0000-0000-4000-8000-000000000006\",\"recommendation\":\"approve\",\"summary\":\"Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.\",\"_processFlow\":{\"id\":\"A7353839-ABC7-F111-BF5B-000D3ABA8400\",\"executionId\":\"aca745ff-ab75-444c-947d-ba5ee8c7e15b\",\"activityExecutionId\":\"Activity_approval_752d4fddc6\"}}"
+					}
+				}
+			},
+			"outputs": {
+				"approverDecision": "reject",
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"recommendation": "approve",
+				"summary": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.",
+				"_processFlow": {
+					"id": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+					"executionId": "aca745ff-ab75-444c-947d-ba5ee8c7e15b",
+					"activityExecutionId": "Activity_approval_752d4fddc6"
+				}
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": "Activity_approval",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "6657EECC-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": "Flow_task_gateway",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_task_gateway"
+		},
+		{
+			"id": "6857EECC-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": {},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": "Gateway_decision",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "6957EECC-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": "Flow_gateway_reject",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_gateway_reject"
+		},
+		{
+			"id": "F39FF2D2-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"scriptId": "7791C36A-B9C7-F111-BF5B-000D3ABA8400"
+			},
+			"outputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"title": "Training Amsterdam",
+				"decision": "reject",
+				"decisionText": "Rejected",
+				"decidedBy": "veronica.fernandez@neptune-software.com",
+				"statusColor": "#bb0000",
+				"statusBg": "#fdeeee",
+				"statusNote": "Your expense claim was rejected. Open it in PeopleHub, fix the receipts or lines and send it for approval again.",
+				"requesterEmail": "antonio.neves@neptune-software.com"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": "Activity_reject",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "F49FF2D2-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": "Flow_reject_email",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_reject_email"
+		},
+		{
+			"id": "F79FF2D2-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"to": "antonio.neves@neptune-software.com",
+				"templateId": "323335B2-AEC7-F111-BF5B-000D3ABA8400",
+				"cc": "",
+				"bcc": "",
+				"tokens": "[{\"name\":\"title\",\"value\":\"{Outputs>/Activity_prepare/title}\"},{\"name\":\"periodText\",\"value\":\"{Outputs>/Activity_prepare/periodText}\"},{\"name\":\"totalText\",\"value\":\"{Outputs>/Activity_prepare/totalText}\"},{\"name\":\"currency\",\"value\":\"{Outputs>/Activity_prepare/currency}\"},{\"name\":\"decisionText\",\"value\":\"{Outputs>/Activity_reject/decisionText}\"},{\"name\":\"statusColor\",\"value\":\"{Outputs>/Activity_reject/statusColor}\"},{\"name\":\"statusBg\",\"value\":\"{Outputs>/Activity_reject/statusBg}\"},{\"name\":\"statusNote\",\"value\":\"{Outputs>/Activity_reject/statusNote}\"},{\"name\":\"decidedBy\",\"value\":\"{Outputs>/Activity_reject/decidedBy}\"}]",
+				"pdfAttachment": "false",
+				"pdfTemplateId": ""
+			},
+			"outputs": {
+				"status": "success"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": "Activity_emailRejected",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "F89FF2D2-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": "Flow_rejected_end",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_rejected_end"
+		},
+		{
+			"id": "FA9FF2D2-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": {},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "running",
+			"activityId": "Event_end",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "FB9FF2D2-DBC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "ACA745FF-AB75-444C-947D-BA5EE8C7E15B",
+			"executionStatus": "completed",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Workflow PeopleHubExpenseClaimApproval ended successfully"
+		},
+		{
+			"id": "E326225B-DDC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "E0DAFC73-27D1-4AFC-9029-6704CCECC75F",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Starting workflow"
+		},
+		{
+			"id": "E626225B-DDC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"requesterName": "António Neves"
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "E0DAFC73-27D1-4AFC-9029-6704CCECC75F",
+			"executionStatus": "running",
+			"activityId": "Event_start",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "E726225B-DDC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "E0DAFC73-27D1-4AFC-9029-6704CCECC75F",
+			"executionStatus": "running",
+			"activityId": "Flow_start_prepare",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_start_prepare"
+		},
+		{
+			"id": "F12FE539-DEC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "9C418D5E-6C8F-45D2-8D58-EEAF3C50D9DB",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Starting workflow"
+		},
+		{
+			"id": "F42FE539-DEC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"requesterName": "António Neves"
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "9C418D5E-6C8F-45D2-8D58-EEAF3C50D9DB",
+			"executionStatus": "running",
+			"activityId": "Event_start",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "F52FE539-DEC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "9C418D5E-6C8F-45D2-8D58-EEAF3C50D9DB",
+			"executionStatus": "running",
+			"activityId": "Flow_start_prepare",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_start_prepare"
+		},
+		{
+			"id": "F72FE539-DEC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"scriptId": "43142A57-B9C7-F111-BF5B-000D3ABA8400"
+			},
+			"outputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"title": "Training Amsterdam",
+				"purpose": "Neptune DXP partner training",
+				"periodText": "2026-10-11 to 2026-10-12",
+				"requesterName": "António Neves",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"approverEmails": "veronica.fernandez@neptune-software.com",
+				"totalText": "12.40",
+				"currency": "EUR",
+				"lineCount": 1,
+				"receiptCount": 1,
+				"passCount": 1,
+				"warningCount": 0,
+				"failCount": 0,
+				"notValidatedCount": 0,
+				"checksText": "1 receipt(s): 1 passed",
+				"recommendation": "approve",
+				"recommendationText": "Approve",
+				"recommendationColor": "#107e3e",
+				"recommendationBg": "#e8f5ec",
+				"summary": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve."
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "9C418D5E-6C8F-45D2-8D58-EEAF3C50D9DB",
+			"executionStatus": "running",
+			"activityId": "Activity_prepare",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "F82FE539-DEC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "9C418D5E-6C8F-45D2-8D58-EEAF3C50D9DB",
+			"executionStatus": "running",
+			"activityId": "Flow_prepare_email",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_prepare_email"
+		},
+		{
+			"id": "D76ADC3F-DEC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"to": "veronica.fernandez@neptune-software.com",
+				"templateId": "4F25C5C9-ADC7-F111-BF5B-000D3ABA8400",
+				"cc": "",
+				"bcc": "",
+				"tokens": "[{\"name\":\"title\",\"value\":\"{Outputs>/Activity_prepare/title}\"},{\"name\":\"purpose\",\"value\":\"{Outputs>/Activity_prepare/purpose}\"},{\"name\":\"periodText\",\"value\":\"{Outputs>/Activity_prepare/periodText}\"},{\"name\":\"requesterName\",\"value\":\"{Outputs>/Activity_prepare/requesterName}\"},{\"name\":\"totalText\",\"value\":\"{Outputs>/Activity_prepare/totalText}\"},{\"name\":\"currency\",\"value\":\"{Outputs>/Activity_prepare/currency}\"},{\"name\":\"lineCount\",\"value\":\"{Outputs>/Activity_prepare/lineCount}\"},{\"name\":\"checksText\",\"value\":\"{Outputs>/Activity_prepare/checksText}\"},{\"name\":\"recommendationText\",\"value\":\"{Outputs>/Activity_prepare/recommendationText}\"},{\"name\":\"recommendationColor\",\"value\":\"{Outputs>/Activity_prepare/recommendationColor}\"},{\"name\":\"recommendationBg\",\"value\":\"{Outputs>/Activity_prepare/recommendationBg}\"}]",
+				"pdfAttachment": "false",
+				"pdfTemplateId": ""
+			},
+			"outputs": {
+				"status": "success"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "9C418D5E-6C8F-45D2-8D58-EEAF3C50D9DB",
+			"executionStatus": "running",
+			"activityId": "Activity_emailApprovers",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "D86ADC3F-DEC7-F111-BF5B-000D3ABA8400",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "9C418D5E-6C8F-45D2-8D58-EEAF3C50D9DB",
+			"executionStatus": "running",
+			"activityId": "Flow_email_task",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_email_task"
+		},
+		{
+			"id": "DB6ADC3F-DEC7-F111-BF5B-000D3ABA8400",
+			"inputs": {
+				"title": "Expense claim: Training Amsterdam (12.40 EUR)",
+				"description": "Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.",
+				"approverGroup": {
+					"roles": [
+						"2A1FD5F8-C2C7-F111-BF5B-000D3ABA8400"
+					],
+					"users": []
+				},
+				"taskActions": [
+					{
+						"id": "58416111-ad5f-4f65-d799-36e6a1183908",
+						"title": "Approve",
+						"value": "approve"
+					},
+					{
+						"id": "75bb9a33-7405-4b21-98e8-6fd5836de976",
+						"title": "Reject",
+						"value": "reject"
+					}
+				],
+				"embeddedInfo": {
+					"id": "f549828f-aacd-4536-dc7c-48c2c433c4d6",
+					"type": "application",
+					"title": "",
+					"appInfo": {
+						"appName": "peoplehubexpenseclaimapproval",
+						"startParams": "{\"claimid\":\"7A1E0000-0000-4000-8000-000000000006\",\"recommendation\":\"approve\",\"summary\":\"Training Amsterdam (2026-10-11 to 2026-10-12), 1 line(s), 12.40 EUR. 1 receipt(s): 1 passed. AI recommendation: Approve.\",\"_processFlow\":{\"id\":\"A7353839-ABC7-F111-BF5B-000D3ABA8400\",\"executionId\":\"9c418d5e-6c8f-45d2-8d58-eeaf3c50d9db\",\"activityExecutionId\":\"Activity_approval_e2ffe00894\"}}"
+					}
+				}
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "9C418D5E-6C8F-45D2-8D58-EEAF3C50D9DB",
+			"executionStatus": "awaiting_user",
+			"activityId": "Activity_approval",
+			"activityStatus": "pending",
+			"message": "Waiting on task Activity_approval_e2ffe00894"
+		},
+		{
+			"id": "9E0B5732-8CCC-F111-BF5B-002248A30EF2",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "B752B53B-EE95-4AE0-8AEA-F89E94D512F4",
+			"executionStatus": "running",
+			"activityId": null,
+			"activityStatus": null,
+			"message": "Starting workflow"
+		},
+		{
+			"id": "A10B5732-8CCC-F111-BF5B-002248A30EF2",
+			"inputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"requesterName": "António Neves"
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "B752B53B-EE95-4AE0-8AEA-F89E94D512F4",
+			"executionStatus": "running",
+			"activityId": "Event_start",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "A20B5732-8CCC-F111-BF5B-002248A30EF2",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "B752B53B-EE95-4AE0-8AEA-F89E94D512F4",
+			"executionStatus": "running",
+			"activityId": "Flow_start_prepare",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_start_prepare"
+		},
+		{
+			"id": "A40B5732-8CCC-F111-BF5B-002248A30EF2",
+			"inputs": {
+				"scriptId": "43142A57-B9C7-F111-BF5B-000D3ABA8400"
+			},
+			"outputs": {
+				"claimid": "7A1E0000-0000-4000-8000-000000000006",
+				"title": "Training Amsterdam",
+				"purpose": "Neptune DXP partner training",
+				"periodText": "2026-10-17 to 2026-10-18",
+				"requesterName": "António Neves",
+				"requesterEmail": "antonio.neves@neptune-software.com",
+				"approverEmails": "emmanuella.ndukwe@neptune-software.com,antonio.neves@neptune-software.com,veronica.fernandez@neptune-software.com",
+				"totalText": "12.40",
+				"currency": "EUR",
+				"lineCount": 1,
+				"receiptCount": 0,
+				"passCount": 0,
+				"warningCount": 0,
+				"failCount": 0,
+				"notValidatedCount": 0,
+				"checksText": "no receipts",
+				"recommendation": "approve",
+				"recommendationText": "Approve",
+				"recommendationColor": "#107e3e",
+				"recommendationBg": "#e8f5ec",
+				"summary": "Training Amsterdam (2026-10-17 to 2026-10-18), 1 line(s), 12.40 EUR. no receipts. AI recommendation: Approve."
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "B752B53B-EE95-4AE0-8AEA-F89E94D512F4",
+			"executionStatus": "running",
+			"activityId": "Activity_prepare",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "A50B5732-8CCC-F111-BF5B-002248A30EF2",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "B752B53B-EE95-4AE0-8AEA-F89E94D512F4",
+			"executionStatus": "running",
+			"activityId": "Flow_prepare_email",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_prepare_email"
+		},
+		{
+			"id": "A80B5732-8CCC-F111-BF5B-002248A30EF2",
+			"inputs": {
+				"to": "emmanuella.ndukwe@neptune-software.com,antonio.neves@neptune-software.com,veronica.fernandez@neptune-software.com",
+				"templateId": "4F25C5C9-ADC7-F111-BF5B-000D3ABA8400",
+				"cc": "",
+				"bcc": "",
+				"tokens": "[{\"name\":\"title\",\"value\":\"{Outputs>/Activity_prepare/title}\"},{\"name\":\"purpose\",\"value\":\"{Outputs>/Activity_prepare/purpose}\"},{\"name\":\"periodText\",\"value\":\"{Outputs>/Activity_prepare/periodText}\"},{\"name\":\"requesterName\",\"value\":\"{Outputs>/Activity_prepare/requesterName}\"},{\"name\":\"totalText\",\"value\":\"{Outputs>/Activity_prepare/totalText}\"},{\"name\":\"currency\",\"value\":\"{Outputs>/Activity_prepare/currency}\"},{\"name\":\"lineCount\",\"value\":\"{Outputs>/Activity_prepare/lineCount}\"},{\"name\":\"checksText\",\"value\":\"{Outputs>/Activity_prepare/checksText}\"},{\"name\":\"recommendationText\",\"value\":\"{Outputs>/Activity_prepare/recommendationText}\"},{\"name\":\"recommendationColor\",\"value\":\"{Outputs>/Activity_prepare/recommendationColor}\"},{\"name\":\"recommendationBg\",\"value\":\"{Outputs>/Activity_prepare/recommendationBg}\"}]",
+				"pdfAttachment": "false",
+				"pdfTemplateId": ""
+			},
+			"outputs": {
+				"status": "success"
+			},
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "B752B53B-EE95-4AE0-8AEA-F89E94D512F4",
+			"executionStatus": "running",
+			"activityId": "Activity_emailApprovers",
+			"activityStatus": "success",
+			"message": null
+		},
+		{
+			"id": "A90B5732-8CCC-F111-BF5B-002248A30EF2",
+			"inputs": null,
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "B752B53B-EE95-4AE0-8AEA-F89E94D512F4",
+			"executionStatus": "running",
+			"activityId": "Flow_email_task",
+			"activityStatus": "success",
+			"message": "Flow taken: Flow_email_task"
+		},
+		{
+			"id": "AC0B5732-8CCC-F111-BF5B-002248A30EF2",
+			"inputs": {
+				"title": "Expense claim: Training Amsterdam (12.40 EUR)",
+				"description": "Training Amsterdam (2026-10-17 to 2026-10-18), 1 line(s), 12.40 EUR. no receipts. AI recommendation: Approve.",
+				"approverGroup": {
+					"roles": [
+						"2A1FD5F8-C2C7-F111-BF5B-000D3ABA8400"
+					],
+					"users": []
+				},
+				"taskActions": [
+					{
+						"id": "58416111-ad5f-4f65-d799-36e6a1183908",
+						"title": "Approve",
+						"value": "approve"
+					},
+					{
+						"id": "75bb9a33-7405-4b21-98e8-6fd5836de976",
+						"title": "Reject",
+						"value": "reject"
+					}
+				],
+				"embeddedInfo": {
+					"id": "f549828f-aacd-4536-dc7c-48c2c433c4d6",
+					"type": "application",
+					"title": "",
+					"appInfo": {
+						"appName": "peoplehubexpenseclaimapproval",
+						"startParams": "{\"claimid\":\"7A1E0000-0000-4000-8000-000000000006\",\"recommendation\":\"approve\",\"summary\":\"Training Amsterdam (2026-10-17 to 2026-10-18), 1 line(s), 12.40 EUR. no receipts. AI recommendation: Approve.\",\"_processFlow\":{\"id\":\"A7353839-ABC7-F111-BF5B-000D3ABA8400\",\"executionId\":\"b752b53b-ee95-4ae0-8aea-f89e94d512f4\",\"activityExecutionId\":\"Activity_approval_1ac223c644\"}}"
+					}
+				}
+			},
+			"outputs": null,
+			"processFlowId": "A7353839-ABC7-F111-BF5B-000D3ABA8400",
+			"processFlowName": "PeopleHubExpenseClaimApproval",
+			"executionId": "B752B53B-EE95-4AE0-8AEA-F89E94D512F4",
+			"executionStatus": "awaiting_user",
+			"activityId": "Activity_approval",
+			"activityStatus": "pending",
+			"message": "Waiting on task Activity_approval_1ac223c644"
+		}
+	]
+}

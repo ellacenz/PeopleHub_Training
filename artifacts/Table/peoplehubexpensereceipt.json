@@ -1,0 +1,83 @@
+{
+	"id": "9fc6dd6b-f333-4e2c-aedc-d8b33603a2a0",
+	"createdAt": "2026-10-12T14:56:34.340Z",
+	"createdBy": "joao.salvador@neptune-software.com",
+	"fields": [
+		{
+			"id": "9a4aa4f4-64f7-4e1c-8fe8-95a912dcff40",
+			"fieldName": "receiptid",
+			"fieldType": "uuid",
+			"isUnique": true,
+			"isNullable": false,
+			"description": "Unique identifier for the receipt"
+		},
+		{
+			"id": "0ad28260-9411-457b-f197-240dcb53a89d",
+			"fieldName": "lineid",
+			"fieldType": "uuid",
+			"isUnique": false,
+			"isNullable": false,
+			"description": "Identifier for the associated line item"
+		},
+		{
+			"id": "bc473545-e1ff-4ddb-c9ce-c8aeb0a9bc66",
+			"fieldName": "filename",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": false,
+			"description": "The name of the receipt file"
+		},
+		{
+			"id": "87652b60-8f63-4cae-def2-99ec1103c9de",
+			"fieldName": "mimetype",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": false,
+			"description": "The MIME type of the file"
+		},
+		{
+			"id": null,
+			"fieldName": "content",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "File content as a data URI (base64)"
+		},
+		{
+			"id": null,
+			"fieldName": "validationstatus",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Latest AI validation: pass, warning or fail"
+		},
+		{
+			"id": null,
+			"fieldName": "validationresult",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Latest AI validation result (JSON): extraction, checks, red flags, summary"
+		},
+		{
+			"id": null,
+			"fieldName": "validatedat",
+			"fieldType": "timestamp",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "When the receipt was last validated"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"vectorStoreConfig": {},
+	"name": "peoplehubexpensereceipt",
+	"description": "Table to store expense receipt file information and content.",
+	"ver": "26.10.14.1211",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"generationStrategy": "uuid",
+	"rolesRead": [],
+	"rolesWrite": []
+}

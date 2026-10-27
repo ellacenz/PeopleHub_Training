@@ -1,0 +1,13 @@
+{
+	"id": "323335b2-aec7-f111-bf5b-000d3aba8400",
+	"createdAt": "2026-10-14T09:07:36.356Z",
+	"createdBy": "antonio.neves@neptune-software.com",
+	"translation": null,
+	"name": "PeopleHubExpenseClaimDecision",
+	"description": "Your expense claim \"{=title}\": {=decisionText}",
+	"content": "<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background-color:#f4f1f3;margin:0;padding:0;\">  <tbody><tr> <td align=\"center\" style=\"padding:32px 12px;\">      <table role=\"presentation\" width=\"600\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%;max-width:600px;background-color:#ffffff;border-radius:12px;overflow:hidden;border:1px solid #e6dfe4;font-family:Arial,Helvetica,sans-serif;\">        <tbody><tr> <td style=\"background-color:#38112A;padding:22px 32px;font-size:17px;font-weight:bold;color:#ffffff;\"><div>PeopleHub Expense Claims</div></td> </tr> <tr><td style=\"background-color:#FF9E33;height:4px;line-height:4px;font-size:0;\"><div><br></div></td></tr> <tr> <td style=\"padding:32px 32px 8px 32px;\">            <div style=\"font-size:12px;font-weight:bold;color:#6E5774;letter-spacing:1px;\">DECISION ON YOUR EXPENSE CLAIM</div> <div style=\"font-size:24px;font-weight:bold;color:#38112A;padding-top:6px;\">{=title}</div> <div style=\"font-size:15px;color:#6E5774;padding-top:4px;\">{=periodText} · {=totalText} {=currency}</div> </td> </tr> <tr> <td style=\"padding:20px 32px 8px 32px;\"><div> <span style=\"display:inline-block;padding:6px 16px;border-radius:6px;background-color:{=statusBg};color:{=statusColor};font-size:15px;font-weight:bold;\">{=decisionText}</span> </div></td> </tr> <tr> <td style=\"padding:16px 32px 28px 32px;font-size:15px;line-height:23px;color:#38112A;\"><div>            Your expense claim was <strong>{=decisionText}</strong> by {=decidedBy}.<br><br>            {=statusNote}          </div></td> </tr> <tr> <td style=\"background-color:#f7f4f6;border-top:1px solid #e6dfe4;padding:18px 32px;font-size:12px;line-height:18px;color:#6E5774;\"><div>            Sent automatically by the approval process; please don't reply.          </div></td> </tr> </tbody></table> </td> </tr></tbody></table>",
+	"ver": "26.10.19.0900",
+	"type": "template",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"i18n": []
+}

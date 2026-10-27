@@ -1,0 +1,407 @@
+:root {
+    --nepBrand: #ff9e33;
+    --nepBrandPeach: #ffdbc4;
+    --pf-surface: #f5f5f7;
+    --nepBrandBurgundy: #38112a;
+    --white: #FFFFFF;
+    --darkText: #131e29;
+    --tinyPadding: 0.5rem;
+    --smallPadding: 1rem;
+    --mediumPadding: 1.5rem;
+    --largeFont: 1.2rem;
+    --nepScrollbarThumb: var(--nepBrandBurgundy);
+}
+
+:root.nepThemeDark,
+:root.sapUiTheme-sap_horizon_dark {
+    --pf-surface: rgba(56, 17, 42, 0.35);
+    --darkText: var(--white);
+    --nepScrollbarThumb: var(--nepBrand);
+}
+
+.nepInboxTheme {
+
+    .scrollerInnerScroll100>[id$="-scroll"] {
+        height: 100% !important;
+    }
+
+    .dialogInnerScroll99>[id$="-cont"]>[id$="-scroll"] {
+        height: 99% !important;
+    }
+
+    .nepTaskList {
+        height: 100%;
+        overflow-y: auto;
+        box-sizing: border-box;
+        scrollbar-width: thin;
+        scrollbar-color: var(--nepScrollbarThumb) transparent;
+    }
+
+    .nepTaskList::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .nepTaskList::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .nepTaskList::-webkit-scrollbar-thumb {
+        background-color: var(--nepScrollbarThumb);
+        border-radius: 4px;
+    }
+
+    .nepInboxPage>[id$="-cont"] {
+        display: flex;
+        flex-direction: column;
+        gap: var(--mediumPadding);
+    }
+
+    .tabFullHeight {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        flex: 1 1 auto;
+        min-height: 0;
+    }
+
+    .scrollFlexFill {
+        height: 100%;
+        scrollbar-width: thin;
+        scrollbar-color: var(--nepScrollbarThumb) transparent;
+    }
+
+    .scrollFlexFill::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .scrollFlexFill::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .scrollFlexFill::-webkit-scrollbar-thumb {
+        background-color: var(--nepScrollbarThumb);
+        border-radius: 4px;
+    }
+
+    .diaUserTaskActionsFooter {
+        flex: 0 0 auto;
+        border-top: 1px solid var(--pf-surface);
+        padding-bottom: var(--mediumPadding);
+    }
+
+    @media screen and (max-width: 696px) {
+        .nepPageTitle .sapFDynamicPageTitleMain {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .nepPageTitle .sapFDynamicPageTitleMainNavigationArea {
+            margin-top: var(--tinyPadding);
+        }
+
+        .nepPageTitle .nepUpdateBtn {
+            margin-top: 0 !important;
+        }
+
+        .titleBox {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .nepPageTitle .sapFDynamicPageTitleMainNavigationAreaInner {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &.sapMApp {
+            overflow-y: auto;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .nepInboxPage>[id$="-cont"] {
+            overflow: visible;
+        }
+
+        .nepPageTitle {
+            flex: 0 0 auto;
+            min-height: auto;
+        }
+
+        .tabFullHeight {
+            flex: 0 0 auto;
+            min-height: auto;
+            height: auto !important;
+            overflow: visible;
+        }
+
+        .nepTaskList {
+            height: auto !important;
+            overflow: visible;
+        }
+
+        .nepSplitter {
+            height: auto !important;
+            overflow: visible;
+        }
+
+        .nepSplitter .sapUiLoSplitterContent {
+            display: block;
+            width: 100% !important;
+            height: auto !important;
+            overflow: visible;
+        }
+
+        .nepSplitter .sapUiLoSplitterBar {
+            display: none;
+        }
+    }
+
+    .tabFullHeight>[id$="-containerContent"],
+    .tabFullHeight>[id$="-containerContent"]>[id$="-content"] {
+        height: 100%;
+        box-sizing: border-box;
+        flex: 1 1 auto;
+        min-height: 0;
+    }
+
+    .tab30Height {
+        height: 30% !important;
+    }
+
+    .background {
+        background-color: transparent;
+    }
+
+    .nepFilterHeader {
+        box-shadow: none;
+    }
+
+    .titleBox {
+        background-color: var(--nepBrandBurgundy);
+        color: var(--nepBrand);
+        border-radius: var(--smallPadding);
+        min-width: fit-content;
+    }
+
+    .titleText {
+        color: var(--white);
+    }
+
+    .titleNumber {
+        color: var(--nepBrand);
+    }
+
+    .nepUpdateBtn {
+        height: 3rem;
+        box-sizing: border-box;
+    }
+
+    .nepUpdateBtn .sapMBtnInner {
+        height: 3rem;
+        box-sizing: border-box;
+        padding: 0 var(--mediumPadding);
+        line-height: 2rem;
+        font-size: var(--largeFont);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--nepBrand);
+        border: none;
+        border-radius: 2rem;
+        margin-inline-end: var(--smallPadding);
+    }
+
+    .nepUpdateBtn:focus>.sapMBtnInner::before {
+        border-color: transparent !important;
+    }
+
+    .nepFilterForm .sapUiFormCL {
+        padding: 20px;
+        border-radius: var(--smallPadding);
+    }
+
+    .nepDateFrom,
+    .nepDateTo,
+    .nepStatusField {
+        height: 3rem;
+    }
+
+    .nepDateFrom .sapMInputBaseIcon,
+    .nepDateTo .sapMInputBaseIcon {
+        color: var(--nepBrandBurgundy);
+        background-color: var(--nepBrand);
+        border-radius: 50%;
+        width: 1.75rem;
+        height: 1.75rem;
+        min-width: 1.75rem;
+        max-width: 1.75rem;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .nepDateFrom .sapMInputBaseIcon::before,
+    .nepDateTo .sapMInputBaseIcon::before {
+        position: relative;
+        top: -0.05rem;
+    }
+
+    .nepDateFrom .sapMInputBaseContentWrapper,
+    .nepDateTo .sapMInputBaseContentWrapper,
+    .nepStatusField .sapMInputBaseContentWrapper {
+        background-color: var(--pf-surface);
+        border-radius: var(--smallPadding);
+        padding: var(--tinyPadding) 0.75rem;
+        height: 3rem;
+        box-sizing: border-box;
+        border: none;
+        background-image: none;
+    }
+
+    .nepDateFrom .sapMInputBaseInner::placeholder,
+    .nepDateTo .sapMInputBaseInner::placeholder,
+    .nepStatusField .sapMInputBaseInner::placeholder {
+        font-size: var(--smallPadding);
+        font-style: normal;
+    }
+
+    .nepStatusField .sapMTokenIcon {
+        color: var(--nepBrandBurgundy);
+    }
+
+    .nepStatusField .sapMToken {
+        font-size: var(--largeFont);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        min-height: var(--mediumPadding);
+        border-radius: var(--smallPadding);
+        background-color: var(--nepBrand);
+    }
+
+    .nepStatusField .sapMToken:hover {
+        border-radius: var(--smallPadding) !important;
+    }
+
+    .nepStatusField .sapMToken .sapMTokenText {
+        font-size: var(--smallPadding);
+    }
+
+    .nepStatusField .sapMTokenIcon::before {
+        position: relative;
+        top: 0.15rem;
+    }
+
+    .tabFullHeight>[id$="-content"] {
+        background-color: transparent;
+    }
+
+    .tabFullHeight>[id$="--header"] {
+        padding-left: var(--smallPadding);
+        background-color: transparent;
+        border-bottom: 2px solid var(--nepBrandBurgundy);
+    }
+
+    [id$="InboxTab"].sapMITBSelected,
+    [id$="HistoryTab"].sapMITBSelected {
+        background-color: var(--nepBrandBurgundy);
+        border-radius: 0.5rem 0.5rem 0 0;
+        padding: 0 var(--smallPadding) !important;
+    }
+
+    [id$="InboxTab"].sapMITBSelected .sapMITBText,
+    [id$="InboxTab"].sapMITBSelected .sapMITBCount,
+    [id$="InboxTab"].sapMITBSelected .sapMITBIcon,
+    [id$="HistoryTab"].sapMITBSelected .sapMITBText,
+    [id$="HistoryTab"].sapMITBSelected .sapMITBCount,
+    [id$="HistoryTab"].sapMITBSelected .sapMITBIcon {
+        color: var(--white);
+    }
+
+    [id$="InboxTab"]:not(.sapMITBSelected) .sapMITBText,
+    [id$="InboxTab"]:not(.sapMITBSelected) .sapMITBCount,
+    [id$="InboxTab"]:not(.sapMITBSelected) .sapMITBIcon,
+    [id$="HistoryTab"]:not(.sapMITBSelected) .sapMITBText,
+    [id$="HistoryTab"]:not(.sapMITBSelected) .sapMITBCount,
+    [id$="HistoryTab"]:not(.sapMITBSelected) .sapMITBIcon {
+        color: var(--darkText);
+    }
+
+    [id$="InboxTab"].sapMITBSelected>.sapMITBFilterWrapper>.sapMITBContentArrow::after,
+    [id$="HistoryTab"].sapMITBSelected>.sapMITBFilterWrapper>.sapMITBContentArrow::after {
+        background-color: var(--nepBrandBurgundy);
+    }
+
+    .nepSplitter>.sapUiLoSplitterBar {
+        background-color: transparent;
+        color: var(--nepBrandBurgundy);
+    }
+
+    .nepSplitter [id$="-splitbar-0"]>div.sapUiLoSplitterBarDecorationAfter {
+        background-image: linear-gradient(to bottom, var(--nepBrandBurgundy), transparent);
+    }
+
+    .nepSplitter [id$="-splitbar-0"]>div.sapUiLoSplitterBarDecorationBefore {
+        background-image: linear-gradient(to top, var(--nepBrandBurgundy), transparent);
+    }
+
+    .nepSplitter.sapUiLoSplitterH>.sapUiLoSplitterBar,
+    .nepSplitter.sapUiLoSplitterH>.sapUiLoSplitterOverlay .sapUiLoSplitterOverlayBar {
+        border-left: none;
+        border-right: none;
+    }
+
+    .listItems {
+        border-radius: var(--smallPadding);
+    }
+
+    .nepTaskList .sapMListNoData {
+        background-color: transparent;
+    }
+
+    .nepEmbeddedInfo {
+        min-height: 25rem;
+        background-color: transparent;
+    }
+
+    .nepEmbeddedInfo>[id$="-cont"] {
+        overflow-y: auto !important;
+        scrollbar-width: thin;
+        scrollbar-color: var(--nepScrollbarThumb) transparent;
+    }
+
+    .nepEmbeddedInfo>[id$="-cont"]::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .nepEmbeddedInfo>[id$="-cont"]::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .nepEmbeddedInfo>[id$="-cont"]::-webkit-scrollbar-thumb {
+        background-color: var(--nepScrollbarThumb);
+        border-radius: 4px;
+    }
+}
+
+.nepInboxTheme .sapMPage.sapMPageBgStandard {
+    background-color: var(--pf-surface);
+}
+
+.nepInboxTheme .sapMFlexItem:has(>.scrollFlexFill) {
+    flex: 1 1 0%;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.nepInboxTheme .sapUiIconTitle {
+    text-align: justify;
+}

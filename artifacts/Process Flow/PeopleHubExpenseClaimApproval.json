@@ -1,0 +1,1051 @@
+{
+	"id": "a7353839-abc7-f111-bf5b-000d3aba8400",
+	"createdAt": "2026-10-14T08:42:44.983Z",
+	"createdBy": "antonio.neves@neptune-software.com",
+	"graph": {
+		"nodes": [
+			{
+				"id": "Event_start",
+				"type": "start",
+				"position": {
+					"x": 0,
+					"y": 161.5
+				},
+				"data": {
+					"label": "Start"
+				}
+			},
+			{
+				"id": "Activity_prepare",
+				"type": "runScript",
+				"position": {
+					"x": 195,
+					"y": 157.5
+				},
+				"data": {
+					"label": "Prepare approval",
+					"hasMultipleIncomingWarning": false,
+					"scriptId": "43142a57-b9c7-f111-bf5b-000d3aba8400"
+				}
+			},
+			{
+				"id": "Activity_emailApprovers",
+				"type": "sendEmail",
+				"position": {
+					"x": 565,
+					"y": 119.5
+				},
+				"data": {
+					"label": "Email approvers",
+					"hasMultipleIncomingWarning": false,
+					"to": "{Outputs>/Activity_prepare/approverEmails}",
+					"cc": "",
+					"bcc": "",
+					"templateId": "4f25c5c9-adc7-f111-bf5b-000d3aba8400",
+					"pdfAttachment": false,
+					"pdfTemplateId": "",
+					"pdfTokens": "",
+					"tokens": [
+						{
+							"name": "title",
+							"value": "{Outputs>/Activity_prepare/title}"
+						},
+						{
+							"name": "purpose",
+							"value": "{Outputs>/Activity_prepare/purpose}"
+						},
+						{
+							"name": "periodText",
+							"value": "{Outputs>/Activity_prepare/periodText}"
+						},
+						{
+							"name": "requesterName",
+							"value": "{Outputs>/Activity_prepare/requesterName}"
+						},
+						{
+							"name": "totalText",
+							"value": "{Outputs>/Activity_prepare/totalText}"
+						},
+						{
+							"name": "currency",
+							"value": "{Outputs>/Activity_prepare/currency}"
+						},
+						{
+							"name": "lineCount",
+							"value": "{Outputs>/Activity_prepare/lineCount}"
+						},
+						{
+							"name": "checksText",
+							"value": "{Outputs>/Activity_prepare/checksText}"
+						},
+						{
+							"name": "recommendationText",
+							"value": "{Outputs>/Activity_prepare/recommendationText}"
+						},
+						{
+							"name": "recommendationColor",
+							"value": "{Outputs>/Activity_prepare/recommendationColor}"
+						},
+						{
+							"name": "recommendationBg",
+							"value": "{Outputs>/Activity_prepare/recommendationBg}"
+						}
+					]
+				}
+			},
+			{
+				"id": "Activity_approval",
+				"type": "userTask",
+				"position": {
+					"x": 935,
+					"y": 138.5
+				},
+				"data": {
+					"label": "Approve expense claim",
+					"hasMultipleIncomingWarning": false,
+					"title": "Expense claim: {Outputs>/Activity_prepare/title} ({Outputs>/Activity_prepare/totalText} EUR)",
+					"description": "{Outputs>/Activity_prepare/summary}",
+					"approverGroup": {
+						"roles": [
+							"2a1fd5f8-c2c7-f111-bf5b-000d3aba8400"
+						],
+						"users": []
+					},
+					"taskActions": [
+						{
+							"id": "58416111-ad5f-4f65-d799-36e6a1183908",
+							"title": "Approve",
+							"value": "approve"
+						},
+						{
+							"id": "75bb9a33-7405-4b21-98e8-6fd5836de976",
+							"title": "Reject",
+							"value": "reject"
+						}
+					],
+					"embeddedInfo": {
+						"id": "f549828f-aacd-4536-dc7c-48c2c433c4d6",
+						"type": "application",
+						"title": "",
+						"appInfo": {
+							"appName": "peoplehubexpenseclaimapproval",
+							"startParams": "{\"claimid\": \"{Outputs>/Activity_prepare/claimid}\", \"recommendation\": \"{Outputs>/Activity_prepare/recommendation}\", \"summary\": \"{Outputs>/Activity_prepare/summary}\"}"
+						}
+					}
+				}
+			},
+			{
+				"id": "Gateway_decision",
+				"type": "exclusiveGateway",
+				"position": {
+					"x": 1305,
+					"y": 138.5
+				},
+				"data": {
+					"label": "Decision",
+					"hasMergeWarning": false,
+					"mergeWarning": null,
+					"changeCounter": 0,
+					"conditions": [
+						{
+							"id": "760e53f3-2b9f-49f5-9903-65f1953dc3c0",
+							"label": "Approve",
+							"isExpression": false,
+							"builderData": [
+								{
+									"type": "atomic",
+									"id": "7bba53a1-efa4-4901-b38a-231c9e9b8f07",
+									"left": {
+										"kind": "taskOutput",
+										"name": "approverDecision",
+										"path": "/Activity_approval"
+									},
+									"operator": "===",
+									"operatorText": "is equal to",
+									"operatorValueType": "string",
+									"right": {
+										"kind": "value",
+										"name": "approve",
+										"valueType": "string"
+									},
+									"aggregator": "AND"
+								}
+							],
+							"expression": "{= ${Outputs>/Activity_approval/approverDecision} === 'approve'}"
+						},
+						{
+							"id": "3a36c52c-5015-4c6d-df0b-3a757690a225",
+							"label": "Reject",
+							"isExpression": false,
+							"builderData": [
+								{
+									"type": "atomic",
+									"id": "2695b9fe-8c17-4e8c-86d2-7a5864dbee5f",
+									"left": {
+										"kind": "taskOutput",
+										"name": "approverDecision",
+										"path": "/Activity_approval"
+									},
+									"operator": "===",
+									"operatorText": "is equal to",
+									"operatorValueType": "string",
+									"right": {
+										"kind": "value",
+										"name": "reject",
+										"valueType": "string"
+									},
+									"aggregator": "AND"
+								}
+							],
+							"expression": "{= ${Outputs>/Activity_approval/approverDecision} === 'reject'}"
+						}
+					]
+				}
+			},
+			{
+				"id": "Activity_approve",
+				"type": "runScript",
+				"position": {
+					"x": 1675,
+					"y": 277
+				},
+				"data": {
+					"label": "Approve claim",
+					"hasMultipleIncomingWarning": false,
+					"scriptId": "8280eb5f-b9c7-f111-bf5b-000d3aba8400"
+				}
+			},
+			{
+				"id": "Activity_reject",
+				"type": "runScript",
+				"position": {
+					"x": 1675,
+					"y": 38
+				},
+				"data": {
+					"label": "Reject claim",
+					"hasMultipleIncomingWarning": false,
+					"scriptId": "7791c36a-b9c7-f111-bf5b-000d3aba8400"
+				}
+			},
+			{
+				"id": "Activity_emailApproved",
+				"type": "sendEmail",
+				"position": {
+					"x": 2045,
+					"y": 239
+				},
+				"data": {
+					"label": "Email requester (approved)",
+					"hasMultipleIncomingWarning": false,
+					"to": "{Outputs>/Activity_prepare/requesterEmail}",
+					"cc": "",
+					"bcc": "",
+					"templateId": "323335b2-aec7-f111-bf5b-000d3aba8400",
+					"pdfAttachment": false,
+					"pdfTemplateId": "",
+					"pdfTokens": "",
+					"tokens": [
+						{
+							"name": "title",
+							"value": "{Outputs>/Activity_prepare/title}"
+						},
+						{
+							"name": "periodText",
+							"value": "{Outputs>/Activity_prepare/periodText}"
+						},
+						{
+							"name": "totalText",
+							"value": "{Outputs>/Activity_prepare/totalText}"
+						},
+						{
+							"name": "currency",
+							"value": "{Outputs>/Activity_prepare/currency}"
+						},
+						{
+							"name": "statusBg",
+							"value": "{Outputs>/Activity_approve/statusBg}"
+						},
+						{
+							"name": "statusColor",
+							"value": "{Outputs>/Activity_approve/statusColor}"
+						},
+						{
+							"name": "decisionText",
+							"value": "{Outputs>/Activity_approve/decisionText}"
+						},
+						{
+							"name": "decisionText",
+							"value": "{Outputs>/Activity_approve/decisionText}"
+						},
+						{
+							"name": "decidedBy",
+							"value": "{Outputs>/Activity_approve/decidedBy}"
+						},
+						{
+							"name": "statusNote",
+							"value": "{Outputs>/Activity_approve/statusNote}"
+						}
+					]
+				}
+			},
+			{
+				"id": "Activity_emailRejected",
+				"type": "sendEmail",
+				"position": {
+					"x": 2043.8159771754636,
+					"y": -85.24964336661913
+				},
+				"data": {
+					"label": "Email requester (rejected)",
+					"hasMultipleIncomingWarning": false,
+					"to": "{Outputs>/Activity_prepare/requesterEmail}",
+					"cc": "",
+					"bcc": "",
+					"templateId": "323335b2-aec7-f111-bf5b-000d3aba8400",
+					"pdfAttachment": false,
+					"pdfTemplateId": "",
+					"pdfTokens": "",
+					"tokens": [
+						{
+							"name": "title",
+							"value": "{Outputs>/Activity_prepare/title}"
+						},
+						{
+							"name": "periodText",
+							"value": "{Outputs>/Activity_prepare/periodText}"
+						},
+						{
+							"name": "totalText",
+							"value": "{Outputs>/Activity_prepare/totalText}"
+						},
+						{
+							"name": "currency",
+							"value": "{Outputs>/Activity_prepare/currency}"
+						},
+						{
+							"name": "statusBg",
+							"value": "{Outputs>/Activity_reject/statusBg}"
+						},
+						{
+							"name": "statusColor",
+							"value": "{Outputs>/Activity_reject/statusColor}"
+						},
+						{
+							"name": "decisionText",
+							"value": "{Outputs>/Activity_reject/decisionText}"
+						},
+						{
+							"name": "decisionText",
+							"value": "{Outputs>/Activity_reject/decisionText}"
+						},
+						{
+							"name": "decidedBy",
+							"value": "{Outputs>/Activity_reject/decidedBy}"
+						},
+						{
+							"name": "statusNote",
+							"value": "{Outputs>/Activity_reject/statusNote}"
+						}
+					]
+				}
+			},
+			{
+				"id": "Event_end",
+				"type": "end",
+				"position": {
+					"x": 2415,
+					"y": 161.5
+				},
+				"data": {
+					"label": "End"
+				}
+			}
+		],
+		"edges": [
+			{
+				"id": "Flow_start_prepare",
+				"source": "Event_start",
+				"sourceHandle": "out-1",
+				"target": "Activity_prepare",
+				"targetHandle": "in-1",
+				"data": {
+					"isRouteAbove": false
+				}
+			},
+			{
+				"id": "Flow_prepare_email",
+				"source": "Activity_prepare",
+				"sourceHandle": "out-1",
+				"target": "Activity_emailApprovers",
+				"targetHandle": "in-1",
+				"data": {
+					"isRouteAbove": false
+				}
+			},
+			{
+				"id": "Flow_email_task",
+				"source": "Activity_emailApprovers",
+				"sourceHandle": "out-1",
+				"target": "Activity_approval",
+				"targetHandle": "in-1",
+				"data": {
+					"isRouteAbove": false
+				}
+			},
+			{
+				"id": "Flow_task_gateway",
+				"source": "Activity_approval",
+				"sourceHandle": "out-1",
+				"target": "Gateway_decision",
+				"targetHandle": "in-1",
+				"data": {
+					"isRouteAbove": false
+				}
+			},
+			{
+				"id": "Flow_gateway_approve",
+				"source": "Gateway_decision",
+				"sourceHandle": "760e53f3-2b9f-49f5-9903-65f1953dc3c0",
+				"target": "Activity_approve",
+				"targetHandle": "in-1",
+				"data": {
+					"isRouteAbove": false
+				}
+			},
+			{
+				"id": "Flow_gateway_reject",
+				"source": "Gateway_decision",
+				"sourceHandle": "3a36c52c-5015-4c6d-df0b-3a757690a225",
+				"target": "Activity_reject",
+				"targetHandle": "in-1",
+				"data": {
+					"isRouteAbove": false
+				}
+			},
+			{
+				"id": "Flow_approve_email",
+				"source": "Activity_approve",
+				"sourceHandle": "out-1",
+				"target": "Activity_emailApproved",
+				"targetHandle": "in-1",
+				"data": {
+					"isRouteAbove": false
+				}
+			},
+			{
+				"id": "Flow_reject_email",
+				"source": "Activity_reject",
+				"sourceHandle": "out-1",
+				"target": "Activity_emailRejected",
+				"targetHandle": "in-1",
+				"data": {
+					"isRouteAbove": false
+				}
+			},
+			{
+				"id": "Flow_approved_end",
+				"source": "Activity_emailApproved",
+				"sourceHandle": "out-1",
+				"target": "Event_end",
+				"targetHandle": "in-1",
+				"data": {
+					"isRouteAbove": false
+				}
+			},
+			{
+				"id": "Flow_rejected_end",
+				"source": "Activity_emailRejected",
+				"sourceHandle": "out-1",
+				"target": "Event_end",
+				"targetHandle": "in-1",
+				"data": {
+					"isRouteAbove": false
+				}
+			}
+		]
+	},
+	"interface": [
+		{
+			"id": "6c1e7b10-0000-4000-8000-000000000001",
+			"parent": "",
+			"name": "claimid",
+			"objectType": "string",
+			"description": "Expense claim to approve",
+			"required": true
+		},
+		{
+			"id": "6c1e7b10-0000-4000-8000-000000000002",
+			"parent": "",
+			"name": "requesterEmail",
+			"objectType": "string",
+			"description": "Email of the claim owner",
+			"required": false
+		},
+		{
+			"id": "6c1e7b10-0000-4000-8000-000000000003",
+			"parent": "",
+			"name": "requesterName",
+			"objectType": "string",
+			"description": "Name of the claim owner",
+			"required": false
+		},
+		{
+			"id": "59d29d6c-3b1d-4694-e383-435f9f6bf29d",
+			"parent": "",
+			"name": "claimid",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "87d3689b-a519-4d55-e5f2-e0495979a8f1",
+			"parent": "",
+			"name": "title",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "51492443-f200-46ad-85b9-ff1a251e2d46",
+			"parent": "",
+			"name": "purpose",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "74e4e112-4568-4733-f3b6-c9e6b282ba92",
+			"parent": "",
+			"name": "periodText",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "730b24ce-5540-4b8b-eadb-f029ec3c0088",
+			"parent": "",
+			"name": "requesterName",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "5ee4aa7d-6acb-48d4-a7e9-8ba7a68b9d4c",
+			"parent": "",
+			"name": "requesterEmail",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "a0e2a46d-35e2-493f-8284-8cd72b2e88d1",
+			"parent": "",
+			"name": "approverEmails",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "650b649d-f4c6-4460-f0ad-02ede3b580ec",
+			"parent": "",
+			"name": "totalText",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "69c61257-924b-496d-b2d3-177d80fe1d05",
+			"parent": "",
+			"name": "currency",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "b29d5be5-09fc-46fd-9f57-bb50e1a5e9d1",
+			"parent": "",
+			"name": "lineCount",
+			"objectType": "number",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "59398d72-33ff-4f8e-e0b1-62e1b435c08a",
+			"parent": "",
+			"name": "receiptCount",
+			"objectType": "number",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "033b9bf6-0061-4d35-9060-0aa0e12906ec",
+			"parent": "",
+			"name": "passCount",
+			"objectType": "number",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "330c6986-a9c9-4b41-9b7c-349d08a71b3c",
+			"parent": "",
+			"name": "warningCount",
+			"objectType": "number",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "6cf987ce-2e15-4d32-f7dc-c066fb6e555b",
+			"parent": "",
+			"name": "failCount",
+			"objectType": "number",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "a13d70eb-b1aa-45c6-ac8f-57e1e13e7924",
+			"parent": "",
+			"name": "notValidatedCount",
+			"objectType": "number",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "b82f634f-5799-4b2d-80b0-de89bc709665",
+			"parent": "",
+			"name": "checksText",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "92b28ff7-4448-4740-cc14-e889a04ba2c3",
+			"parent": "",
+			"name": "recommendation",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "065f4615-4b2e-4e42-f4fb-c824d79d9aa6",
+			"parent": "",
+			"name": "recommendationText",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "fc79b2b5-e599-4f9a-bff0-ca1ea9933a06",
+			"parent": "",
+			"name": "recommendationColor",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "db4c8607-55bb-4ab0-d5d2-73dff81cdada",
+			"parent": "",
+			"name": "recommendationBg",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "96e64a74-02a9-4e8f-d5e4-a43252958156",
+			"parent": "",
+			"name": "summary",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_prepare"
+		},
+		{
+			"id": "b910b3b8-affe-450f-e3c6-8eb5e482bbbd",
+			"parent": "",
+			"name": "claimid",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_approve"
+		},
+		{
+			"id": "58a4e508-5e9b-4c99-e2e9-d1945ede23d4",
+			"parent": "",
+			"name": "title",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_approve"
+		},
+		{
+			"id": "f9ca024b-a44b-4450-889e-0b9d41f7eb3b",
+			"parent": "",
+			"name": "decision",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_approve"
+		},
+		{
+			"id": "0aa675f4-7d2d-4d1d-d82a-3dcdc3527557",
+			"parent": "",
+			"name": "decisionText",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_approve"
+		},
+		{
+			"id": "32b762b8-5811-4cf7-97b5-a7e79c1381e8",
+			"parent": "",
+			"name": "decidedBy",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_approve"
+		},
+		{
+			"id": "c1465020-cf4f-4fde-f96c-d0fb8653f58b",
+			"parent": "",
+			"name": "statusColor",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_approve"
+		},
+		{
+			"id": "00274dee-e250-4edd-f195-857881b94e19",
+			"parent": "",
+			"name": "statusBg",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_approve"
+		},
+		{
+			"id": "f27e5130-a570-4d86-d5e3-cdcb9a12e0d5",
+			"parent": "",
+			"name": "statusNote",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_approve"
+		},
+		{
+			"id": "4611dc71-31c5-4480-ee17-e27a35735e1e",
+			"parent": "",
+			"name": "requesterEmail",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_approve"
+		},
+		{
+			"id": "0746ad94-7a9b-4f6a-ab44-2441a61c5520",
+			"parent": "",
+			"name": "claimid",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_reject"
+		},
+		{
+			"id": "c3759a66-ce66-4d08-f189-71be4413c98d",
+			"parent": "",
+			"name": "title",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_reject"
+		},
+		{
+			"id": "933cf6b5-6004-4e2b-c762-d8e8b96020bd",
+			"parent": "",
+			"name": "decision",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_reject"
+		},
+		{
+			"id": "564d1898-39a5-4f61-e330-88e7ec603b23",
+			"parent": "",
+			"name": "decisionText",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_reject"
+		},
+		{
+			"id": "d277f8ba-9edf-498c-c8f3-c4fda909457c",
+			"parent": "",
+			"name": "decidedBy",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_reject"
+		},
+		{
+			"id": "22bb188d-a116-4c7d-8fac-70094874a6b4",
+			"parent": "",
+			"name": "statusColor",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_reject"
+		},
+		{
+			"id": "2e6fc781-e7ad-4004-e9ba-8d4e88edc272",
+			"parent": "",
+			"name": "statusBg",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_reject"
+		},
+		{
+			"id": "f1bfd0b3-b88e-4fc7-8c97-852e31090645",
+			"parent": "",
+			"name": "statusNote",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_reject"
+		},
+		{
+			"id": "e04b5409-c208-4b64-9d65-c60f9573c41e",
+			"parent": "",
+			"name": "requesterEmail",
+			"objectType": "string",
+			"description": "",
+			"required": false,
+			"value": "",
+			"minLength": "",
+			"maxLength": "",
+			"default": "",
+			"example": "",
+			"sourceNodeId": "Activity_reject"
+		}
+	],
+	"testdata": {
+		"children": []
+	},
+	"name": "PeopleHubExpenseClaimApproval",
+	"ver": "26.10.15.0829",
+	"description": "Expense claim approval: started by script PeopleHubExpenseClaimSend (claim already Submitted) -> prepare -> email approvers -> user task (role PeopleHubApproverClaim) -> approve/reject -> email requester.",
+	"cleanupOnSuccess": false,
+	"archived": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"allowPublicRun": true,
+	"roles": []
+}

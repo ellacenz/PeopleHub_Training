@@ -1,0 +1,139 @@
+{
+	"id": "0ea424f5-8c07-4d1c-88cd-2f9919dc0d52",
+	"createdAt": "2026-10-12T14:56:53.390Z",
+	"createdBy": "joao.salvador@neptune-software.com",
+	"fields": [
+		{
+			"fieldName": "lineid",
+			"fieldType": "uuid",
+			"isUnique": true,
+			"description": "Unique identifier for the expense line.",
+			"isNullable": false,
+			"id": "f608f6ff-b0c3-4417-bc6a-979dcf01643a"
+		},
+		{
+			"fieldName": "claimid",
+			"fieldType": "uuid",
+			"isUnique": false,
+			"description": "Identifier for the associated claim.",
+			"isNullable": false,
+			"id": "d9a00399-bcbb-4cb8-c9a7-54ece1c3e7a1"
+		},
+		{
+			"fieldName": "expensedate",
+			"fieldType": "timestamp",
+			"isUnique": false,
+			"description": "The date the expense occurred.",
+			"isNullable": false,
+			"id": "4b8d2efc-7f37-4b9f-af5a-ea6a29e5326d"
+		},
+		{
+			"fieldName": "category",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "The category of the expense.",
+			"isNullable": false,
+			"id": "6e828b0d-3ed3-4cac-fb1b-68c1045e6137"
+		},
+		{
+			"fieldName": "merchant",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "The merchant where the expense was incurred.",
+			"isNullable": true,
+			"id": "176f2db9-bb9c-4bed-c300-863f97285985"
+		},
+		{
+			"fieldName": "amount",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"description": "The amount of the expense.",
+			"isNullable": false,
+			"precision": "19",
+			"scale": "4",
+			"id": "91007f29-1d32-4e31-8430-102e35f0b15f"
+		},
+		{
+			"fieldName": "currency",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "The currency of the expense.",
+			"isNullable": false,
+			"id": "27e2a809-9b72-4998-9d3a-b0cbef54fef6"
+		},
+		{
+			"fieldName": "rate",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"description": "The exchange rate applied.",
+			"isNullable": true,
+			"precision": "19",
+			"scale": "8",
+			"id": "c766a48b-30f3-4f5c-9cc3-d5a48c0f8b1d"
+		},
+		{
+			"fieldName": "ratedate",
+			"fieldType": "timestamp",
+			"isUnique": false,
+			"description": "The date the exchange rate was applied.",
+			"isNullable": true,
+			"id": "264c814b-2139-4eca-c765-87f7c3af14df"
+		},
+		{
+			"fieldName": "amounteur",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"description": "The amount converted to EUR.",
+			"isNullable": true,
+			"precision": "19",
+			"scale": "4",
+			"id": "678736b4-100f-4062-8dab-135aa8ee0841"
+		},
+		{
+			"fieldName": "distancekm",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"description": "Distance in kilometers if applicable.",
+			"isNullable": true,
+			"precision": "10",
+			"scale": "2",
+			"id": "4ebc56ce-476c-4507-f169-cb391bcfc140"
+		},
+		{
+			"fieldName": "description",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Additional details about the expense.",
+			"isNullable": true,
+			"id": "c18c3b0f-15b4-46f5-8f15-991864b94201"
+		},
+		{
+			"fieldName": "receiptid",
+			"fieldType": "uuid",
+			"isUnique": false,
+			"description": "Reference to the uploaded receipt file.",
+			"isNullable": true,
+			"id": "ff348778-c6f8-44f2-a013-02244b0b6e71"
+		},
+		{
+			"fieldName": "policyflags",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Flags indicating policy compliance status.",
+			"isNullable": true,
+			"id": "d668f01b-79ec-4c6a-e216-3d72b0d28fb7"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"vectorStoreConfig": {},
+	"name": "peoplehubexpenseline",
+	"description": "A table to store individual expense line items associated with a claim.",
+	"ver": "26.10.14.1049",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"generationStrategy": "uuid",
+	"rolesRead": [],
+	"rolesWrite": []
+}

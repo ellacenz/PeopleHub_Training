@@ -1,0 +1,2 @@
+window.addEventListener('offline', function() { sap.m.MessageToast.show('Offline - showing cached tasks.'); });
+window.addEventListener('online', function() { sap.m.MessageToast.show('Back online.'); });

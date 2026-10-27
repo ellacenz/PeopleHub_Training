@@ -1,0 +1,24 @@
+{
+	"id": "be852cc1-359e-4b72-8a5e-5a0b17e909eb",
+	"createdAt": "2026-10-12T14:57:00.213Z",
+	"createdBy": "joao.salvador@neptune-software.com",
+	"attributes": [],
+	"locales": [
+		{
+			"isoCode": "EN",
+			"locale": "en"
+		}
+	],
+	"name": "odata_test",
+	"description": null,
+	"fallbackLocale": "EN",
+	"application": "odata_test",
+	"ver": "26.10.09.0801",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"active": true,
+	"deleted": false,
+	"baseModelId": null,
+	"enhancedBy": [],
+	"baseModel": null,
+	"apps": []
+}

@@ -1,0 +1,32 @@
+{
+	"id": "bbdda6c0-c0ce-f111-bf5b-7ced8d2c6615",
+	"createdAt": "2026-10-23T09:04:29.730Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"scripts": [
+		{
+			"id": "3DE5A870-C0CE-F111-BF5B-7CED8D2C6615",
+			"name": "OnboardingReminder",
+			"number": 1,
+			"abort": true,
+			"continue": false,
+			"skipto": false
+		}
+	],
+	"name": "OnboardingReminder",
+	"description": "Daily onboarding reminder: progress, overdue tasks and tasks due in the next 14 days",
+	"alertEmail": null,
+	"active": false,
+	"intervalMonths": null,
+	"intervalDays": 1,
+	"intervalHours": null,
+	"intervalMinutes": null,
+	"intervalSeconds": null,
+	"maxRuntimeSeconds": "0",
+	"restartMaxRuntimeAbort": false,
+	"startdate": "2026-10-23T09:03:12.000Z",
+	"stopdate": "9999-12-31T10:03:00.000Z",
+	"executeInNextCycle": false,
+	"ver": "26.10.23.0905",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"runAsUser": "3c752340-91c1-4510-a2ce-a7f1733d67f2"
+}

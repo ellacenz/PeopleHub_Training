@@ -1,0 +1,1916 @@
+{
+	"id": "fb6fecd7-3cc9-f111-bf5b-000d3ab82ee9",
+	"createdAt": "2026-10-16T08:37:39.300Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"interface": [
+		{
+			"id": "9ec76818-80f0-469e-87e5-fdebbc6b97bd",
+			"parent": "",
+			"name": "header",
+			"objectType": "object",
+			"objectName": "header",
+			"description": ""
+		},
+		{
+			"id": "10a485bc-a4bb-44cf-a43f-d0fe8f7d7a42",
+			"parent": "9ec76818-80f0-469e-87e5-fdebbc6b97bd",
+			"name": "reference",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "1d892cd1-e746-4512-8290-9a9c9f997342",
+			"parent": "",
+			"name": "employee",
+			"objectType": "object",
+			"objectName": "employee",
+			"description": ""
+		},
+		{
+			"id": "ed9d8780-13b3-4399-85e6-85236c6be5ed",
+			"parent": "1d892cd1-e746-4512-8290-9a9c9f997342",
+			"name": "name",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "ea764361-39a7-4a58-af62-0a05b6ae4438",
+			"parent": "1d892cd1-e746-4512-8290-9a9c9f997342",
+			"name": "pernr",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "a7e5bbac-d2f5-495a-8eaf-40c9b7914277",
+			"parent": "1d892cd1-e746-4512-8290-9a9c9f997342",
+			"name": "orgUnit",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "5bea6d2f-cfad-4eb5-a5b8-b1f6d417d744",
+			"parent": "1d892cd1-e746-4512-8290-9a9c9f997342",
+			"name": "manager",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "651a40c8-ec86-4e5a-9099-475ee6ca3983",
+			"parent": "",
+			"name": "leave",
+			"objectType": "object",
+			"objectName": "leave",
+			"description": ""
+		},
+		{
+			"id": "cbe6ffc3-7ec8-40fc-b0e8-9cc2853f1bc6",
+			"parent": "651a40c8-ec86-4e5a-9099-475ee6ca3983",
+			"name": "type",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "3a29b4d0-de7e-4ad9-886f-ec69caf9f3d1",
+			"parent": "651a40c8-ec86-4e5a-9099-475ee6ca3983",
+			"name": "startDate",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "896a52de-48ef-4a1c-b6ad-824807e9c008",
+			"parent": "651a40c8-ec86-4e5a-9099-475ee6ca3983",
+			"name": "endDate",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "363e04ae-b737-44e2-9f08-5b3c7c077a49",
+			"parent": "651a40c8-ec86-4e5a-9099-475ee6ca3983",
+			"name": "workingDays",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "4d318d75-a15b-4333-83b9-822fa43e4923",
+			"parent": "651a40c8-ec86-4e5a-9099-475ee6ca3983",
+			"name": "holidaysText",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "d685c967-7a9c-47d0-b296-e398de81b50d",
+			"parent": "",
+			"name": "balance",
+			"objectType": "object",
+			"objectName": "balance",
+			"description": ""
+		},
+		{
+			"id": "6d03b64c-ab01-450e-a8f2-6a46259f63c2",
+			"parent": "d685c967-7a9c-47d0-b296-e398de81b50d",
+			"name": "quota",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "a4e4e767-e575-4e02-95e5-d6fa222c3d89",
+			"parent": "d685c967-7a9c-47d0-b296-e398de81b50d",
+			"name": "sapRemaining",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "4bd90bfc-b369-4d92-bc50-ba97025d4f9e",
+			"parent": "d685c967-7a9c-47d0-b296-e398de81b50d",
+			"name": "booked",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "22f3649d-98cd-4836-8312-6793685e37f3",
+			"parent": "d685c967-7a9c-47d0-b296-e398de81b50d",
+			"name": "available",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "c4d39549-f620-47b4-b4b0-89aa988dea60",
+			"parent": "",
+			"name": "approval",
+			"objectType": "object",
+			"objectName": "approval",
+			"description": ""
+		},
+		{
+			"id": "95729816-3266-4ea9-a92f-d32bde63a3e8",
+			"parent": "c4d39549-f620-47b4-b4b0-89aa988dea60",
+			"name": "by",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "be32093e-fa2f-4549-b545-ff97d00971a3",
+			"parent": "c4d39549-f620-47b4-b4b0-89aa988dea60",
+			"name": "on",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "f2dfc523-ace9-433c-9eb4-c059f325eaa3",
+			"parent": "c4d39549-f620-47b4-b4b0-89aa988dea60",
+			"name": "comment",
+			"objectType": "string",
+			"description": ""
+		},
+		{
+			"id": "c3f2e755-1e53-4936-b9d9-e9818d3ac188",
+			"parent": "",
+			"name": "meta",
+			"objectType": "object",
+			"objectName": "meta",
+			"description": ""
+		},
+		{
+			"id": "5d37064e-1f99-4c67-a5c6-bb8ccaacec3c",
+			"parent": "c3f2e755-1e53-4936-b9d9-e9818d3ac188",
+			"name": "generatedOn",
+			"objectType": "string",
+			"description": ""
+		}
+	],
+	"connectorSettings": null,
+	"objects": [
+		{
+			"fieldNo": "5df2e957-fe5b-456e-8795-a67cfdfab43c",
+			"fieldName": "Settings",
+			"fieldParent": 0,
+			"fieldPos": 1,
+			"fieldType": "neptune.pdf.settings",
+			"attributes": [
+				{
+					"attribute": "pageMargins",
+					"grouping": "Page",
+					"script": "",
+					"value": "[50,50,50,70]",
+					"translation": []
+				}
+			],
+			"fieldDescription": "PDF Settings"
+		},
+		{
+			"fieldNo": "c4a49fa3-32c6-4818-a7f9-d6f657b8bf05",
+			"fieldName": "Header",
+			"fieldParent": 0,
+			"fieldPos": 2,
+			"fieldType": "neptune.pdf.header",
+			"attributes": []
+		},
+		{
+			"fieldNo": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldName": "Content",
+			"fieldParent": 0,
+			"fieldPos": 3,
+			"fieldType": "neptune.pdf.content",
+			"attributes": [],
+			"fieldDescription": "Main PDF content area"
+		},
+		{
+			"fieldNo": "cd26ab57-55db-4036-a04b-8efd4df75ac0",
+			"fieldName": "CanvasBand",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 4,
+			"fieldType": "neptune.pdf.canvas",
+			"attributes": [
+				{
+					"attribute": "w",
+					"grouping": "Properties",
+					"script": "",
+					"value": "495",
+					"translation": []
+				},
+				{
+					"attribute": "h",
+					"grouping": "Properties",
+					"script": "",
+					"value": "80",
+					"translation": []
+				},
+				{
+					"attribute": "r",
+					"grouping": "Properties",
+					"script": "",
+					"value": "10",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Properties",
+					"script": "",
+					"value": "#38112A",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "1f3ab81d-f198-480e-8132-4413127ce6f3",
+			"fieldName": "CanvasAccent",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 5,
+			"fieldType": "neptune.pdf.canvas",
+			"attributes": [
+				{
+					"attribute": "w",
+					"grouping": "Properties",
+					"script": "",
+					"value": "495",
+					"translation": []
+				},
+				{
+					"attribute": "h",
+					"grouping": "Properties",
+					"script": "",
+					"value": "4",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Properties",
+					"script": "",
+					"value": "#FF9E33",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "d2004202-9c10-461d-add6-cf252f2859f8",
+			"fieldName": "StackBrand",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 6,
+			"fieldType": "neptune.pdf.stack",
+			"attributes": [
+				{
+					"attribute": "x",
+					"grouping": "Position",
+					"script": "",
+					"value": "70",
+					"translation": []
+				},
+				{
+					"attribute": "y",
+					"grouping": "Position",
+					"script": "",
+					"value": "72",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "9364421f-6252-4d8a-bd7d-a9b97900c825",
+			"fieldName": "TextBrand",
+			"fieldParent": "d2004202-9c10-461d-add6-cf252f2859f8",
+			"fieldPos": 7,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "PeopleHub",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "20",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#ffffff",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "debe8c2e-e448-407e-a7b2-4706e3790d6e",
+			"fieldName": "TextBrandSub",
+			"fieldParent": "d2004202-9c10-461d-add6-cf252f2859f8",
+			"fieldPos": 8,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "People Team",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "10",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#FF9E33",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "8950e93a-762d-4482-821c-ff146b8e0013",
+			"fieldName": "StackBand",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 9,
+			"fieldType": "neptune.pdf.stack",
+			"attributes": [
+				{
+					"attribute": "x",
+					"grouping": "Position",
+					"script": "",
+					"value": "300",
+					"translation": []
+				},
+				{
+					"attribute": "y",
+					"grouping": "Position",
+					"script": "",
+					"value": "70",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "2def965b-bc6b-4d67-8570-5d63254f9936",
+			"fieldName": "TextBandTitle",
+			"fieldParent": "8950e93a-762d-4482-821c-ff146b8e0013",
+			"fieldPos": 10,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "LEAVE CONFIRMATION",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "15",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#ffffff",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "d7791d6c-afa0-499a-93c7-a07fc704c7f1",
+			"fieldName": "TextBandReference",
+			"fieldParent": "8950e93a-762d-4482-821c-ff146b8e0013",
+			"fieldPos": 11,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "Reference {/header/reference}",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "11",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#ffffff",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "7da84531-17b3-457c-98f6-ff67db4defc1",
+			"fieldName": "TextHeadline",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 12,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "Your leave is approved.",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "24",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				},
+				{
+					"attribute": "top",
+					"grouping": "Margin",
+					"script": "",
+					"value": "26",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "fd686e17-e4d7-4058-837c-dcfec74436cf",
+			"fieldName": "TextIntro",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 13,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "Keep this confirmation for your records.",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "11",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#6E5774",
+					"translation": []
+				},
+				{
+					"attribute": "bottom",
+					"grouping": "Margin",
+					"script": "",
+					"value": "16",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "723d99ca-81fc-419e-b3b7-1c9ca883a64e",
+			"fieldName": "TableEmployee",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 14,
+			"fieldType": "neptune.pdf.table",
+			"attributes": [
+				{
+					"attribute": "widths",
+					"grouping": "Properties",
+					"script": "",
+					"value": "['50%','50%']",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "ab3c2dbc-f69d-42ef-b19a-58e3d8919dd6",
+			"fieldName": "RowEmployee1",
+			"fieldParent": "723d99ca-81fc-419e-b3b7-1c9ca883a64e",
+			"fieldPos": 15,
+			"fieldType": "neptune.pdf.tablerow",
+			"attributes": []
+		},
+		{
+			"fieldNo": "83a2c7a5-5bf4-4369-ad39-2765f3d07a95",
+			"fieldName": "StackEmployee",
+			"fieldParent": "ab3c2dbc-f69d-42ef-b19a-58e3d8919dd6",
+			"fieldPos": 16,
+			"fieldType": "neptune.pdf.stack",
+			"attributes": [
+				{
+					"attribute": "top",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				},
+				{
+					"attribute": "bottom",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				},
+				{
+					"attribute": "left",
+					"grouping": "Margin",
+					"script": "",
+					"value": "8",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "b7d3ccef-cc85-4c13-8457-ea693051f966",
+			"fieldName": "TextEmployeeLabel",
+			"fieldParent": "83a2c7a5-5bf4-4369-ad39-2765f3d07a95",
+			"fieldPos": 17,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "EMPLOYEE",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "8",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#6E5774",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "d6e11235-a81d-431c-8c44-bcb6e8a1c5aa",
+			"fieldName": "TextEmployeeValue",
+			"fieldParent": "83a2c7a5-5bf4-4369-ad39-2765f3d07a95",
+			"fieldPos": 18,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "{/employee/name}",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "12",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "43926f55-ed21-48f1-8949-2c954ba46364",
+			"fieldName": "StackPernr",
+			"fieldParent": "ab3c2dbc-f69d-42ef-b19a-58e3d8919dd6",
+			"fieldPos": 19,
+			"fieldType": "neptune.pdf.stack",
+			"attributes": [
+				{
+					"attribute": "top",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				},
+				{
+					"attribute": "bottom",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				},
+				{
+					"attribute": "left",
+					"grouping": "Margin",
+					"script": "",
+					"value": "8",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "e66f46f6-5e59-4580-9f90-a748db7710c8",
+			"fieldName": "TextPernrLabel",
+			"fieldParent": "43926f55-ed21-48f1-8949-2c954ba46364",
+			"fieldPos": 20,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "PERSONNEL NO.",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "8",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#6E5774",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "9a8209dc-4f30-4b69-8f11-4ac67635f31b",
+			"fieldName": "TextPernrValue",
+			"fieldParent": "43926f55-ed21-48f1-8949-2c954ba46364",
+			"fieldPos": 21,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "{/employee/pernr}",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "12",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "7fa133d6-4346-4962-a11d-c5da00814c2a",
+			"fieldName": "RowEmployee2",
+			"fieldParent": "723d99ca-81fc-419e-b3b7-1c9ca883a64e",
+			"fieldPos": 22,
+			"fieldType": "neptune.pdf.tablerow",
+			"attributes": []
+		},
+		{
+			"fieldNo": "9899dc41-4e0d-44f8-9f6d-291c36a0eba1",
+			"fieldName": "StackOrgUnit",
+			"fieldParent": "7fa133d6-4346-4962-a11d-c5da00814c2a",
+			"fieldPos": 23,
+			"fieldType": "neptune.pdf.stack",
+			"attributes": [
+				{
+					"attribute": "top",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				},
+				{
+					"attribute": "bottom",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				},
+				{
+					"attribute": "left",
+					"grouping": "Margin",
+					"script": "",
+					"value": "8",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "2374d651-3993-4d1b-8805-ca291b9608c7",
+			"fieldName": "TextOrgUnitLabel",
+			"fieldParent": "9899dc41-4e0d-44f8-9f6d-291c36a0eba1",
+			"fieldPos": 24,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "ORGANISATIONAL UNIT",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "8",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#6E5774",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "db0e498e-4df2-4974-909f-d87fe876c611",
+			"fieldName": "TextOrgUnitValue",
+			"fieldParent": "9899dc41-4e0d-44f8-9f6d-291c36a0eba1",
+			"fieldPos": 25,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "{/employee/orgUnit}",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "12",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "5872b068-67af-445d-a288-88f858465704",
+			"fieldName": "StackManager",
+			"fieldParent": "7fa133d6-4346-4962-a11d-c5da00814c2a",
+			"fieldPos": 26,
+			"fieldType": "neptune.pdf.stack",
+			"attributes": [
+				{
+					"attribute": "top",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				},
+				{
+					"attribute": "bottom",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				},
+				{
+					"attribute": "left",
+					"grouping": "Margin",
+					"script": "",
+					"value": "8",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "c55696ad-1897-43df-8868-edb7ae7f6be3",
+			"fieldName": "TextManagerLabel",
+			"fieldParent": "5872b068-67af-445d-a288-88f858465704",
+			"fieldPos": 27,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "MANAGER (SAP)",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "8",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#6E5774",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "23c7c610-e555-4d8b-9b87-327162ede317",
+			"fieldName": "TextManagerValue",
+			"fieldParent": "5872b068-67af-445d-a288-88f858465704",
+			"fieldPos": 28,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "{/employee/manager}",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "12",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "b89f33ee-a9be-4bdd-95bc-7e2b8fb42211",
+			"fieldName": "TextLeaveTitle",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 29,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "Leave details",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "16",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				},
+				{
+					"attribute": "top",
+					"grouping": "Margin",
+					"script": "",
+					"value": "22",
+					"translation": []
+				},
+				{
+					"attribute": "bottom",
+					"grouping": "Margin",
+					"script": "",
+					"value": "8",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "3c6862aa-ff7d-424d-ab2a-e34b1bd5a7e6",
+			"fieldName": "TableLeave",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 30,
+			"fieldType": "neptune.pdf.table",
+			"attributes": [
+				{
+					"attribute": "headerRows",
+					"grouping": "Properties",
+					"script": "",
+					"value": "1",
+					"translation": []
+				},
+				{
+					"attribute": "widths",
+					"grouping": "Properties",
+					"script": "",
+					"value": "['34%','22%','22%','22%']",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "1045a41c-688b-4776-bd8f-0e9a3c8b764d",
+			"fieldName": "RowLeaveHeader",
+			"fieldParent": "3c6862aa-ff7d-424d-ab2a-e34b1bd5a7e6",
+			"fieldPos": 31,
+			"fieldType": "neptune.pdf.tablerow",
+			"attributes": []
+		},
+		{
+			"fieldNo": "505eeee1-c5a3-45f9-91a3-f6ce915864e1",
+			"fieldName": "TextLeaveHead0",
+			"fieldParent": "1045a41c-688b-4776-bd8f-0e9a3c8b764d",
+			"fieldPos": 32,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "Absence type",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "10",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#6E5774",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "0ec61f33-2e13-4df5-84c9-b1bb694c1fde",
+			"fieldName": "TextLeaveHead1",
+			"fieldParent": "1045a41c-688b-4776-bd8f-0e9a3c8b764d",
+			"fieldPos": 33,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "From",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "10",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#6E5774",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "6a147c42-10aa-42ec-bf28-f7bd3a48863c",
+			"fieldName": "TextLeaveHead2",
+			"fieldParent": "1045a41c-688b-4776-bd8f-0e9a3c8b764d",
+			"fieldPos": 34,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "To",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "10",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#6E5774",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "30d927a0-06c8-4a87-a2f4-1c8a26992c3c",
+			"fieldName": "TextLeaveHead3",
+			"fieldParent": "1045a41c-688b-4776-bd8f-0e9a3c8b764d",
+			"fieldPos": 35,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "Working days",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "10",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#6E5774",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "67a7366f-1104-4bb7-8405-6d3647340118",
+			"fieldName": "RowLeaveValues",
+			"fieldParent": "3c6862aa-ff7d-424d-ab2a-e34b1bd5a7e6",
+			"fieldPos": 36,
+			"fieldType": "neptune.pdf.tablerow",
+			"attributes": []
+		},
+		{
+			"fieldNo": "7d667038-a4ac-4529-8e8f-d5e5d5b3432f",
+			"fieldName": "TextLeaveValue0",
+			"fieldParent": "67a7366f-1104-4bb7-8405-6d3647340118",
+			"fieldPos": 37,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "{/leave/type}",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "12",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "036b09f9-945b-4c23-be11-a907890dd442",
+			"fieldName": "TextLeaveValue1",
+			"fieldParent": "67a7366f-1104-4bb7-8405-6d3647340118",
+			"fieldPos": 38,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "{/leave/startDate}",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "12",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "faf1036f-b06c-426f-b124-46c441e51fc2",
+			"fieldName": "TextLeaveValue2",
+			"fieldParent": "67a7366f-1104-4bb7-8405-6d3647340118",
+			"fieldPos": 39,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "{/leave/endDate}",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "12",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "50e13b24-0b2d-434a-9154-8cfa58b33b39",
+			"fieldName": "TextLeaveValue3",
+			"fieldParent": "67a7366f-1104-4bb7-8405-6d3647340118",
+			"fieldPos": 40,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "{/leave/workingDays}",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "12",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "e2c83d7d-4c38-44d6-b157-90a3865740fb",
+			"fieldName": "TextHolidays",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 41,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "{/leave/holidaysText}",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "9",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#6E5774",
+					"translation": []
+				},
+				{
+					"attribute": "top",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "14aaf21e-dcbb-42d6-ad67-4e9fb72bdeaf",
+			"fieldName": "TextBalanceTitle",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 42,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "Leave balance ({/balance/quota})",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "16",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				},
+				{
+					"attribute": "top",
+					"grouping": "Margin",
+					"script": "",
+					"value": "22",
+					"translation": []
+				},
+				{
+					"attribute": "bottom",
+					"grouping": "Margin",
+					"script": "",
+					"value": "8",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "b84e26e9-a9ce-4b7f-9307-0c082599c18b",
+			"fieldName": "TableBalance",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 43,
+			"fieldType": "neptune.pdf.table",
+			"attributes": [
+				{
+					"attribute": "widths",
+					"grouping": "Properties",
+					"script": "",
+					"value": "['34%','33%','33%']",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "841073bf-9194-40e2-9575-ce60441b1041",
+			"fieldName": "RowBalance",
+			"fieldParent": "b84e26e9-a9ce-4b7f-9307-0c082599c18b",
+			"fieldPos": 44,
+			"fieldType": "neptune.pdf.tablerow",
+			"attributes": []
+		},
+		{
+			"fieldNo": "e80da56b-e90c-433d-b1c8-8012ebaf5b6a",
+			"fieldName": "StackSapRemaining",
+			"fieldParent": "841073bf-9194-40e2-9575-ce60441b1041",
+			"fieldPos": 45,
+			"fieldType": "neptune.pdf.stack",
+			"attributes": [
+				{
+					"attribute": "top",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				},
+				{
+					"attribute": "bottom",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				},
+				{
+					"attribute": "left",
+					"grouping": "Margin",
+					"script": "",
+					"value": "8",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "6229f42a-a95b-4ca4-b537-f2317efe40dc",
+			"fieldName": "TextSapRemainingLabel",
+			"fieldParent": "e80da56b-e90c-433d-b1c8-8012ebaf5b6a",
+			"fieldPos": 46,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "REMAINING IN SAP",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "8",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#6E5774",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "ff984184-6d04-4209-b151-1fc0036b7797",
+			"fieldName": "TextSapRemainingValue",
+			"fieldParent": "e80da56b-e90c-433d-b1c8-8012ebaf5b6a",
+			"fieldPos": 47,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "{/balance/sapRemaining} day(s)",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "12",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "2881f368-70a2-464c-b4c7-00107b0741e5",
+			"fieldName": "StackBooked",
+			"fieldParent": "841073bf-9194-40e2-9575-ce60441b1041",
+			"fieldPos": 48,
+			"fieldType": "neptune.pdf.stack",
+			"attributes": [
+				{
+					"attribute": "top",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				},
+				{
+					"attribute": "bottom",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				},
+				{
+					"attribute": "left",
+					"grouping": "Margin",
+					"script": "",
+					"value": "8",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "a9316533-8968-4531-9281-b01ac9c36c3e",
+			"fieldName": "TextBookedLabel",
+			"fieldParent": "2881f368-70a2-464c-b4c7-00107b0741e5",
+			"fieldPos": 49,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "BOOKED IN NEPTUNE (INCL. THIS ONE)",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "8",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#6E5774",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "36a6ce84-c751-46ba-8519-80019e23dc7c",
+			"fieldName": "TextBookedValue",
+			"fieldParent": "2881f368-70a2-464c-b4c7-00107b0741e5",
+			"fieldPos": 50,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "{/balance/booked} day(s)",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "12",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "c600606d-d997-4c83-859f-f75bfdcc63ed",
+			"fieldName": "StackAvailable",
+			"fieldParent": "841073bf-9194-40e2-9575-ce60441b1041",
+			"fieldPos": 51,
+			"fieldType": "neptune.pdf.stack",
+			"attributes": [
+				{
+					"attribute": "top",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				},
+				{
+					"attribute": "bottom",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				},
+				{
+					"attribute": "left",
+					"grouping": "Margin",
+					"script": "",
+					"value": "8",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "c1c30782-6a4c-4449-b2e5-f0691c1b1540",
+			"fieldName": "TextAvailableLabel",
+			"fieldParent": "c600606d-d997-4c83-859f-f75bfdcc63ed",
+			"fieldPos": 52,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "AVAILABLE AFTER THIS REQUEST",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "8",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#6E5774",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "e2a1e48d-2533-4ff4-9b39-783d0c62df6c",
+			"fieldName": "TextAvailableValue",
+			"fieldParent": "c600606d-d997-4c83-859f-f75bfdcc63ed",
+			"fieldPos": 53,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "{/balance/available} day(s)",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "12",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "8aef2e7d-665a-4906-b119-ecf749d6c63f",
+			"fieldName": "TextApprovalTitle",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 54,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "Approval",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "16",
+					"translation": []
+				},
+				{
+					"attribute": "bold",
+					"grouping": "Font",
+					"script": "",
+					"value": "true",
+					"translation": []
+				},
+				{
+					"attribute": "top",
+					"grouping": "Margin",
+					"script": "",
+					"value": "22",
+					"translation": []
+				},
+				{
+					"attribute": "bottom",
+					"grouping": "Margin",
+					"script": "",
+					"value": "6",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "0cd13541-ebed-42cc-8c9a-0d40b19046bc",
+			"fieldName": "TextApprovedBy",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 55,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "Approved by {/approval/by} on {/approval/on}",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "12",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "6d0f91f2-b675-4388-9e12-d3fc5f82825b",
+			"fieldName": "TextApprovalComment",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 56,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "Comment: {/approval/comment}",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "12",
+					"translation": []
+				},
+				{
+					"attribute": "top",
+					"grouping": "Margin",
+					"script": "",
+					"value": "4",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "a3908a7c-de24-426b-b5fd-d910248f6731",
+			"fieldName": "TextNote",
+			"fieldParent": "3d861324-466f-4da3-802b-b74bd4d77ace",
+			"fieldPos": 57,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "Generated automatically. The absence is recorded in Neptune; SAP is not updated by this app.",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "9",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#6E5774",
+					"translation": []
+				},
+				{
+					"attribute": "top",
+					"grouping": "Margin",
+					"script": "",
+					"value": "34",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "70f86455-ec47-4e92-a293-762d069008b1",
+			"fieldName": "Footer",
+			"fieldParent": 0,
+			"fieldPos": 58,
+			"fieldType": "neptune.pdf.footer",
+			"attributes": []
+		},
+		{
+			"fieldNo": "a94991c1-3e3c-4eb1-9557-477a87dae073",
+			"fieldName": "ColumnsFooter",
+			"fieldParent": "70f86455-ec47-4e92-a293-762d069008b1",
+			"fieldPos": 59,
+			"fieldType": "neptune.pdf.columns",
+			"attributes": [
+				{
+					"attribute": "color",
+					"grouping": "Font",
+					"script": "",
+					"value": "#6E5774",
+					"translation": []
+				},
+				{
+					"attribute": "fontSize",
+					"grouping": "Font",
+					"script": "",
+					"value": "9",
+					"translation": []
+				},
+				{
+					"attribute": "left",
+					"grouping": "Margin",
+					"script": "",
+					"value": "50",
+					"translation": []
+				},
+				{
+					"attribute": "right",
+					"grouping": "Margin",
+					"script": "",
+					"value": "50",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "77bfca3d-c98c-431a-b3f0-66e25807fbea",
+			"fieldName": "TextFooterLeft",
+			"fieldParent": "a94991c1-3e3c-4eb1-9557-477a87dae073",
+			"fieldPos": 60,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "PeopleHub · People Team",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "6504331f-7966-4e35-b342-9411ef4e12be",
+			"fieldName": "TextFooterRight",
+			"fieldParent": "a94991c1-3e3c-4eb1-9557-477a87dae073",
+			"fieldPos": 61,
+			"fieldType": "neptune.pdf.text",
+			"attributes": [
+				{
+					"attribute": "text",
+					"grouping": "Properties",
+					"script": "",
+					"value": "Generated {/meta/generatedOn} · {/header/reference}",
+					"translation": []
+				},
+				{
+					"attribute": "alignment",
+					"grouping": "Font",
+					"script": "",
+					"value": "right",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "3fddce80-4b7a-4594-98b7-cbdf357f0db8",
+			"fieldName": "Default Style",
+			"fieldParent": 0,
+			"fieldPos": 62,
+			"fieldType": "neptune.pdf.defaultstyle",
+			"attributes": [
+				{
+					"attribute": "fontSize",
+					"grouping": "Properties",
+					"script": "",
+					"value": "11",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Properties",
+					"script": "",
+					"value": "#38112A",
+					"translation": []
+				}
+			]
+		},
+		{
+			"fieldNo": "6c5b5852-7133-4768-a0d7-7958c67744e4",
+			"fieldName": "Styles",
+			"fieldParent": 0,
+			"fieldPos": 63,
+			"fieldType": "neptune.pdf.styles",
+			"attributes": [],
+			"fieldDescription": "Define your custom styles and assign to objects"
+		},
+		{
+			"fieldNo": "0abb9696-9634-4d76-ac76-9b8f97e7e47e",
+			"fieldName": "StyleCard",
+			"fieldParent": "6c5b5852-7133-4768-a0d7-7958c67744e4",
+			"fieldPos": 64,
+			"fieldType": "neptune.pdf.style",
+			"attributes": [
+				{
+					"attribute": "background",
+					"grouping": "Properties",
+					"script": "",
+					"value": "#f3effc",
+					"translation": []
+				}
+			]
+		}
+	],
+	"application": "PeopleHubLeaveConfirmation",
+	"description": "PeopleHub leave approval confirmation (generated by PeopleHubLeaveRequestDecide)",
+	"status": "Active",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"disabled": false,
+	"testdata": "file:///testdata.js",
+	"ver": "26.10.16.0842",
+	"publicAccess": false,
+	"enableStorage": true,
+	"enableConnector": false,
+	"connector": null,
+	"dd": null,
+	"fonts": [],
+	"i18n": []
+}

@@ -1,0 +1,38 @@
+{
+	"id": "6c0a11c6-d6c7-f111-bf5b-000d3aba8400",
+	"createdAt": "2026-10-14T13:54:29.510Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "73a0ff58-1ace-44a8-9d26-1067e11ec610",
+			"name": "peoplehubexpenseclaim",
+			"contextname": "peoplehubexpenseclaim"
+		},
+		{
+			"id": "0ea424f5-8c07-4d1c-88cd-2f9919dc0d52",
+			"name": "peoplehubexpenseline",
+			"contextname": "peoplehubexpenseline"
+		},
+		{
+			"id": "6bf3fdb7-f9bb-4bea-a437-46c09d42f20c",
+			"name": "peoplehubexpensepolicy",
+			"contextname": "peoplehubexpensepolicy"
+		}
+	],
+	"agents": [],
+	"processFlows": [],
+	"apis": [],
+	"name": "PeopleHubExpenseClaimSend",
+	"ver": "26.10.14.1356",
+	"description": "POST { claimid }: checks the claim, sets it to Submitted (one send only) and starts the process flow PeopleHubExpenseClaimApproval.",
+	"folder": "04_approval",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "6411635b-3295-489d-a5b0-674945933aca",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2"
+}

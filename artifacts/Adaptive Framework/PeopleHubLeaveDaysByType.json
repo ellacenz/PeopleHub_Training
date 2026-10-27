@@ -1,0 +1,135 @@
+{
+	"id": "1dbea1bf-54cd-f111-bf5b-000d3ab0a70f",
+	"createdAt": "2026-10-21T13:38:51.116Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"settings": {
+		"properties": {
+			"report": {
+				"paginationRows": "14",
+				"updateTime": 0,
+				"initialGroupField": ""
+			},
+			"form": {
+				"enableCompact": false,
+				"showFilter": false
+			},
+			"table": {
+				"titleAlign": "center",
+				"chartHeight": "260",
+				"chartType": "column",
+				"enableSorting": false,
+				"enableMonochrome": false,
+				"pieInnerSize": 0,
+				"enable3D": false,
+				"alpha3D": 0,
+				"beta3D": 0,
+				"depth3D": 100,
+				"legendEnable": false,
+				"legendAlign": "center",
+				"legendVerticalAlign": "bottom",
+				"legendLayout": "horizontal",
+				"xAxisTitleEnable": false,
+				"xAxisReversed": false,
+				"xAxisStartOnTick": true,
+				"xAxisGridLineWidth": 0,
+				"yAxisTitleEnable": false,
+				"yAxisReversed": false,
+				"yAxisStartOnTick": true,
+				"yAxisGridLineWidth": 1
+			}
+		},
+		"fieldCatalog": [
+			{
+				"name": "TYPE_TEXT",
+				"label": "Absence type",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "STATUS",
+				"label": "Status",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "WORKING_DAYS",
+				"label": "Working days",
+				"type": "decimal",
+				"usage": "BOTH"
+			},
+			{
+				"name": "EMPLOYEE_NAME",
+				"label": "Employee",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "START_DATE",
+				"label": "Start date",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "createdBy",
+				"label": "Created By",
+				"type": "text",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [],
+		"fieldsRun": [
+			{
+				"visible": true,
+				"name": "WORKING_DAYS",
+				"text": "Working days",
+				"enableFilter": false,
+				"fieldPos": 1,
+				"type": "value"
+			},
+			{
+				"visible": true,
+				"name": "TYPE_TEXT",
+				"text": "Absence type",
+				"fieldPos": 2,
+				"type": "category"
+			}
+		],
+		"defaultVariant": {
+			"id": "",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		},
+		"translation": {
+			"EN": {
+				"report": {},
+				"form": {},
+				"table": {},
+				"fieldCatalog": {}
+			}
+		},
+		"table": "peoplehubleaverequest"
+	},
+	"name": "PeopleHubLeaveDaysByType",
+	"description": "Leave days by absence type (tile chart)",
+	"group": "",
+	"type": "C",
+	"connectorid": "5755ed8e-54cd-f111-bf5b-000d3ab0a70f",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "26.10.21.1338",
+	"disabled": false,
+	"appType": "A",
+	"application": "neptunedxp_adaptive_tile_chart",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null,
+	"i18n": []
+}

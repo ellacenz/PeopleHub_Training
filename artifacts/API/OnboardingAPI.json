@@ -1,0 +1,342 @@
+{
+	"id": "1b635ce9-38cd-f111-bf5b-000d3ab0a70f",
+	"createdAt": "2026-10-21T10:19:35.296Z",
+	"createdBy": "joao.salvador@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "5306a9eb-d32f-4dcc-9404-62eae24b196e",
+			"path": "/onboardingtask",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				},
+				{
+					"name": "select",
+					"description": "fieldName1, fieldname2, fieldName3"
+				},
+				{
+					"name": "take",
+					"description": "Limit (paginated) - max number of entities that should be taken"
+				},
+				{
+					"name": "skip",
+					"description": "Offset (paginated) from where entities should be taken"
+				},
+				{
+					"name": "order",
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}"
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": "200",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "onboardingtask"
+						}
+					]
+				},
+				{
+					"status": "400",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "8b5674c7-7570-4b83-a0f3-da44d772a720",
+			"path": "/onboardingtask",
+			"method": "PUT",
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectTyoe": "array",
+					"name": "onboardingtask"
+				}
+			],
+			"responses": [
+				{
+					"status": "200",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "onboardingtask"
+						}
+					]
+				},
+				{
+					"status": "400",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "1421c170-4d00-48a7-9209-dcbeb9c33570",
+			"path": "/onboardingtask",
+			"method": "POST",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [
+				{
+					"objectTyoe": "array",
+					"name": "onboardingtask"
+				}
+			],
+			"responses": [
+				{
+					"status": "200",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "onboardingtask"
+						}
+					]
+				},
+				{
+					"status": "400",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "4a835bf9-b032-4ce6-907b-a860ab4d7aca",
+			"path": "/onboardingtask",
+			"method": "DELETE",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": "200",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "onboardingtask"
+						}
+					]
+				},
+				{
+					"status": "400",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "c2ccc29e-c966-47cd-8975-268365a058c8",
+			"path": "/onboardingtask/count",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": "200",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "count"
+						}
+					]
+				},
+				{
+					"status": "400",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "536b2083-bddc-4d49-b72b-ee852236f0b2",
+			"name": "onboardingtask",
+			"properties": [
+				{
+					"id": "01fce820-5da1-4ba2-9aec-367f80f25783",
+					"parent": "",
+					"name": "id",
+					"description": "Unique record ID",
+					"objectType": "string"
+				},
+				{
+					"id": "754053c4-ff29-4bc1-bad7-44ac70b14b0d",
+					"parent": "",
+					"name": "title",
+					"objectType": "string"
+				},
+				{
+					"id": "658c6441-bbef-4fd0-b629-f316649a3c79",
+					"parent": "",
+					"name": "dueDate",
+					"objectType": "string"
+				},
+				{
+					"id": "1966971a-3afa-42ea-884b-fc9f6504916c",
+					"parent": "",
+					"name": "done",
+					"objectType": "boolean"
+				},
+				{
+					"id": "415aee6a-69aa-4405-9677-5d4758a6a78c",
+					"parent": "",
+					"name": "createdAt",
+					"description": "Date when record was created",
+					"objectType": "number"
+				},
+				{
+					"id": "df18c353-348a-4aee-9c51-570ae9e232be",
+					"parent": "",
+					"name": "createdBy",
+					"description": "Created by",
+					"objectType": "string"
+				},
+				{
+					"id": "11d02c74-0049-4684-96ab-ea3e9937ff46",
+					"parent": "",
+					"name": "updatedAt",
+					"description": "Date when record was updated",
+					"objectType": "number"
+				},
+				{
+					"id": "b8503420-5024-4a4d-a863-a092c94387f5",
+					"parent": "",
+					"name": "updatedBy",
+					"description": "Updated by",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "e24ec56e-8f80-458b-8f88-ce347fa57cae",
+			"name": "Error",
+			"properties": [
+				{
+					"id": "aa6ed8db-5b9d-47ac-9b05-726f34fb2354",
+					"parent": "",
+					"name": "status",
+					"objectType": "string"
+				},
+				{
+					"id": "fe30d4b7-cae9-43f3-a577-b9176b9a4035",
+					"parent": "",
+					"name": "message",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "400ba482-6f54-4844-ae72-b680603effd9",
+			"name": "count",
+			"properties": [
+				{
+					"id": "c03c8b0c-8e90-4410-8b98-268944cb423e",
+					"parent": "",
+					"name": "count",
+					"objectType": "number"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "OnboardingAPI",
+	"endpoint": "/api/entity",
+	"ver": "26.10.21.1359",
+	"version": null,
+	"description": null,
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": "",
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"enableScriptEditor": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

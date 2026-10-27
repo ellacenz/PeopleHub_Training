@@ -1,0 +1,11 @@
+{
+	"id": "2a1fd5f8-c2c7-f111-bf5b-000d3aba8400",
+	"createdAt": "2026-10-14T11:32:44.846Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"name": "PeopleHubApproverClaim",
+	"description": null,
+	"ver": "26.10.14.1132",
+	"isGlobalAdmin": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"acl": []
+}

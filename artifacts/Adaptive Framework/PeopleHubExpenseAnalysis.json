@@ -1,0 +1,192 @@
+{
+	"id": "29eab9ea-54cd-f111-bf5b-000d3ab0a70f",
+	"createdAt": "2026-10-21T13:40:03.790Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"settings": {
+		"properties": {
+			"report": {
+				"enableValues": true,
+				"enableLeftPanel": true,
+				"enableRightPanel": true,
+				"showLeftPanel": true,
+				"showRightPanel": true,
+				"autoRun": true,
+				"iconButtonClose": "",
+				"textButtonClose": "Close",
+				"typeButtonClose": "Transparent",
+				"enableVariant": true,
+				"enableClose": false,
+				"title": "Expense Analysis"
+			},
+			"form": {},
+			"table": {
+				"showRowTotal": true,
+				"showColTotal": true
+			}
+		},
+		"fieldCatalog": [
+			{
+				"name": "category",
+				"label": "Category",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "merchant",
+				"label": "Merchant",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "currency",
+				"label": "Currency",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "amount",
+				"label": "Amount",
+				"type": "decimal",
+				"usage": "BOTH"
+			},
+			{
+				"name": "amounteur",
+				"label": "Amount EUR",
+				"type": "decimal",
+				"usage": "BOTH"
+			},
+			{
+				"name": "policyflags",
+				"label": "Policy flags",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "expensedate",
+				"label": "Date",
+				"type": "timestamp",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [],
+		"fieldsRun": [
+			{
+				"text": "Category",
+				"hidden": false,
+				"filter": true,
+				"name": "category",
+				"fieldPos": 1
+			},
+			{
+				"text": "Currency",
+				"hidden": false,
+				"filter": true,
+				"name": "currency",
+				"fieldPos": 2
+			},
+			{
+				"text": "Merchant",
+				"hidden": false,
+				"filter": true,
+				"name": "merchant",
+				"fieldPos": 3
+			},
+			{
+				"text": "Policy flags",
+				"hidden": false,
+				"filter": true,
+				"name": "policyflags",
+				"fieldPos": 4
+			},
+			{
+				"text": "Amount EUR",
+				"hidden": false,
+				"filter": false,
+				"name": "amounteur",
+				"enableFilter": false,
+				"fieldPos": 5
+			},
+			{
+				"text": "Amount",
+				"hidden": false,
+				"filter": false,
+				"name": "amount",
+				"enableFilter": false,
+				"fieldPos": 6
+			}
+		],
+		"defaultVariant": {
+			"id": "",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [
+				{
+					"text": "Category",
+					"hidden": false,
+					"filter": true,
+					"name": "category",
+					"fieldPos": 1,
+					"visible": false,
+					"filterType": "Transparent"
+				}
+			],
+			"column": [
+				{
+					"text": "Currency",
+					"hidden": false,
+					"filter": true,
+					"name": "currency",
+					"fieldPos": 2,
+					"visible": false,
+					"filterType": "Transparent"
+				}
+			],
+			"val": [
+				{
+					"text": "Amount EUR",
+					"hidden": false,
+					"filter": false,
+					"name": "amounteur",
+					"enableFilter": false,
+					"fieldPos": 5,
+					"visible": false,
+					"filterType": "Transparent"
+				}
+			],
+			"inclusions": {},
+			"exclusions": {},
+			"rendererName": "Table",
+			"aggregatorName": "Sum"
+		},
+		"translation": {
+			"EN": {
+				"report": {
+					"title": "Expense Analysis",
+					"textButtonClose": ""
+				},
+				"form": {},
+				"table": {},
+				"fieldCatalog": {}
+			}
+		},
+		"table": "peoplehubexpenseline"
+	},
+	"name": "PeopleHubExpenseAnalysis",
+	"description": "Expense lines: slice and dice",
+	"group": "",
+	"type": "C",
+	"connectorid": "73873c9f-54cd-f111-bf5b-000d3ab0a70f",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "26.10.21.1340",
+	"disabled": false,
+	"appType": "A",
+	"application": "neptunedxp_adaptive_bi",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null,
+	"i18n": []
+}

@@ -1,0 +1,227 @@
+{
+	"id": "e479d918-3ec9-f111-bf5b-000d3ab82ee9",
+	"createdAt": "2026-10-16T08:46:37.723Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000a01",
+			"path": "/",
+			"summary": "Approve or reject",
+			"method": "POST",
+			"description": "Body { id, decision: APPROVED | REJECTED, comment } (comment required on reject). Returns { ok, id, STATUS, pdfCreated, pdfMessage, emailSent, emailMessage } or { ok:false, error } with 400/403/404/409.",
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "DecideResult",
+							"objectType": "reference",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "409",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "DecideResult",
+							"objectType": "reference",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"name": "DecideInput",
+					"objectType": "reference",
+					"items": [],
+					"isArray": false,
+					"path": null
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "9538fecf-3dc9-f111-bf5b-000d3ab82ee9",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		}
+	],
+	"definitions": [
+		{
+			"id": "E1C1A000-0000-4000-8000-000000000A11",
+			"name": "DecideInput",
+			"properties": [
+				{
+					"id": null,
+					"name": "id",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Leave request id",
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "decision",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "APPROVED or REJECTED",
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "comment",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Required when rejecting",
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": "object"
+		},
+		{
+			"id": "E1C1A000-0000-4000-8000-000000000A12",
+			"name": "DecideResult",
+			"properties": [
+				{
+					"id": null,
+					"name": "ok",
+					"objectType": "boolean",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "error",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "id",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "STATUS",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "pdfCreated",
+					"objectType": "boolean",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "pdfMessage",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "emailSent",
+					"objectType": "boolean",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "emailMessage",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": "object"
+		}
+	],
+	"documentation": [],
+	"name": "PeopleHubLeaveRequestDecideApi",
+	"endpoint": "/api/serverscript/peoplehubleaverequestdecideapi",
+	"ver": "26.10.16.0849",
+	"version": null,
+	"description": "Manager approves or rejects a pending leave request (PDF + email to the employee)",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"enableScriptEditor": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"apiGroup": null,
+	"apiFormat": 1,
+	"roles": []
+}

@@ -1,0 +1,38 @@
+{
+	"id": "cbbbe92c-55cd-f111-bf5b-000d3ab0a70f",
+	"createdAt": "2026-10-21T13:41:54.460Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "4e641d1b-52fa-43f2-9d17-1d7ecd735a2e",
+			"name": "peoplehubleaverequest",
+			"contextname": "peoplehubleaverequest"
+		},
+		{
+			"id": "73a0ff58-1ace-44a8-9d26-1067e11ec610",
+			"name": "peoplehubexpenseclaim",
+			"contextname": "peoplehubexpenseclaim"
+		}
+	],
+	"agents": [],
+	"processFlows": [],
+	"apis": [],
+	"name": "PeopleHubDashboardKpi",
+	"ver": "26.10.21.1341",
+	"description": "Dashboard KPI tile: returns a UI5 Integration Card (numeric header) with what waits for a decision, approved leave days and approved claims",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "72287854-1837-4365-9f80-c2200ae67efd",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"jsscriptGroupObj": {
+		"id": "72287854-1837-4365-9f80-c2200ae67efd",
+		"name": "PeopleHubLeave",
+		"ver": "26.10.21.1341"
+	}
+}

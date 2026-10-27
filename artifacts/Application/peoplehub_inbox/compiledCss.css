@@ -1,0 +1,341 @@
+:root {
+  --nepBrand: #ff9e33;
+  --nepBrandPeach: #ffdbc4;
+  --pf-surface: #f5f5f7;
+  --nepBrandBurgundy: #38112a;
+  --white: #FFFFFF;
+  --darkText: #131e29;
+  --tinyPadding: 0.5rem;
+  --smallPadding: 1rem;
+  --mediumPadding: 1.5rem;
+  --largeFont: 1.2rem;
+  --nepScrollbarThumb: var(--nepBrandBurgundy);
+}
+
+:root.nepThemeDark,
+:root.sapUiTheme-sap_horizon_dark {
+  --pf-surface: rgba(56, 17, 42, 0.35);
+  --darkText: var(--white);
+  --nepScrollbarThumb: var(--nepBrand);
+}
+
+.nepInboxTheme .scrollerInnerScroll100 > [id$=-scroll] {
+  height: 100% !important;
+}
+.nepInboxTheme .dialogInnerScroll99 > [id$=-cont] > [id$=-scroll] {
+  height: 99% !important;
+}
+.nepInboxTheme .nepTaskList {
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--nepScrollbarThumb) transparent;
+}
+.nepInboxTheme .nepTaskList::-webkit-scrollbar {
+  width: 8px;
+}
+.nepInboxTheme .nepTaskList::-webkit-scrollbar-track {
+  background: transparent;
+}
+.nepInboxTheme .nepTaskList::-webkit-scrollbar-thumb {
+  background-color: var(--nepScrollbarThumb);
+  border-radius: 4px;
+}
+.nepInboxTheme .nepInboxPage > [id$=-cont] {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mediumPadding);
+}
+.nepInboxTheme .tabFullHeight {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.nepInboxTheme .scrollFlexFill {
+  height: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--nepScrollbarThumb) transparent;
+}
+.nepInboxTheme .scrollFlexFill::-webkit-scrollbar {
+  width: 8px;
+}
+.nepInboxTheme .scrollFlexFill::-webkit-scrollbar-track {
+  background: transparent;
+}
+.nepInboxTheme .scrollFlexFill::-webkit-scrollbar-thumb {
+  background-color: var(--nepScrollbarThumb);
+  border-radius: 4px;
+}
+.nepInboxTheme .diaUserTaskActionsFooter {
+  flex: 0 0 auto;
+  border-top: 1px solid var(--pf-surface);
+  padding-bottom: var(--mediumPadding);
+}
+@media screen and (max-width: 696px) {
+  .nepInboxTheme .nepPageTitle .sapFDynamicPageTitleMain {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nepInboxTheme .nepPageTitle .sapFDynamicPageTitleMainNavigationArea {
+    margin-top: var(--tinyPadding);
+  }
+  .nepInboxTheme .nepPageTitle .nepUpdateBtn {
+    margin-top: 0 !important;
+  }
+  .nepInboxTheme .titleBox {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .nepInboxTheme .nepPageTitle .sapFDynamicPageTitleMainNavigationAreaInner {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nepInboxTheme.sapMApp {
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nepInboxTheme .nepInboxPage > [id$=-cont] {
+    overflow: visible;
+  }
+  .nepInboxTheme .nepPageTitle {
+    flex: 0 0 auto;
+    min-height: auto;
+  }
+  .nepInboxTheme .tabFullHeight {
+    flex: 0 0 auto;
+    min-height: auto;
+    height: auto !important;
+    overflow: visible;
+  }
+  .nepInboxTheme .nepTaskList {
+    height: auto !important;
+    overflow: visible;
+  }
+  .nepInboxTheme .nepSplitter {
+    height: auto !important;
+    overflow: visible;
+  }
+  .nepInboxTheme .nepSplitter .sapUiLoSplitterContent {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible;
+  }
+  .nepInboxTheme .nepSplitter .sapUiLoSplitterBar {
+    display: none;
+  }
+}
+.nepInboxTheme .tabFullHeight > [id$=-containerContent],
+.nepInboxTheme .tabFullHeight > [id$=-containerContent] > [id$=-content] {
+  height: 100%;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.nepInboxTheme .tab30Height {
+  height: 30% !important;
+}
+.nepInboxTheme .background {
+  background-color: transparent;
+}
+.nepInboxTheme .nepFilterHeader {
+  box-shadow: none;
+}
+.nepInboxTheme .titleBox {
+  background-color: var(--nepBrandBurgundy);
+  color: var(--nepBrand);
+  border-radius: var(--smallPadding);
+  min-width: fit-content;
+}
+.nepInboxTheme .titleText {
+  color: var(--white);
+}
+.nepInboxTheme .titleNumber {
+  color: var(--nepBrand);
+}
+.nepInboxTheme .nepUpdateBtn {
+  height: 3rem;
+  box-sizing: border-box;
+}
+.nepInboxTheme .nepUpdateBtn .sapMBtnInner {
+  height: 3rem;
+  box-sizing: border-box;
+  padding: 0 var(--mediumPadding);
+  line-height: 2rem;
+  font-size: var(--largeFont);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--nepBrand);
+  border: none;
+  border-radius: 2rem;
+  margin-inline-end: var(--smallPadding);
+}
+.nepInboxTheme .nepUpdateBtn:focus > .sapMBtnInner::before {
+  border-color: transparent !important;
+}
+.nepInboxTheme .nepFilterForm .sapUiFormCL {
+  padding: 20px;
+  border-radius: var(--smallPadding);
+}
+.nepInboxTheme .nepDateFrom,
+.nepInboxTheme .nepDateTo,
+.nepInboxTheme .nepStatusField {
+  height: 3rem;
+}
+.nepInboxTheme .nepDateFrom .sapMInputBaseIcon,
+.nepInboxTheme .nepDateTo .sapMInputBaseIcon {
+  color: var(--nepBrandBurgundy);
+  background-color: var(--nepBrand);
+  border-radius: 50%;
+  width: 1.75rem;
+  height: 1.75rem;
+  min-width: 1.75rem;
+  max-width: 1.75rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nepInboxTheme .nepDateFrom .sapMInputBaseIcon::before,
+.nepInboxTheme .nepDateTo .sapMInputBaseIcon::before {
+  position: relative;
+  top: -0.05rem;
+}
+.nepInboxTheme .nepDateFrom .sapMInputBaseContentWrapper,
+.nepInboxTheme .nepDateTo .sapMInputBaseContentWrapper,
+.nepInboxTheme .nepStatusField .sapMInputBaseContentWrapper {
+  background-color: var(--pf-surface);
+  border-radius: var(--smallPadding);
+  padding: var(--tinyPadding) 0.75rem;
+  height: 3rem;
+  box-sizing: border-box;
+  border: none;
+  background-image: none;
+}
+.nepInboxTheme .nepDateFrom .sapMInputBaseInner::placeholder,
+.nepInboxTheme .nepDateTo .sapMInputBaseInner::placeholder,
+.nepInboxTheme .nepStatusField .sapMInputBaseInner::placeholder {
+  font-size: var(--smallPadding);
+  font-style: normal;
+}
+.nepInboxTheme .nepStatusField .sapMTokenIcon {
+  color: var(--nepBrandBurgundy);
+}
+.nepInboxTheme .nepStatusField .sapMToken {
+  font-size: var(--largeFont);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: var(--mediumPadding);
+  border-radius: var(--smallPadding);
+  background-color: var(--nepBrand);
+}
+.nepInboxTheme .nepStatusField .sapMToken:hover {
+  border-radius: var(--smallPadding) !important;
+}
+.nepInboxTheme .nepStatusField .sapMToken .sapMTokenText {
+  font-size: var(--smallPadding);
+}
+.nepInboxTheme .nepStatusField .sapMTokenIcon::before {
+  position: relative;
+  top: 0.15rem;
+}
+.nepInboxTheme .tabFullHeight > [id$=-content] {
+  background-color: transparent;
+}
+.nepInboxTheme .tabFullHeight > [id$="--header"] {
+  padding-left: var(--smallPadding);
+  background-color: transparent;
+  border-bottom: 2px solid var(--nepBrandBurgundy);
+}
+.nepInboxTheme [id$=InboxTab].sapMITBSelected,
+.nepInboxTheme [id$=HistoryTab].sapMITBSelected {
+  background-color: var(--nepBrandBurgundy);
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 0 var(--smallPadding) !important;
+}
+.nepInboxTheme [id$=InboxTab].sapMITBSelected .sapMITBText,
+.nepInboxTheme [id$=InboxTab].sapMITBSelected .sapMITBCount,
+.nepInboxTheme [id$=InboxTab].sapMITBSelected .sapMITBIcon,
+.nepInboxTheme [id$=HistoryTab].sapMITBSelected .sapMITBText,
+.nepInboxTheme [id$=HistoryTab].sapMITBSelected .sapMITBCount,
+.nepInboxTheme [id$=HistoryTab].sapMITBSelected .sapMITBIcon {
+  color: var(--white);
+}
+.nepInboxTheme [id$=InboxTab]:not(.sapMITBSelected) .sapMITBText,
+.nepInboxTheme [id$=InboxTab]:not(.sapMITBSelected) .sapMITBCount,
+.nepInboxTheme [id$=InboxTab]:not(.sapMITBSelected) .sapMITBIcon,
+.nepInboxTheme [id$=HistoryTab]:not(.sapMITBSelected) .sapMITBText,
+.nepInboxTheme [id$=HistoryTab]:not(.sapMITBSelected) .sapMITBCount,
+.nepInboxTheme [id$=HistoryTab]:not(.sapMITBSelected) .sapMITBIcon {
+  color: var(--darkText);
+}
+.nepInboxTheme [id$=InboxTab].sapMITBSelected > .sapMITBFilterWrapper > .sapMITBContentArrow::after,
+.nepInboxTheme [id$=HistoryTab].sapMITBSelected > .sapMITBFilterWrapper > .sapMITBContentArrow::after {
+  background-color: var(--nepBrandBurgundy);
+}
+.nepInboxTheme .nepSplitter > .sapUiLoSplitterBar {
+  background-color: transparent;
+  color: var(--nepBrandBurgundy);
+}
+.nepInboxTheme .nepSplitter [id$=-splitbar-0] > div.sapUiLoSplitterBarDecorationAfter {
+  background-image: linear-gradient(to bottom, var(--nepBrandBurgundy), transparent);
+}
+.nepInboxTheme .nepSplitter [id$=-splitbar-0] > div.sapUiLoSplitterBarDecorationBefore {
+  background-image: linear-gradient(to top, var(--nepBrandBurgundy), transparent);
+}
+.nepInboxTheme .nepSplitter.sapUiLoSplitterH > .sapUiLoSplitterBar,
+.nepInboxTheme .nepSplitter.sapUiLoSplitterH > .sapUiLoSplitterOverlay .sapUiLoSplitterOverlayBar {
+  border-left: none;
+  border-right: none;
+}
+.nepInboxTheme .listItems {
+  border-radius: var(--smallPadding);
+}
+.nepInboxTheme .nepTaskList .sapMListNoData {
+  background-color: transparent;
+}
+.nepInboxTheme .nepEmbeddedInfo {
+  min-height: 25rem;
+  background-color: transparent;
+}
+.nepInboxTheme .nepEmbeddedInfo > [id$=-cont] {
+  overflow-y: auto !important;
+  scrollbar-width: thin;
+  scrollbar-color: var(--nepScrollbarThumb) transparent;
+}
+.nepInboxTheme .nepEmbeddedInfo > [id$=-cont]::-webkit-scrollbar {
+  width: 8px;
+}
+.nepInboxTheme .nepEmbeddedInfo > [id$=-cont]::-webkit-scrollbar-track {
+  background: transparent;
+}
+.nepInboxTheme .nepEmbeddedInfo > [id$=-cont]::-webkit-scrollbar-thumb {
+  background-color: var(--nepScrollbarThumb);
+  border-radius: 4px;
+}
+
+.nepInboxTheme .sapMPage.sapMPageBgStandard {
+  background-color: var(--pf-surface);
+}
+
+.nepInboxTheme .sapMFlexItem:has(> .scrollFlexFill) {
+  flex: 1 1 0%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.nepInboxTheme .sapUiIconTitle {
+  text-align: justify;
+}

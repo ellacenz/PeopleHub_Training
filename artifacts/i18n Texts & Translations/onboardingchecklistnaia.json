@@ -1,0 +1,24 @@
+{
+	"id": "c6f7d4f7-5fcd-f111-bf5b-000d3ab0a70f",
+	"createdAt": "2026-10-21T14:59:09.913Z",
+	"createdBy": "joao.salvador@neptune-software.com",
+	"attributes": [],
+	"locales": [
+		{
+			"isoCode": "EN",
+			"locale": "en"
+		}
+	],
+	"name": "onboardingchecklistnaia",
+	"description": null,
+	"fallbackLocale": "en",
+	"application": "onboardingchecklistnaia",
+	"ver": "26.10.21.1518",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"active": true,
+	"deleted": false,
+	"baseModelId": null,
+	"enhancedBy": [],
+	"baseModel": null,
+	"apps": []
+}

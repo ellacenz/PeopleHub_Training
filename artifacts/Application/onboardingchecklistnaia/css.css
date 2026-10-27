@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --onboardingchecklistnaia-primary: #3f51e8;
+    --onboardingchecklistnaia-primary-dark: #2f3fc4;
+    --onboardingchecklistnaia-bg: #f4f5fa;
+    --onboardingchecklistnaia-surface: #ffffff;
+    --onboardingchecklistnaia-border: #e6e8f0;
+    --onboardingchecklistnaia-text-main: #1d2129;
+    --onboardingchecklistnaia-text-light: #6b7280;
+    --onboardingchecklistnaia-success: #1a7f37;
+    --onboardingchecklistnaia-success-bg: #e3f6e8;
+    --onboardingchecklistnaia-warning: #9a6700;
+    --onboardingchecklistnaia-warning-bg: #fff3d6;
+    --onboardingchecklistnaia-error: #c4314b;
+    --onboardingchecklistnaia-error-bg: #fde8ec;
+    --onboardingchecklistnaia-info: #2f5fd0;
+    --onboardingchecklistnaia-info-bg: #e8edfc;
+    --onboardingchecklistnaia-focus-ring: rgba(63,81,232,0.35);
+    --onboardingchecklistnaia-disabled-bg: rgba(29,33,41,0.12);
+    --onboardingchecklistnaia-disabled-text: rgba(29,33,41,0.38);
+}
+
+.sapUiTheme-sap_horizon_dark,
+.sapUiTheme-neptune_horizon_dark {
+    --onboardingchecklistnaia-primary: #7c8bff;
+    --onboardingchecklistnaia-primary-dark: #99a4ff;
+    --onboardingchecklistnaia-bg: #14161f;
+    --onboardingchecklistnaia-surface: #1f222e;
+    --onboardingchecklistnaia-border: #2d3040;
+    --onboardingchecklistnaia-text-main: #eef0f7;
+    --onboardingchecklistnaia-text-light: #a7acc0;
+    --onboardingchecklistnaia-success: #4fd17a;
+    --onboardingchecklistnaia-success-bg: rgba(79,209,122,0.14);
+    --onboardingchecklistnaia-warning: #f2c14e;
+    --onboardingchecklistnaia-warning-bg: rgba(242,193,78,0.14);
+    --onboardingchecklistnaia-error: #ff6b81;
+    --onboardingchecklistnaia-error-bg: rgba(255,107,129,0.14);
+    --onboardingchecklistnaia-info: #86a3ff;
+    --onboardingchecklistnaia-info-bg: rgba(134,163,255,0.14);
+    --onboardingchecklistnaia-focus-ring: rgba(124,139,255,0.45);
+    --onboardingchecklistnaia-disabled-bg: rgba(238,240,247,0.12);
+    --onboardingchecklistnaia-disabled-text: rgba(238,240,247,0.38);
+}
+
+/* Pin SAP icon glyph font so icons never vanish */
+.onboardingchecklistnaia_page .sapUiIcon,
+.onboardingchecklistnaia_page .sapMBtnIcon { font-family: "SAP-icons" !important; }
+
+/* ===== Page / Layout ===== */
+.onboardingchecklistnaia_page.sapMPage,
+.onboardingchecklistnaia_page {
+    background: var(--onboardingchecklistnaia-bg) !important;
+    font-family: "Inter", sans-serif;
+}
+.onboardingchecklistnaia_page .sapFDynamicPageTitleMainContent,
+.onboardingchecklistnaia_page .sapFDynamicPageTitleWrapper {
+    background: var(--onboardingchecklistnaia-surface) !important;
+}
+.onboardingchecklistnaia_page .sapFDynamicPageHeaderPinnable {
+    background: var(--onboardingchecklistnaia-surface) !important;
+    border-bottom: 1px solid var(--onboardingchecklistnaia-border) !important;
+}
+.onboardingchecklistnaia_contentArea {
+    padding: 16px 24px 32px;
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== Title / subtitle text ===== */
+.onboardingchecklistnaia_pageTitle,
+.onboardingchecklistnaia_pageTitle.sapMTitle {
+    font-family: "Inter", sans-serif !important;
+    font-weight: 700 !important;
+    color: var(--onboardingchecklistnaia-text-main) !important;
+    font-size: clamp(20px, 3vw, 26px) !important;
+}
+.onboardingchecklistnaia_pageSubtitle {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: var(--onboardingchecklistnaia-text-light) !important;
+    font-size: 13px;
+}
+
+/* ===== State boxes (loading / error / empty / no-results) ===== */
+.onboardingchecklistnaia_stateBox {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding: 48px 24px;
+    background: var(--onboardingchecklistnaia-surface);
+    border-radius: 16px;
+    border: 1px solid var(--onboardingchecklistnaia-border);
+}
+.onboardingchecklistnaia_stateIcon {
+    font-size: 2.5rem !important;
+    color: var(--onboardingchecklistnaia-text-light) !important;
+    font-family: "SAP-icons" !important;
+}
+.onboardingchecklistnaia_stateIconError {
+    color: var(--onboardingchecklistnaia-error) !important;
+}
+.onboardingchecklistnaia_stateText {
+    font-family: "Inter", sans-serif;
+    color: var(--onboardingchecklistnaia-text-light) !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ===== Offline MessageStrip ===== */
+.onboardingchecklistnaia_offlineStrip.sapMMsgStrip {
+    background: var(--onboardingchecklistnaia-warning-bg) !important;
+    border: 1px solid var(--onboardingchecklistnaia-warning) !important;
+    border-radius: 12px !important;
+    padding: 10px 16px !important;
+}
+.onboardingchecklistnaia_offlineStrip .sapMMsgStripMessage {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--onboardingchecklistnaia-text-main) !important;
+}
+.onboardingchecklistnaia_offlineStrip .sapUiIcon {
+    color: var(--onboardingchecklistnaia-warning) !important;
+    font-family: "SAP-icons" !important;
+}
+
+/* ===== SearchField ===== */
+.onboardingchecklistnaia_searchField.sapMSF {
+    background: transparent !important;
+    height: auto !important;
+}
+.onboardingchecklistnaia_searchField.sapMSF > form.sapMSFF {
+    background: var(--onboardingchecklistnaia-surface) !important;
+    border: 1.5px solid var(--onboardingchecklistnaia-border) !important;
+    border-radius: 50px !important;
+    height: 42px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 4px 0 16px !important;
+    box-shadow: none !important;
+    outline: none !important;
+    position: relative !important;
+    transition: border-color 0.2s !important;
+}
+html.sap-desktop .onboardingchecklistnaia_searchField.sapMSF.sapMFocus > .sapMSFF::before,
+.onboardingchecklistnaia_searchField.sapMSF.sapMFocus > .sapMSFF::before,
+.onboardingchecklistnaia_searchField.sapMSF > .sapMSFF::before {
+    content: none !important;
+    display: none !important;
+    border: none !important;
+    outline: none !important;
+}
+.onboardingchecklistnaia_searchField.sapMSF.sapMFocus > form.sapMSFF,
+.onboardingchecklistnaia_searchField.sapMSF > form.sapMSFF:focus-within {
+    border-color: var(--onboardingchecklistnaia-primary) !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.onboardingchecklistnaia_searchField.sapMSF .sapMSFF {
+    box-shadow: none !important;
+}
+.onboardingchecklistnaia_searchField.sapMSF .sapMSFI {
+    background: transparent !important;
+    border: none !important;
+    font-family: "Inter", sans-serif !important;
+    font-size: 0.875rem !important;
+    font-weight: 400 !important;
+    color: var(--onboardingchecklistnaia-text-main) !important;
+    height: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    outline: none !important;
+    -webkit-appearance: none !important;
+}
+.onboardingchecklistnaia_searchField.sapMSF .sapMSFI::placeholder {
+    color: var(--onboardingchecklistnaia-text-light) !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+}
+.onboardingchecklistnaia_searchField.sapMSF .sapMSFS {
+    background: var(--onboardingchecklistnaia-primary) !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+    border: none !important;
+    line-height: 1 !important;
+    transition: background 0.2s, box-shadow 0.2s !important;
+}
+.onboardingchecklistnaia_searchField.sapMSF .sapMSFS .sapUiIcon {
+    color: #fff !important;
+    font-size: 1rem !important;
+    line-height: 1 !important;
+    font-family: "SAP-icons" !important;
+}
+.onboardingchecklistnaia_searchField.sapMSF .sapMSFS:hover {
+    background: var(--onboardingchecklistnaia-primary-dark) !important;
+}
+.onboardingchecklistnaia_searchField.sapMSF .sapMSFS:active {
+    transform: scale(0.93);
+}
+.onboardingchecklistnaia_searchField.sapMSF .sapMSFR {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.onboardingchecklistnaia_searchField.sapMSF .sapMSFR .sapUiIcon {
+    color: var(--onboardingchecklistnaia-text-light) !important;
+    font-size: 0.75rem !important;
+    font-family: "SAP-icons" !important;
+}
+
+/* ===== Task list / cards ===== */
+.onboardingchecklistnaia_taskList.sapMList {
+    background: transparent !important;
+}
+.onboardingchecklistnaia_taskList .sapMListNoData,
+.onboardingchecklistnaia_taskList .sapMLIBContent {
+    border: none !important;
+}
+.onboardingchecklistnaia_taskCardItem.sapMLIB {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin-bottom: 14px;
+}
+.onboardingchecklistnaia_taskCard {
+    background: var(--onboardingchecklistnaia-surface);
+    border: 1px solid var(--onboardingchecklistnaia-border);
+    border-radius: 16px;
+    padding: 18px 20px;
+    gap: 10px;
+    box-shadow: 0 2px 10px rgba(16, 24, 64, 0.06);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.onboardingchecklistnaia_taskCard:hover {
+    box-shadow: 0 6px 18px rgba(16, 24, 64, 0.1);
+    transform: translateY(-1px);
+}
+.onboardingchecklistnaia_taskCardTop {
+    align-items: center;
+    gap: 12px;
+}
+.onboardingchecklistnaia_taskTitle {
+    font-family: "Inter", sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    color: var(--onboardingchecklistnaia-text-main) !important;
+    flex: 1;
+}
+.onboardingchecklistnaia_taskMeta {
+    align-items: center;
+    gap: 6px;
+}
+.onboardingchecklistnaia_taskMetaIcon {
+    font-size: 0.85rem !important;
+    color: var(--onboardingchecklistnaia-text-light) !important;
+    font-family: "SAP-icons" !important;
+}
+.onboardingchecklistnaia_taskMetaText {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    color: var(--onboardingchecklistnaia-text-light) !important;
+}
+
+/* ===== Status pill (ObjectStatus) ===== */
+.onboardingchecklistnaia_taskStatusPill {
+    border-radius: 45px;
+    padding: 3px 12px;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.onboardingchecklistnaia_taskStatusPill.sapMObjStatusSuccess {
+    background: var(--onboardingchecklistnaia-success-bg);
+}
+.onboardingchecklistnaia_taskStatusPill.sapMObjStatusSuccess .sapMObjStatusText,
+.onboardingchecklistnaia_taskStatusPill.sapMObjStatusSuccess .sapMObjStatusIcon {
+    color: var(--onboardingchecklistnaia-success) !important;
+}
+.onboardingchecklistnaia_taskStatusPill.sapMObjStatusWarning {
+    background: var(--onboardingchecklistnaia-warning-bg);
+}
+.onboardingchecklistnaia_taskStatusPill.sapMObjStatusWarning .sapMObjStatusText,
+.onboardingchecklistnaia_taskStatusPill.sapMObjStatusWarning .sapMObjStatusIcon {
+    color: var(--onboardingchecklistnaia-warning) !important;
+}
+.onboardingchecklistnaia_taskStatusPill.sapMObjStatusError {
+    background: var(--onboardingchecklistnaia-error-bg);
+}
+.onboardingchecklistnaia_taskStatusPill.sapMObjStatusError .sapMObjStatusText,
+.onboardingchecklistnaia_taskStatusPill.sapMObjStatusError .sapMObjStatusIcon {
+    color: var(--onboardingchecklistnaia-error) !important;
+}
+.onboardingchecklistnaia_taskStatusPill.sapMObjStatusInformation {
+    background: var(--onboardingchecklistnaia-info-bg);
+}
+.onboardingchecklistnaia_taskStatusPill.sapMObjStatusInformation .sapMObjStatusText,
+.onboardingchecklistnaia_taskStatusPill.sapMObjStatusInformation .sapMObjStatusIcon {
+    color: var(--onboardingchecklistnaia-info) !important;
+}
+.onboardingchecklistnaia_taskStatusPill .sapMObjStatusIcon {
+    font-size: 11px;
+    margin-right: 4px;
+    font-family: "SAP-icons" !important;
+}
+
+/* ===== Refresh button (header action, pill, filled) ===== */
+.onboardingchecklistnaia_btnRefresh.sapMBtn > span {
+    background: var(--onboardingchecklistnaia-primary) !important;
+    border-radius: 50px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
+    transition: background 0.2s, box-shadow 0.2s !important;
+}
+.onboardingchecklistnaia_btnRefresh.sapMBtn > span .sapMBtnIcon {
+    color: #fff !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+    font-family: "SAP-icons" !important;
+}
+.onboardingchecklistnaia_btnRefresh.sapMBtn > span > span > bdi,
+.onboardingchecklistnaia_btnRefresh.sapMBtn > span .sapMBtnContent > bdi {
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+.onboardingchecklistnaia_btnRefresh.sapMBtn:not(.sapMBtnDisabled):hover { transform: translateY(-2px); }
+.onboardingchecklistnaia_btnRefresh.sapMBtn:not(.sapMBtnDisabled):hover > span {
+    background: var(--onboardingchecklistnaia-primary-dark) !important;
+    box-shadow: 0 4px 12px rgba(63,81,232,0.35) !important;
+}
+.onboardingchecklistnaia_btnRefresh.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnIcon { color: #fff !important; }
+.onboardingchecklistnaia_btnRefresh.sapMBtn:not(.sapMBtnDisabled):hover > span > span > bdi,
+.onboardingchecklistnaia_btnRefresh.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnContent > bdi { color: #fff !important; }
+html.sap-desktop .onboardingchecklistnaia_btnRefresh.sapMBtn:focus > .sapMFocusable:not(.sapMBadgeIndicator)::before { border: 0 !important; outline: none !important; }
+.onboardingchecklistnaia_btnRefresh.sapMBtn:not(.sapMBtnDisabled):focus > span { box-shadow: 0 0 0 3px var(--onboardingchecklistnaia-focus-ring) !important; outline: none !important; }
+.onboardingchecklistnaia_btnRefresh.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnIcon { color: #fff !important; }
+.onboardingchecklistnaia_btnRefresh.sapMBtn:not(.sapMBtnDisabled):focus > span > span > bdi,
+.onboardingchecklistnaia_btnRefresh.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnContent > bdi { color: #fff !important; }
+.onboardingchecklistnaia_btnRefresh.sapMBtn:not(.sapMBtnDisabled):active { transform: translateY(0) scale(0.97); }
+.onboardingchecklistnaia_btnRefresh.sapMBtn:not(.sapMBtnDisabled):active > span { background: var(--onboardingchecklistnaia-primary) !important; box-shadow: none; }
+.onboardingchecklistnaia_btnRefresh.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnIcon { color: #fff !important; }
+.onboardingchecklistnaia_btnRefresh.sapMBtn:not(.sapMBtnDisabled):active > span > span > bdi,
+.onboardingchecklistnaia_btnRefresh.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnContent > bdi { color: #fff !important; }
+.onboardingchecklistnaia_btnRefresh.sapMBtn.sapMBtnDisabled > span { background: var(--onboardingchecklistnaia-disabled-bg) !important; }
+.onboardingchecklistnaia_btnRefresh.sapMBtn.sapMBtnDisabled > span .sapMBtnIcon { color: var(--onboardingchecklistnaia-disabled-text) !important; }
+.onboardingchecklistnaia_btnRefresh.sapMBtn.sapMBtnDisabled > span > span > bdi,
+.onboardingchecklistnaia_btnRefresh.sapMBtn.sapMBtnDisabled > span .sapMBtnContent > bdi { color: var(--onboardingchecklistnaia-disabled-text) !important; }
+
+/* ===== Retry button (outline pill) ===== */
+.onboardingchecklistnaia_btnRetry.sapMBtn > span {
+    background: transparent !important;
+    border: 2px solid var(--onboardingchecklistnaia-primary) !important;
+    border-radius: 50px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
+    transition: background 0.2s, box-shadow 0.2s, border-color 0.2s !important;
+}
+.onboardingchecklistnaia_btnRetry.sapMBtn > span .sapMBtnIcon {
+    color: var(--onboardingchecklistnaia-primary) !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+    font-family: "SAP-icons" !important;
+}
+.onboardingchecklistnaia_btnRetry.sapMBtn > span > span > bdi,
+.onboardingchecklistnaia_btnRetry.sapMBtn > span .sapMBtnContent > bdi {
+    color: var(--onboardingchecklistnaia-primary) !important;
+    font-weight: 600 !important;
+}
+.onboardingchecklistnaia_btnRetry.sapMBtn:not(.sapMBtnDisabled):hover { transform: translateY(-2px); }
+.onboardingchecklistnaia_btnRetry.sapMBtn:not(.sapMBtnDisabled):hover > span {
+    background: var(--onboardingchecklistnaia-primary) !important;
+    border-color: var(--onboardingchecklistnaia-primary) !important;
+    box-shadow: 0 4px 12px rgba(63,81,232,0.35) !important;
+}
+.onboardingchecklistnaia_btnRetry.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnIcon { color: #fff !important; }
+.onboardingchecklistnaia_btnRetry.sapMBtn:not(.sapMBtnDisabled):hover > span > span > bdi,
+.onboardingchecklistnaia_btnRetry.sapMBtn:not(.sapMBtnDisabled):hover > span .sapMBtnContent > bdi { color: #fff !important; }
+html.sap-desktop .onboardingchecklistnaia_btnRetry.sapMBtn:focus > .sapMFocusable:not(.sapMBadgeIndicator)::before { border: 0 !important; outline: none !important; }
+.onboardingchecklistnaia_btnRetry.sapMBtn:not(.sapMBtnDisabled):focus > span { box-shadow: 0 0 0 3px var(--onboardingchecklistnaia-focus-ring) !important; outline: none !important; border-color: var(--onboardingchecklistnaia-primary) !important; }
+.onboardingchecklistnaia_btnRetry.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnIcon { color: var(--onboardingchecklistnaia-primary) !important; }
+.onboardingchecklistnaia_btnRetry.sapMBtn:not(.sapMBtnDisabled):focus > span > span > bdi,
+.onboardingchecklistnaia_btnRetry.sapMBtn:not(.sapMBtnDisabled):focus > span .sapMBtnContent > bdi { color: var(--onboardingchecklistnaia-primary) !important; }
+.onboardingchecklistnaia_btnRetry.sapMBtn:not(.sapMBtnDisabled):active { transform: translateY(0) scale(0.97); }
+.onboardingchecklistnaia_btnRetry.sapMBtn:not(.sapMBtnDisabled):active > span { background: var(--onboardingchecklistnaia-primary) !important; box-shadow: none; }
+.onboardingchecklistnaia_btnRetry.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnIcon { color: #fff !important; }
+.onboardingchecklistnaia_btnRetry.sapMBtn:not(.sapMBtnDisabled):active > span > span > bdi,
+.onboardingchecklistnaia_btnRetry.sapMBtn:not(.sapMBtnDisabled):active > span .sapMBtnContent > bdi { color: #fff !important; }
+.onboardingchecklistnaia_btnRetry.sapMBtn.sapMBtnDisabled > span { border-color: var(--onboardingchecklistnaia-disabled-text) !important; background: transparent !important; opacity: 0.5; }
+.onboardingchecklistnaia_btnRetry.sapMBtn.sapMBtnDisabled > span .sapMBtnIcon { color: var(--onboardingchecklistnaia-disabled-text) !important; }
+.onboardingchecklistnaia_btnRetry.sapMBtn.sapMBtnDisabled > span > span > bdi,
+.onboardingchecklistnaia_btnRetry.sapMBtn.sapMBtnDisabled > span .sapMBtnContent > bdi { color: var(--onboardingchecklistnaia-disabled-text) !important; }

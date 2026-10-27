@@ -1,0 +1,216 @@
+{
+	"id": "97990a60-19c7-f111-bf5b-000d3aba8400",
+	"createdAt": "2026-10-13T15:18:43.506Z",
+	"createdBy": "antonio.neves@neptune-software.com",
+	"cachedCard": null,
+	"supportedTransports": null,
+	"config": {
+		"modelConfig": {
+			"response_format": "text",
+			"schema": {
+				"name": "InvoiceExtractionResult",
+				"schema": {
+					"type": "object",
+					"additionalProperties": false,
+					"required": [
+						"success",
+						"flowType",
+						"confidence",
+						"qualityScore",
+						"similarity",
+						"extraction"
+					],
+					"properties": {
+						"success": {
+							"type": "boolean"
+						},
+						"flowType": {
+							"const": "invoice-extraction"
+						},
+						"confidence": {
+							"type": "number",
+							"minimum": 0,
+							"maximum": 1
+						},
+						"qualityScore": {
+							"type": "integer",
+							"minimum": 0,
+							"maximum": 100
+						},
+						"similarity": {
+							"type": "number",
+							"minimum": 0,
+							"maximum": 1
+						},
+						"extraction": {
+							"type": "object",
+							"additionalProperties": false,
+							"required": [
+								"invoiceNumber",
+								"date",
+								"total",
+								"vendor",
+								"currency",
+								"lineItems",
+								"subtotal",
+								"tax",
+								"vatId",
+								"documentType",
+								"redFlags"
+							],
+							"properties": {
+								"invoiceNumber": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"date": {
+									"type": [
+										"string",
+										"null"
+									],
+									"pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+								},
+								"total": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"vendor": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"currency": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"lineItems": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"additionalProperties": false,
+										"required": [
+											"description",
+											"quantity",
+											"unitPrice",
+											"amount"
+										],
+										"properties": {
+											"description": {
+												"type": "string"
+											},
+											"quantity": {
+												"type": [
+													"string",
+													"null"
+												]
+											},
+											"unitPrice": {
+												"type": [
+													"string",
+													"null"
+												]
+											},
+											"amount": {
+												"type": "string"
+											}
+										}
+									}
+								},
+								"subtotal": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"tax": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"vatId": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"documentType": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"redFlags": {
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			"lastMessages": 1,
+			"temperature": 0.1
+		},
+		"vectorConfig": {
+			"k": 1,
+			"threshold": 0.8
+		},
+		"onlyMetadata": false,
+		"compactionConfig": {
+			"enabled": false,
+			"contextWindowTokens": 10000,
+			"thresholdPercentage": 50,
+			"modelId": null
+		},
+		"enableHybridTools": false,
+		"openTasksInPromptLimit": 10,
+		"continueTasksAfterDisconnect": false,
+		"provider": {},
+		"dailyUserTokenLimit": null,
+		"preScript": null
+	},
+	"name": "PeopleHubInvoiceExtractionPDF",
+	"ver": "26.10.23.0745",
+	"version": null,
+	"description": "Reads a receipt PDF and compares it with the claimed expense line. Returns JSON (see prompt). Called by script PeopleHubReceiptValidation.",
+	"enableIntelligentApps": null,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"type": "standard",
+	"model": "775413f3-c8c7-f111-bf5b-000d3aba8400",
+	"sapSystemId": null,
+	"cardUrl": null,
+	"cardFetchedAt": null,
+	"cardSignatureVerified": null,
+	"outboundApiAuthId": null,
+	"localMCPConnections": [],
+	"remoteMCPConnections": [],
+	"roles": [],
+	"tools": [],
+	"tableSources": [],
+	"peersMap": [],
+	"outputGuardrailsMap": [],
+	"inputGuardrailsMap": [],
+	"sapDataSourcesMap": [],
+	"prompts": [
+		{
+			"id": "9431dfe1-19c7-f111-bf5b-000d3aba8400",
+			"name": "9431dfe1-19c7-f111-bf5b-000d3aba8400",
+			"ver": "26.10.13.1522"
+		},
+		{
+			"id": "60f7e3a5-b5ce-f111-bf5b-7ced8d2c6615",
+			"name": "60f7e3a5-b5ce-f111-bf5b-7ced8d2c6615",
+			"ver": "26.10.23.0745"
+		}
+	]
+}

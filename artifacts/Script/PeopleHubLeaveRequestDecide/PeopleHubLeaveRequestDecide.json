@@ -1,0 +1,61 @@
+{
+	"id": "9538fecf-3dc9-f111-bf5b-000d3ab82ee9",
+	"createdAt": "2026-10-16T08:44:35.490Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [
+		{
+			"id": "21E041E0-8CC8-F111-BF5B-000D3AB82EE9",
+			"name": "dayjs",
+			"contextname": "dayjs"
+		}
+	],
+	"entitySets": [
+		{
+			"id": "4e641d1b-52fa-43f2-9d17-1d7ecd735a2e",
+			"name": "peoplehubleaverequest",
+			"contextname": "peoplehubleaverequest"
+		}
+	],
+	"agents": [],
+	"processFlows": [],
+	"apis": [
+		{
+			"id": "f01909d5-7bc2-4abc-ba33-a70aba7ba59b",
+			"name": "getEmployees",
+			"contextname": "getEmployees",
+			"parent": "287393dc-396c-47cf-9706-02de8efe96d4",
+			"method": "GET"
+		},
+		{
+			"id": "f9fdb337-ed7f-43ae-9925-e265967f3b45",
+			"name": "getHolidays",
+			"contextname": "getHolidays",
+			"parent": "287393dc-396c-47cf-9706-02de8efe96d4",
+			"method": "GET"
+		},
+		{
+			"id": "dc3d3ca6-40e8-49eb-8c3a-21c81eee2878",
+			"name": "getLeaveBalance",
+			"contextname": "getLeaveBalance",
+			"parent": "287393dc-396c-47cf-9706-02de8efe96d4",
+			"method": "GET"
+		}
+	],
+	"name": "PeopleHubLeaveRequestDecide",
+	"ver": "26.10.16.0846",
+	"description": "POST { id, decision, comment }: a manager approves or rejects a PENDING leave request; on approve creates the PDF PeopleHubLeaveConfirmation and emails it to the employee (template PeopleHubLeaveRequestDecision).",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "72287854-1837-4365-9f80-c2200ae67efd",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"jsscriptGroupObj": {
+		"id": "72287854-1837-4365-9f80-c2200ae67efd",
+		"name": "PeopleHubLeave",
+		"ver": "26.10.21.1341"
+	}
+}

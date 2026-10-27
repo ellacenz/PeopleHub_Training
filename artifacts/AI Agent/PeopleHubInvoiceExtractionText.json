@@ -1,0 +1,210 @@
+{
+	"id": "cee2313c-1ac7-f111-bf5b-000d3aba8400",
+	"createdAt": "2026-10-13T15:24:52.850Z",
+	"createdBy": "antonio.neves@neptune-software.com",
+	"cachedCard": null,
+	"supportedTransports": null,
+	"config": {
+		"modelConfig": {
+			"response_format": "json_schema",
+			"schema": {
+				"name": "InvoiceExtractionResult",
+				"schema": {
+					"type": "object",
+					"additionalProperties": false,
+					"required": [
+						"success",
+						"flowType",
+						"confidence",
+						"qualityScore",
+						"similarity",
+						"extraction"
+					],
+					"properties": {
+						"success": {
+							"type": "boolean"
+						},
+						"flowType": {
+							"const": "invoice-extraction"
+						},
+						"confidence": {
+							"type": "number",
+							"minimum": 0,
+							"maximum": 1
+						},
+						"qualityScore": {
+							"type": "integer",
+							"minimum": 0,
+							"maximum": 100
+						},
+						"similarity": {
+							"type": "number",
+							"minimum": 0,
+							"maximum": 1
+						},
+						"extraction": {
+							"type": "object",
+							"additionalProperties": false,
+							"required": [
+								"invoiceNumber",
+								"date",
+								"total",
+								"vendor",
+								"currency",
+								"lineItems",
+								"subtotal",
+								"tax",
+								"vatId",
+								"documentType",
+								"redFlags"
+							],
+							"properties": {
+								"invoiceNumber": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"date": {
+									"type": [
+										"string",
+										"null"
+									],
+									"pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+								},
+								"total": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"vendor": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"currency": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"lineItems": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"additionalProperties": false,
+										"required": [
+											"description",
+											"quantity",
+											"unitPrice",
+											"amount"
+										],
+										"properties": {
+											"description": {
+												"type": "string"
+											},
+											"quantity": {
+												"type": [
+													"string",
+													"null"
+												]
+											},
+											"unitPrice": {
+												"type": [
+													"string",
+													"null"
+												]
+											},
+											"amount": {
+												"type": "string"
+											}
+										}
+									}
+								},
+								"subtotal": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"tax": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"vatId": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"documentType": {
+									"type": [
+										"string",
+										"null"
+									]
+								},
+								"redFlags": {
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			"lastMessages": 3,
+			"temperature": 0.5
+		},
+		"vectorConfig": {
+			"k": 1,
+			"threshold": 0.8
+		},
+		"onlyMetadata": false,
+		"compactionConfig": {
+			"enabled": false,
+			"contextWindowTokens": 10000,
+			"thresholdPercentage": 50,
+			"modelId": null
+		},
+		"enableHybridTools": false,
+		"openTasksInPromptLimit": 10,
+		"continueTasksAfterDisconnect": false,
+		"provider": {},
+		"dailyUserTokenLimit": null
+	},
+	"name": "PeopleHubInvoiceExtractionText",
+	"ver": "26.10.14.1033",
+	"version": null,
+	"description": null,
+	"enableIntelligentApps": null,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"type": "standard",
+	"model": "bae88fa1-a8ed-4788-9c05-a0067fb4f153",
+	"sapSystemId": null,
+	"cardUrl": null,
+	"cardFetchedAt": null,
+	"cardSignatureVerified": null,
+	"outboundApiAuthId": null,
+	"localMCPConnections": [],
+	"remoteMCPConnections": [],
+	"roles": [],
+	"tools": [],
+	"tableSources": [],
+	"peersMap": [],
+	"outputGuardrailsMap": [],
+	"inputGuardrailsMap": [],
+	"sapDataSourcesMap": [],
+	"prompts": [
+		{
+			"id": "ba0dcd54-1ac7-f111-bf5b-000d3aba8400",
+			"name": "ba0dcd54-1ac7-f111-bf5b-000d3aba8400",
+			"ver": "26.10.13.1525"
+		}
+	]
+}

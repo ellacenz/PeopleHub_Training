@@ -1,0 +1,33 @@
+{
+	"id": "3de5a870-c0ce-f111-bf5b-7ced8d2c6615",
+	"createdAt": "2026-10-23T09:02:23.510Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "b1d34a86-37cd-f111-bf5b-000d3ab0a70f",
+			"name": "onboardingtask",
+			"contextname": "onboardingtask"
+		}
+	],
+	"agents": [],
+	"processFlows": [],
+	"apis": [],
+	"name": "OnboardingReminder",
+	"ver": "26.10.23.0906",
+	"description": "Job script: onboarding progress, overdue tasks and tasks due in the next 14 days, written to the log",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "3ce5a870-c0ce-f111-bf5b-7ced8d2c6615",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"jsscriptGroupObj": {
+		"id": "3ce5a870-c0ce-f111-bf5b-7ced8d2c6615",
+		"name": "PeopleHubOnboarding",
+		"ver": "26.10.23.0906"
+	}
+}

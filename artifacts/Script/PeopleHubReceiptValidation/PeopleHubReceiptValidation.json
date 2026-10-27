@@ -1,0 +1,54 @@
+{
+	"id": "691b9544-b9c7-f111-bf5b-000d3aba8400",
+	"createdAt": "2026-10-14T10:23:16.900Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "73a0ff58-1ace-44a8-9d26-1067e11ec610",
+			"name": "peoplehubexpenseclaim",
+			"contextname": "peoplehubexpenseclaim"
+		},
+		{
+			"id": "0ea424f5-8c07-4d1c-88cd-2f9919dc0d52",
+			"name": "peoplehubexpenseline",
+			"contextname": "peoplehubexpenseline"
+		},
+		{
+			"id": "9fc6dd6b-f333-4e2c-aedc-d8b33603a2a0",
+			"name": "peoplehubexpensereceipt",
+			"contextname": "peoplehubexpensereceipt"
+		}
+	],
+	"agents": [
+		{
+			"id": "97990a60-19c7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubInvoiceExtractionPDF",
+			"contextname": "PeopleHubInvoiceExtractionPDF"
+		},
+		{
+			"id": "9c6b7b06-1ac7-f111-bf5b-000d3aba8400",
+			"name": "PeopleHubInvoiceExtractionImage",
+			"contextname": "PeopleHubInvoiceExtractionImage"
+		}
+	],
+	"processFlows": [],
+	"apis": [],
+	"name": "PeopleHubReceiptValidation",
+	"ver": "26.10.23.0741",
+	"description": "POST { lineid }: AI reads the receipt (PDF/image) and code checks it against the expense line. Saves the result on the receipt (1 line = 1 receipt).",
+	"folder": "03_ai",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "6411635b-3295-489d-a5b0-674945933aca",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"jsscriptGroupObj": {
+		"id": "6411635b-3295-489d-a5b0-674945933aca",
+		"name": "PeopleHubExpenseClaim",
+		"ver": "26.10.23.0741"
+	}
+}

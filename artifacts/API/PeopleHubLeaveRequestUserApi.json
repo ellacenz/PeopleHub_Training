@@ -1,0 +1,195 @@
+{
+	"id": "1c51c1b1-8cc8-f111-bf5b-000d3ab82ee9",
+	"createdAt": "2026-10-15T11:36:53.623Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000601",
+			"path": "/",
+			"summary": "Current leave user",
+			"method": "GET",
+			"description": "Returns { username, isEmployee, isManager, mapped, PERNR, EMPLOYEE_NAME, ORG_TEXT, POS_TEXT, MANAGER_PERNR, MANAGER_NAME, message }",
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "LeaveUser",
+							"objectType": "reference",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "1a51c1b1-8cc8-f111-bf5b-000d3ab82ee9",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		}
+	],
+	"definitions": [
+		{
+			"id": "E1C1A000-0000-4000-8000-000000000611",
+			"name": "LeaveUser",
+			"properties": [
+				{
+					"id": null,
+					"name": "username",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "isEmployee",
+					"objectType": "boolean",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "isManager",
+					"objectType": "boolean",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "mapped",
+					"objectType": "boolean",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "PERNR",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "EMPLOYEE_NAME",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "ORG_TEXT",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "POS_TEXT",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "MANAGER_PERNR",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "MANAGER_NAME",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "message",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": "object"
+		}
+	],
+	"documentation": [],
+	"name": "PeopleHubLeaveRequestUserApi",
+	"endpoint": "/api/serverscript/peoplehubleaverequestuserapi",
+	"ver": "26.10.15.1140",
+	"version": null,
+	"description": "Current user, linked SAP employee and leave roles (employee / manager)",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"enableScriptEditor": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"apiGroup": null,
+	"apiFormat": 1,
+	"roles": []
+}

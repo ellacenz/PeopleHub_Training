@@ -1,0 +1,167 @@
+{
+	"id": "e123a23f-98c8-f111-bf5b-000d3ab82ee9",
+	"createdAt": "2026-10-15T12:59:35.400Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000901",
+			"path": "/",
+			"summary": "Delete a draft",
+			"method": "POST",
+			"description": "Body { id }. Only the owner's DRAFT. Returns { ok, id, deleted } or { ok:false, error } with 400/403/404/409.",
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "DeleteResult",
+							"objectType": "reference",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "409",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "DeleteResult",
+							"objectType": "reference",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"name": "DeleteInput",
+					"objectType": "reference",
+					"items": [],
+					"isArray": false,
+					"path": null
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "df23a23f-98c8-f111-bf5b-000d3ab82ee9",
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		}
+	],
+	"definitions": [
+		{
+			"id": "E1C1A000-0000-4000-8000-000000000911",
+			"name": "DeleteInput",
+			"properties": [
+				{
+					"id": null,
+					"name": "id",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Leave request id",
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": "object"
+		},
+		{
+			"id": "E1C1A000-0000-4000-8000-000000000912",
+			"name": "DeleteResult",
+			"properties": [
+				{
+					"id": null,
+					"name": "ok",
+					"objectType": "boolean",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "error",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "id",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "deleted",
+					"objectType": "boolean",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": "object"
+		}
+	],
+	"documentation": [],
+	"name": "PeopleHubLeaveRequestDeleteApi",
+	"endpoint": "/api/serverscript/PeopleHubLeaveRequestDeleteApi",
+	"ver": "26.10.15.1259",
+	"version": null,
+	"description": "Delete the employee's own draft leave request",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"enableScriptEditor": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"apiGroup": null,
+	"apiFormat": 1,
+	"roles": []
+}

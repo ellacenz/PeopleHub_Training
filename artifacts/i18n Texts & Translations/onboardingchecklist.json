@@ -1,0 +1,24 @@
+{
+	"id": "35ba5dd8-3dcd-f111-bf5b-000d3ab0a70f",
+	"createdAt": "2026-10-21T10:54:54.226Z",
+	"createdBy": "joao.salvador@neptune-software.com",
+	"attributes": [],
+	"locales": [
+		{
+			"isoCode": "EN",
+			"locale": "en"
+		}
+	],
+	"name": "onboardingchecklist",
+	"description": null,
+	"fallbackLocale": "en",
+	"application": "onboardingchecklist",
+	"ver": "26.10.23.1450",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"active": true,
+	"deleted": false,
+	"baseModelId": null,
+	"enhancedBy": [],
+	"baseModel": null,
+	"apps": []
+}

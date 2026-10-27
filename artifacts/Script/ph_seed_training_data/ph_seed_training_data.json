@@ -1,0 +1,27 @@
+{
+	"id": "12814e87-8a4d-4db6-a2da-445653b29b06",
+	"createdAt": "2026-10-12T14:57:02.113Z",
+	"createdBy": "joao.salvador@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"agents": [],
+	"processFlows": [],
+	"apis": [],
+	"name": "ph_seed_training_data",
+	"ver": "26.10.15.1204",
+	"description": "",
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "72287854-1837-4365-9f80-c2200ae67efd",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"jsscriptGroupObj": {
+		"id": "72287854-1837-4365-9f80-c2200ae67efd",
+		"name": "PeopleHubLeave",
+		"ver": "26.10.21.1341"
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"id": "e5a625fe-91c8-f111-bf5b-000d3ab82ee9",
+	"createdAt": "2026-10-15T12:14:39.490Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "6667e56b-a8e0-407e-b86c-e1e302e10ab6",
+			"name": "peoplehubusermap",
+			"contextname": "peoplehubusermap"
+		},
+		{
+			"id": "4e641d1b-52fa-43f2-9d17-1d7ecd735a2e",
+			"name": "peoplehubleaverequest",
+			"contextname": "peoplehubleaverequest"
+		}
+	],
+	"agents": [],
+	"processFlows": [],
+	"apis": [
+		{
+			"id": "f01909d5-7bc2-4abc-ba33-a70aba7ba59b",
+			"name": "getEmployees",
+			"contextname": "getEmployees",
+			"parent": "287393dc-396c-47cf-9706-02de8efe96d4",
+			"method": "GET"
+		}
+	],
+	"name": "PeopleHubLeaveRequestSeed",
+	"ver": "26.10.15.1214",
+	"description": "Creates 3 test leave requests (Pending, Approved, Rejected) for the user who runs it, using their SAP employee from peoplehubusermap. Safe to run repeatedly (replaces the runner's SEED rows).",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "72287854-1837-4365-9f80-c2200ae67efd",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"jsscriptGroupObj": {
+		"id": "72287854-1837-4365-9f80-c2200ae67efd",
+		"name": "PeopleHubLeave",
+		"ver": "26.10.21.1341"
+	}
+}

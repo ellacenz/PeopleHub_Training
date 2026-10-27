@@ -1,0 +1,550 @@
+{
+	"id": "be420fde-47bf-4310-b48d-3eb9ebabe175",
+	"createdAt": "2026-10-12T14:57:01.620Z",
+	"createdBy": "joao.salvador@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "345cfd20-cc40-403e-a596-e0f70579e19e",
+			"path": "/peoplehubusermap",
+			"summary": null,
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubusermap",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					],
+					"pattern": null
+				},
+				{
+					"name": "select",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "fieldName1, fieldname2, fieldName3",
+					"pattern": null
+				},
+				{
+					"name": "take",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "Limit (paginated) - max number of entities that should be taken",
+					"pattern": null
+				},
+				{
+					"name": "skip",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "Offset (paginated) from where entities should be taken",
+					"pattern": null
+				},
+				{
+					"name": "order",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}",
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "93c0bdbf-5b8b-4e3f-8098-f263b4e79156",
+			"path": "/peoplehubusermap",
+			"summary": null,
+			"method": "PUT",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubusermap",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"name": "peoplehubusermap",
+					"objectType": "array",
+					"items": [],
+					"isArray": false,
+					"path": null
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "1d895270-d49e-4451-bd4b-65ee329e83e6",
+			"path": "/peoplehubusermap",
+			"summary": null,
+			"method": "POST",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubusermap",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": null,
+					"pattern": null,
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "peoplehubusermap",
+					"objectType": "array",
+					"items": [],
+					"isArray": false,
+					"path": null
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "a2cc0256-117c-4951-9da5-45373f2319d0",
+			"path": "/peoplehubusermap",
+			"summary": null,
+			"method": "DELETE",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubusermap",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": null,
+					"pattern": null,
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "bbd92e6f-14d9-4569-85ae-01696350d4c2",
+			"path": "/peoplehubusermap/count",
+			"summary": null,
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "count",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					],
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		}
+	],
+	"definitions": [
+		{
+			"id": "3b1770de-92cd-4787-ba70-5725cf49f425",
+			"name": "peoplehubusermap",
+			"properties": [
+				{
+					"id": null,
+					"name": "id",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Unique record ID",
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "USER_NAME",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Neptune user name (login)",
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "PERNR",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "SAP personnel number, 8 digits with leading zeros",
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "ROLE",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "EMPLOYEE or MANAGER (informational only; Neptune roles decide)",
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "createdAt",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Date when record was created",
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "createdBy",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Created by",
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "updatedAt",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Date when record was updated",
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "updatedBy",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Updated by",
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": "object"
+		},
+		{
+			"id": "d3e594c6-3f99-4970-af45-191b4fa89196",
+			"name": "Error",
+			"properties": [
+				{
+					"id": null,
+					"name": "status",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": null,
+					"name": "message",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": "object"
+		},
+		{
+			"id": "6d2a09c2-406b-43a1-b9da-c416723c7695",
+			"name": "count",
+			"properties": [
+				{
+					"id": null,
+					"name": "count",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": "object"
+		}
+	],
+	"documentation": [],
+	"name": "PeopleHubUserMapTrainingME",
+	"endpoint": "/api/entity",
+	"ver": "26.10.15.1202",
+	"version": null,
+	"description": null,
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": "",
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"enableScriptEditor": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

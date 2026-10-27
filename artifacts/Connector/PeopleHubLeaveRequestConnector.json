@@ -1,0 +1,17 @@
+{
+	"id": "5755ed8e-54cd-f111-bf5b-000d3ab0a70f",
+	"createdAt": "2026-10-21T13:37:29.513Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"settings": {
+		"tableid": "4e641d1b-52fa-43f2-9d17-1d7ecd735a2e",
+		"hasDocumentation": false
+	},
+	"documentation": {},
+	"name": "PeopleHubLeaveRequestConnector",
+	"description": null,
+	"group": null,
+	"type": "T",
+	"ver": "26.10.21.1337",
+	"disabled": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2"
+}

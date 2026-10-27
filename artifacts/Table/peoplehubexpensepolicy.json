@@ -1,0 +1,71 @@
+{
+	"id": "6bf3fdb7-f9bb-4bea-a437-46c09d42f20c",
+	"createdAt": "2026-10-12T14:56:59.863Z",
+	"createdBy": "joao.salvador@neptune-software.com",
+	"fields": [
+		{
+			"fieldName": "policyid",
+			"fieldType": "uuid",
+			"isUnique": true,
+			"description": "Unique identifier for the expense policy.",
+			"isNullable": false,
+			"id": "dfb56784-7c12-46c3-ac23-61115a0fbf3a"
+		},
+		{
+			"fieldName": "category",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "The expense category this policy applies to.",
+			"isNullable": false,
+			"id": "35afc4d8-e89d-49b5-d628-810990a7a4ef"
+		},
+		{
+			"fieldName": "maxamount",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"description": "The maximum allowed amount for this category.",
+			"isNullable": true,
+			"precision": "12",
+			"scale": "2",
+			"id": "ccc594a2-15cf-49f7-d0e5-e7667ed26d93"
+		},
+		{
+			"fieldName": "period",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "The time period for the policy (e.g., monthly, yearly).",
+			"isNullable": false,
+			"id": "80d713cc-2f8b-42eb-989a-d41c5eecaee0"
+		},
+		{
+			"fieldName": "receiptthreshold",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"description": "The amount above which a receipt is required.",
+			"isNullable": true,
+			"precision": "12",
+			"scale": "2",
+			"id": "c575b0ca-5c1d-4cfd-fdcb-11b5dd63bf65"
+		},
+		{
+			"fieldName": "blocking",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Whether the policy blocks expenses exceeding the limit.",
+			"isNullable": false,
+			"id": "61e36a82-eb7f-4c60-edbe-c0f62475b400"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"vectorStoreConfig": {},
+	"name": "peoplehubexpensepolicy",
+	"description": "A table to store expense policy rules and limits.",
+	"ver": "26.10.14.1049",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"generationStrategy": "uuid",
+	"rolesRead": [],
+	"rolesWrite": []
+}

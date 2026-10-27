@@ -1,0 +1,38 @@
+{
+	"id": "43142a57-b9c7-f111-bf5b-000d3aba8400",
+	"createdAt": "2026-10-14T10:23:48.073Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "73a0ff58-1ace-44a8-9d26-1067e11ec610",
+			"name": "peoplehubexpenseclaim",
+			"contextname": "peoplehubexpenseclaim"
+		},
+		{
+			"id": "0ea424f5-8c07-4d1c-88cd-2f9919dc0d52",
+			"name": "peoplehubexpenseline",
+			"contextname": "peoplehubexpenseline"
+		},
+		{
+			"id": "9fc6dd6b-f333-4e2c-aedc-d8b33603a2a0",
+			"name": "peoplehubexpensereceipt",
+			"contextname": "peoplehubexpensereceipt"
+		}
+	],
+	"agents": [],
+	"processFlows": [],
+	"apis": [],
+	"name": "PeopleHubExpenseClaimApprovalPrepare",
+	"ver": "26.10.14.1354",
+	"description": "Process flow PeopleHubExpenseClaimApproval, step 1: summary of the claim (already Submitted by PeopleHubExpenseClaimSend) and its AI results, recommendation, approver emails.",
+	"folder": "04_approval",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "6411635b-3295-489d-a5b0-674945933aca",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2"
+}

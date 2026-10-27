@@ -1,0 +1,129 @@
+{
+	"id": "4e641d1b-52fa-43f2-9d17-1d7ecd735a2e",
+	"createdAt": "2026-10-12T14:56:28.206Z",
+	"createdBy": "joao.salvador@neptune-software.com",
+	"fields": [
+		{
+			"fieldName": "PERNR",
+			"fieldType": "smalltext",
+			"description": "Requester personnel number, 8 digits",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"fieldName": "EMPLOYEE_NAME",
+			"fieldType": "mediumtext",
+			"description": "Requester full name",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"fieldName": "MANAGER_PERNR",
+			"fieldType": "smalltext",
+			"description": "Approver personnel number from GET_EMPLOYEES MANAGER",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"fieldName": "AWART",
+			"fieldType": "smalltext",
+			"description": "Absence type, normally 0100 Leave",
+			"isUnique": false,
+			"isNullable": false,
+			"default": "0100"
+		},
+		{
+			"fieldName": "TYPE_TEXT",
+			"fieldType": "mediumtext",
+			"description": "Absence type text",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"fieldName": "START_DATE",
+			"fieldType": "smalltext",
+			"description": "Start date as YYYY-MM-DD",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"fieldName": "END_DATE",
+			"fieldType": "smalltext",
+			"description": "End date as YYYY-MM-DD",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"fieldName": "WORKING_DAYS",
+			"fieldType": "decimal",
+			"description": "Calculated working days, 1 decimal",
+			"isUnique": false,
+			"isNullable": false,
+			"precision": 5,
+			"scale": 1
+		},
+		{
+			"fieldName": "COMMENT",
+			"fieldType": "text",
+			"description": "Requester comment",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"fieldName": "STATUS",
+			"fieldType": "smalltext",
+			"description": "PENDING, APPROVED, REJECTED or CANCELLED",
+			"isUnique": false,
+			"isNullable": false,
+			"default": "PENDING"
+		},
+		{
+			"fieldName": "DECISION_COMMENT",
+			"fieldType": "text",
+			"description": "Manager comment, required on reject",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"fieldName": "DECIDED_BY",
+			"fieldType": "smalltext",
+			"description": "Deciding manager personnel number",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"fieldName": "DECIDED_AT",
+			"fieldType": "bigint",
+			"description": "Decision timestamp, epoch ms",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"fieldName": "CREATED_AT_APP",
+			"fieldType": "bigint",
+			"description": "Creation timestamp, epoch ms",
+			"isUnique": false,
+			"isNullable": false
+		},
+		{
+			"fieldName": "SOURCE",
+			"fieldType": "smalltext",
+			"description": "APP or AI (drafted by HR Assistant)",
+			"isUnique": false,
+			"isNullable": false,
+			"default": "APP"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"vectorStoreConfig": {},
+	"name": "peoplehubleaverequest",
+	"description": null,
+	"ver": "26.10.15.1159",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"generationStrategy": null,
+	"rolesRead": [],
+	"rolesWrite": []
+}

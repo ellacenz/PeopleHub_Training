@@ -1,0 +1,2027 @@
+{
+	"id": "1200ad74-b4c7-f111-bf5b-000d3aba8400",
+	"createdAt": "2026-10-14T09:48:50.070Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000101",
+			"path": "/peoplehubexpenseclaim",
+			"summary": null,
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpenseclaim",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" } or Not(value), Between(1,10), In([\"a\",\"b\"]), LessThan, MoreThan, Like, IsNull",
+					"pattern": null
+				},
+				{
+					"name": "select",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "fieldName1, fieldName2",
+					"pattern": null
+				},
+				{
+					"name": "take",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "Max number of rows",
+					"pattern": null
+				},
+				{
+					"name": "skip",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "Offset",
+					"pattern": null
+				},
+				{
+					"name": "order",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{\"fieldName\": \"ASC\"}",
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000102",
+			"path": "/peoplehubexpenseclaim",
+			"summary": null,
+			"method": "PUT",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpenseclaim",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"name": "peoplehubexpenseclaim",
+					"objectType": "array",
+					"items": [],
+					"isArray": false,
+					"path": null
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000103",
+			"path": "/peoplehubexpenseclaim",
+			"summary": null,
+			"method": "POST",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpenseclaim",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" }",
+					"pattern": null
+				}
+			],
+			"content": [
+				{
+					"name": "peoplehubexpenseclaim",
+					"objectType": "array",
+					"items": [],
+					"isArray": false,
+					"path": null
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000104",
+			"path": "/peoplehubexpenseclaim",
+			"summary": null,
+			"method": "DELETE",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpenseclaim",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" }",
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000105",
+			"path": "/peoplehubexpenseclaim/count",
+			"summary": null,
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "count",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" }",
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000201",
+			"path": "/peoplehubexpenseline",
+			"summary": null,
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpenseline",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" } or Not(value), Between(1,10), In([\"a\",\"b\"]), LessThan, MoreThan, Like, IsNull",
+					"pattern": null
+				},
+				{
+					"name": "select",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "fieldName1, fieldName2",
+					"pattern": null
+				},
+				{
+					"name": "take",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "Max number of rows",
+					"pattern": null
+				},
+				{
+					"name": "skip",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "Offset",
+					"pattern": null
+				},
+				{
+					"name": "order",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{\"fieldName\": \"ASC\"}",
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000202",
+			"path": "/peoplehubexpenseline",
+			"summary": null,
+			"method": "PUT",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpenseline",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"name": "peoplehubexpenseline",
+					"objectType": "array",
+					"items": [],
+					"isArray": false,
+					"path": null
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000203",
+			"path": "/peoplehubexpenseline",
+			"summary": null,
+			"method": "POST",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpenseline",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" }",
+					"pattern": null
+				}
+			],
+			"content": [
+				{
+					"name": "peoplehubexpenseline",
+					"objectType": "array",
+					"items": [],
+					"isArray": false,
+					"path": null
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000204",
+			"path": "/peoplehubexpenseline",
+			"summary": null,
+			"method": "DELETE",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpenseline",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" }",
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000205",
+			"path": "/peoplehubexpenseline/count",
+			"summary": null,
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "count",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" }",
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000301",
+			"path": "/peoplehubexpensepolicy",
+			"summary": null,
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpensepolicy",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" }",
+					"pattern": null
+				},
+				{
+					"name": "select",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "fieldName1, fieldName2",
+					"pattern": null
+				},
+				{
+					"name": "take",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "Max number of rows",
+					"pattern": null
+				},
+				{
+					"name": "skip",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "Offset",
+					"pattern": null
+				},
+				{
+					"name": "order",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{\"fieldName\": \"ASC\"}",
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000302",
+			"path": "/peoplehubexpensepolicy",
+			"summary": null,
+			"method": "PUT",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpensepolicy",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"name": "peoplehubexpensepolicy",
+					"objectType": "array",
+					"items": [],
+					"isArray": false,
+					"path": null
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000303",
+			"path": "/peoplehubexpensepolicy",
+			"summary": null,
+			"method": "POST",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpensepolicy",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" }",
+					"pattern": null
+				}
+			],
+			"content": [
+				{
+					"name": "peoplehubexpensepolicy",
+					"objectType": "array",
+					"items": [],
+					"isArray": false,
+					"path": null
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000304",
+			"path": "/peoplehubexpensepolicy",
+			"summary": null,
+			"method": "DELETE",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpensepolicy",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" }",
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000305",
+			"path": "/peoplehubexpensepolicy/count",
+			"summary": null,
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "count",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" }",
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000401",
+			"path": "/peoplehubexpensereceipt",
+			"summary": null,
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpensereceipt",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" }",
+					"pattern": null
+				},
+				{
+					"name": "select",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "fieldName1, fieldName2 (leave out content for lists)",
+					"pattern": null
+				},
+				{
+					"name": "take",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "Max number of rows",
+					"pattern": null
+				},
+				{
+					"name": "skip",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "Offset",
+					"pattern": null
+				},
+				{
+					"name": "order",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{\"fieldName\": \"ASC\"}",
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000402",
+			"path": "/peoplehubexpensereceipt",
+			"summary": null,
+			"method": "PUT",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpensereceipt",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"name": "peoplehubexpensereceipt",
+					"objectType": "array",
+					"items": [],
+					"isArray": false,
+					"path": null
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000403",
+			"path": "/peoplehubexpensereceipt",
+			"summary": null,
+			"method": "POST",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpensereceipt",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" }",
+					"pattern": null
+				}
+			],
+			"content": [
+				{
+					"name": "peoplehubexpensereceipt",
+					"objectType": "array",
+					"items": [],
+					"isArray": false,
+					"path": null
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000404",
+			"path": "/peoplehubexpensereceipt",
+			"summary": null,
+			"method": "DELETE",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "peoplehubexpensereceipt",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" }",
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8000-000000000405",
+			"path": "/peoplehubexpensereceipt/count",
+			"summary": null,
+			"method": "GET",
+			"description": null,
+			"responses": [
+				{
+					"id": null,
+					"status": "200",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "count",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				},
+				{
+					"id": null,
+					"status": "400",
+					"description": null,
+					"headers": [],
+					"content": [
+						{
+							"name": "Error",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"default": null,
+					"inPath": false,
+					"required": false,
+					"description": "{ \"fieldName\": \"value\" }",
+					"pattern": null
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": null,
+			"preRequestHook": null,
+			"tags": null,
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		}
+	],
+	"definitions": [
+		{
+			"id": "e1c1a000-0000-4000-8001-000000000100",
+			"name": "peoplehubexpenseclaim",
+			"properties": [
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000101",
+					"name": "id",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Unique record ID",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000102",
+					"name": "claimid",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Claim id (uuid)",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000103",
+					"name": "title",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Claim title",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000104",
+					"name": "purpose",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Business purpose",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000105",
+					"name": "datefrom",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Start date",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000106",
+					"name": "dateto",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "End date",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000107",
+					"name": "status",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Draft, Submitted, Approved or Rejected",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000108",
+					"name": "totaleur",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Total in EUR",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000109",
+					"name": "createdByPerson",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Requester username",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000110",
+					"name": "submittedat",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Submitted at",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000111",
+					"name": "approver",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Approver username",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000112",
+					"name": "decidedat",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Decided at",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000113",
+					"name": "rejectionreason",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Reason when rejected",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000114",
+					"name": "createdAt",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Date when record was created",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000115",
+					"name": "createdBy",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Created by",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000116",
+					"name": "updatedAt",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Date when record was updated",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000117",
+					"name": "updatedBy",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Updated by",
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8001-000000000200",
+			"name": "peoplehubexpenseline",
+			"properties": [
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000201",
+					"name": "id",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Unique record ID",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000202",
+					"name": "lineid",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Line id (uuid)",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000203",
+					"name": "claimid",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Claim id",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000204",
+					"name": "expensedate",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Expense date",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000205",
+					"name": "category",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Meals, Hotel, Transport, Mileage or Other",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000206",
+					"name": "merchant",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Merchant",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000207",
+					"name": "amount",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Amount in the original currency",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000208",
+					"name": "currency",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "ISO currency",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000209",
+					"name": "rate",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Exchange rate to EUR",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000210",
+					"name": "ratedate",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Rate date",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000211",
+					"name": "amounteur",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Amount in EUR",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000212",
+					"name": "distancekm",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Distance in km (Mileage)",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000213",
+					"name": "description",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Description",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000214",
+					"name": "receiptid",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Receipt id when a receipt is attached",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000215",
+					"name": "policyflags",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Policy check messages",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000216",
+					"name": "createdAt",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Date when record was created",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000217",
+					"name": "createdBy",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Created by",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000218",
+					"name": "updatedAt",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Date when record was updated",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000219",
+					"name": "updatedBy",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Updated by",
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8001-000000000300",
+			"name": "peoplehubexpensepolicy",
+			"properties": [
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000301",
+					"name": "id",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Unique record ID",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000302",
+					"name": "policyid",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Policy id (uuid)",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000303",
+					"name": "category",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Expense category",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000304",
+					"name": "maxamount",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Maximum amount in EUR",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000305",
+					"name": "period",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Line or Day",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000306",
+					"name": "receiptthreshold",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Receipt required above this EUR amount",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000307",
+					"name": "blocking",
+					"objectType": "boolean",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Blocks submit when exceeded",
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8001-000000000400",
+			"name": "peoplehubexpensereceipt",
+			"properties": [
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000401",
+					"name": "id",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Unique record ID",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000402",
+					"name": "receiptid",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Receipt id (uuid)",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000403",
+					"name": "lineid",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "Expense line id",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000404",
+					"name": "filename",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "File name",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000405",
+					"name": "mimetype",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "MIME type",
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000406",
+					"name": "content",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": "File content, base64",
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8001-000000000900",
+			"name": "Error",
+			"properties": [
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000901",
+					"name": "status",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				},
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000902",
+					"name": "message",
+					"objectType": "string",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": null
+		},
+		{
+			"id": "e1c1a000-0000-4000-8001-000000000910",
+			"name": "count",
+			"properties": [
+				{
+					"id": "e1c1a000-0000-4000-8001-000000000911",
+					"name": "count",
+					"objectType": "number",
+					"required": false,
+					"children": [],
+					"alternatives": null,
+					"description": null,
+					"pattern": null
+				}
+			],
+			"description": null,
+			"isIncluded": false,
+			"type": null
+		}
+	],
+	"documentation": [],
+	"name": "PeopleHubExpenseClaimTableApi",
+	"endpoint": "/api/entity",
+	"ver": "26.10.14.1132",
+	"version": null,
+	"description": "Table API for the expense claim training: claims, lines, policies and receipts",
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"enableScriptEditor": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

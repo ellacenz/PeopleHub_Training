@@ -1,0 +1,38 @@
+{
+	"id": "c3a78c49-b4c7-f111-bf5b-000d3aba8400",
+	"createdAt": "2026-10-14T09:47:37.716Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "73a0ff58-1ace-44a8-9d26-1067e11ec610",
+			"name": "peoplehubexpenseclaim",
+			"contextname": "peoplehubexpenseclaim"
+		},
+		{
+			"id": "0ea424f5-8c07-4d1c-88cd-2f9919dc0d52",
+			"name": "peoplehubexpenseline",
+			"contextname": "peoplehubexpenseline"
+		},
+		{
+			"id": "6bf3fdb7-f9bb-4bea-a437-46c09d42f20c",
+			"name": "peoplehubexpensepolicy",
+			"contextname": "peoplehubexpensepolicy"
+		}
+	],
+	"agents": [],
+	"processFlows": [],
+	"apis": [],
+	"name": "PeopleHubExpenseClaimSeed",
+	"ver": "26.10.23.0740",
+	"description": "Creates or refreshes the expense claim training mock data: 6 claims (requester Antonio, approver Veronica), their lines and the expense policies. Safe to run repeatedly.",
+	"folder": "02_seed",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "6411635b-3295-489d-a5b0-674945933aca",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2"
+}

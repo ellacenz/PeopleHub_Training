@@ -1,0 +1,39 @@
+{
+	"id": "4dfc7bc5-96c8-f111-bf5b-000d3ab82ee9",
+	"createdAt": "2026-10-15T12:48:56.356Z",
+	"createdBy": "veronica.fernandez@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [
+		{
+			"id": "21E041E0-8CC8-F111-BF5B-000D3AB82EE9",
+			"name": "dayjs",
+			"contextname": "dayjs"
+		}
+	],
+	"entitySets": [
+		{
+			"id": "4e641d1b-52fa-43f2-9d17-1d7ecd735a2e",
+			"name": "peoplehubleaverequest",
+			"contextname": "peoplehubleaverequest"
+		}
+	],
+	"agents": [],
+	"processFlows": [],
+	"apis": [],
+	"name": "PeopleHubLeaveRequestSend",
+	"ver": "26.10.16.0845",
+	"description": "POST { id }: sends the employee's own DRAFT leave request for approval (status PENDING) and emails every user with role PeopleHubManagerTrainingME (template PeopleHubLeaveRequestApproval).",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "72287854-1837-4365-9f80-c2200ae67efd",
+	"package": "bfd1586e-0116-4cb9-86d6-a420a40859c2",
+	"jsscriptGroupObj": {
+		"id": "72287854-1837-4365-9f80-c2200ae67efd",
+		"name": "PeopleHubLeave",
+		"ver": "26.10.21.1341"
+	}
+}
